@@ -1,0 +1,19 @@
+.navbar_ui {
+  background: rgb(7 149 7 / 56%);
+  height: 40px;
+}
+.nav-link {
+  color: #fff !important;
+  font-size: 13px !important;
+  display: flex !important;
+  align-items: center;
+}
+.curreny_option {
+  outline: none;
+  border: none;
+  background: none;
+  color: black;
+}
+.curencyOption {
+  color: black;
+}
