@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import { Col, Row } from "react-bootstrap";
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import "../../assets/css/style.css";
 
@@ -10,21 +11,93 @@ const Header = () => {
   const [value, setValue] = useState({ currency: "usd" });
   const currencyList = [
     {
-      value: "usd",
+      value: "USD",
     },
     {
-      value: "inr",
+      value: "INR",
     },
     {
-      value: "dhr",
+      value: "DHR",
     },
     {
-      value: "kd",
+      value: "KD",
     },
+  ];
+  const langaugeList = [
+    { name: "English" },
+    { name: "Hindi" },
+    { name: "Arabic" },
+    { name: "French" },
   ];
   return (
     <>
-      <Navbar className="navbar_ui" expand="lg">
+      <div className="navbar_ui col-lg-12 col-md-12">
+        <div className="container">
+          <div className="navbar_align">
+            <Link to="/" className="navigation_link">
+              <div> DOWNLOAD ENCHE APPS </div>
+            </Link>
+            <div className="nav_right">
+              <select
+                value={value?.currency}
+                name="currency"
+                onChange={(e) => setValue({ [e.target.name]: e.target.value })}
+                className="curreny_option navigation_link"
+              >
+                {currencyList?.map((item, key) => (
+                  <option
+                    value={item?.value}
+                    key={key}
+                    className="curencyOption"
+                  >
+                    {item.value}
+                  </option>
+                ))}
+              </select>
+              <select
+                className="curreny_option navigation_link"
+                name="level"
+                // value={data.level}
+                onChange={(e) => setValue({ [e.target.name]: e.target.value })}
+              >
+                <option selected hidden>
+                  English
+                </option>
+                {langaugeList.map((item) => (
+                  <option value={item.name} className="curencyOption">
+                    {item.name}
+                  </option>
+                ))}
+              </select>
+              <select
+                className="curreny_option navigation_link"
+                name="level"
+                // value={data.level}
+                onChange={(e) => setValue({ [e.target.name]: e.target.value })}
+              >
+                <option selected hidden>
+                  Join As
+                </option>
+                <option value="abc" className="curencyOption">
+                  Buyer
+                </option>
+                <option value="abc" className="curencyOption">
+                  Seller
+                </option>
+              </select>
+              <Link to="/signup" className="navigation_link nav_signIn">
+                <span>Sign Up</span>
+              </Link>
+              {/* <div className="sign_divider"> | </div> */}
+              <Link to="/signin" className="navigation_link">
+                Login
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <>
+        {/* <Navbar className="navbar_ui" expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -76,16 +149,11 @@ const Header = () => {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
-              <Link to="/signup" className="nav-link">
-                Sign Up
-              </Link>
-              <Link to="/signin" className="nav-link">
-                Login
-              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
+      </>
     </>
   );
 };

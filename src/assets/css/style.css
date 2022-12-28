@@ -1,19 +1,403 @@
+/*  Navbar css start  */
+
 .navbar_ui {
   background: rgb(7 149 7 / 56%);
   height: 40px;
-}
-.nav-link {
-  color: #fff !important;
-  font-size: 13px !important;
-  display: flex !important;
+  display: flex;
   align-items: center;
 }
+
+.navbar_align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_right {
+  display: flex;
+  gap: 5px;
+}
+
+.navigation_link {
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navigation_link:hover {
+  color: #fff;
+}
+
+.nav_signIn {
+  padding-right: 5px;
+}
+
+.nav_signIn span {
+  border-right: 1.5px solid #fff;
+  line-height: 12px;
+  padding: 0 10px;
+}
+
+/* .sign_divider {
+  line-height: 10px; 
+  padding: 0 10px; 
+  color: #fff;
+} */
 .curreny_option {
   outline: none;
   border: none;
   background: none;
-  color: black;
 }
+
 .curencyOption {
   color: black;
 }
+
+/*  Navbar css end */
+
+/* sub header page css start */
+
+.home_page {
+  background-color: rgb(216 214 214 / 43%);
+  height: 110px;
+}
+
+.home_Head {
+  padding-top: 20px;
+}
+
+.search_bar {
+  background-color: #fff;
+  padding: 3px;
+  width: 850px;
+}
+
+.home_search {
+  display: flex;
+  border: 1px solid #00000042;
+  border-radius: 5px;
+}
+
+.search_below {
+  display: flex;
+  gap: 20px;
+}
+
+.search_svg {
+  max-width: 100%;
+  width: 129px;
+}
+
+.search_font {
+  font-size: 12px;
+}
+
+.home_pageSearch {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search_icon {
+  height: 18px;
+}
+
+.home_inp {
+  border: none;
+  width: 780px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.home_inp:active {
+  outline: none;
+}
+
+.inputSearch {
+  background-color: rgb(7 149 7 / 56%);
+  width: 100px;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px;
+  margin: 2px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trac_btn {
+  background-color: rgb(7 149 7 / 56%);
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  color: #fff;
+  max-width: 158px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.home_icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+}
+
+.home_news {
+  display: flex;
+  gap: 13px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+/*  sub header page css end  */
+
+/* login css start */
+
+.sign_body {
+  background-color: rgb(216 214 214 / 43%);
+  border-top: 1px solid #847e7e45;
+  padding: 45px 0;
+}
+
+.cardBody {
+  /* height: 500px; */
+  width: 400px;
+  /* border: 1px solid green; */
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.card_padd {
+  padding: 22px 25px;
+}
+
+.login_Head {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #008000bf;
+  padding-bottom: 8px;
+}
+
+.login_subHead {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+.loginInp {
+  margin-top: 12px;
+}
+
+.loginInp input {
+  position: "relative";
+  padding-left: 25px;
+  outline: none;
+  width: 100%;
+  border: 1px solid rgb(179 179 179 / 44%);
+  background-color: rgb(216 214 214 / 18%);
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.login_inpSvg {
+  position: absolute;
+  padding: 7px 5px;
+}
+
+.loginWithGoogle {
+  border: 1px solid rgb(179 179 179 / 44%);
+  background-color: rgb(216 214 214 / 18%);
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google_logo {
+  height: 14px;
+  width: 14px;
+  margin-right: 6px;
+}
+
+.sign_in_or {
+  color: #adb5bd;
+  font: normal normal normal 17px/28px Poppins;
+  letter-spacing: 0;
+  margin: 14px;
+  position: relative;
+  text-align: center;
+}
+
+.sign_in_or:before {
+  background-color: #adb5bd75;
+  content: " ";
+  height: 1px;
+  margin-top: 16px;
+  position: absolute;
+  width: 46%;
+  left: 0;
+}
+
+.sign_in_or:after {
+  background-color: #adb5bd75;
+  content: " ";
+  height: 1px;
+  margin-top: 16px;
+  position: absolute;
+  width: 46%;
+  right: 0;
+}
+
+.loginWithFacebook {
+  border: 1px solid rgb(179 179 179 / 44%);
+  background-color: #0d6efdc7;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.remberDev {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0px;
+  margin: 6px 0px;
+}
+
+.remberMe {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.login_btn {
+  width: 100%;
+  background-color: rgb(7 149 7 / 56%);
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.notYet_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 3px;
+  font-size: 12px;
+}
+
+/* login css end */
+
+/* Home page css start */
+
+.home_banner {
+  height: 150px;
+  background-color: rgb(216 214 214 / 43%);
+}
+
+.banner_back {
+  text-align: center;
+  padding: 12px;
+}
+
+.banner_img {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+  /* min-height: 100%; */
+  /* background-position: center center;  */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.stores_title {
+  text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  color: gray;
+}
+
+.stores_cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 5px 30px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.stores_cart_align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stores_cart_align img {
+  height: 50px;
+  width: 50px;
+}
+
+/* charity cart css start */
+
+.charity_cart {
+  background-color: rgb(179 230 231 / 30%);
+  margin-top: 15px;
+  /* height: 200px; */
+}
+
+.explore_head {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.explore_subhead {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(7 149 7 / 66%);
+}
+
+.exp_imgs {
+  height: 200px;
+  width: 140px;
+  border: 1px solid gray;
+}
+
+/* charity cart css end */
+
+/* Home page css end */
