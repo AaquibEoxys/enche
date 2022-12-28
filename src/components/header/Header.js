@@ -5,6 +5,7 @@ import React, { useState } from "react";
 // import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
+import "./header.scss";
 import "../../assets/css/style.css";
 
 const Header = () => {

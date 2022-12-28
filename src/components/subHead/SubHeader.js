@@ -5,6 +5,7 @@ import truck from "../../assets/images/truck.svg";
 import bell from "../../assets/images/bell.svg";
 import heart from "../../assets/images/heart.svg";
 import cart from "../../assets/images/cart.svg";
+import "./subHeader.scss";
 
 const SubHeader = () => {
   return (

@@ -2,6 +2,7 @@ import React from "react";
 import SubHeader from "../subHead/SubHeader";
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
+import "./login.scss";
 
 const Login = () => {
   return (
@@ -41,7 +42,7 @@ const Login = () => {
                 Remember Me
               </label>
             </div>
-            <div className="log_btn_div">
+            <div>
               <button className="login_btn"> Log in </button>
             </div>
             <div className="notYet_div">

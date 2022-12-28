@@ -1,0 +1,45 @@
+.navbar_ui {
+  background: rgb(7 149 7 / 56%);
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+  .navbar_align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navigation_link {
+      color: #fff;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .nav_right {
+      display: flex;
+      gap: 5px;
+
+      .curreny_option {
+        outline: none;
+        border: none;
+        background: none;
+
+        .curencyOption {
+          color: black;
+        }
+      }
+
+      .nav_signIn {
+        padding-right: 5px;
+
+        span {
+          border-right: 1.5px solid #fff;
+          line-height: 12px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

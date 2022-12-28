@@ -1,0 +1,79 @@
+.home_banner {
+  height: 150px;
+  background-color: rgb(216 214 214 / 43%);
+
+  .banner_back {
+    text-align: center;
+    padding: 12px;
+
+    .banner_img {
+      height: 350px;
+      object-fit: cover;
+      width: 100%;
+      /* min-height: 100%; */
+      /* background-position: center center;  */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+
+    .stores_title {
+      text-align: start;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px 4px;
+      color: gray;
+    }
+
+    .stores_cart {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+      margin-bottom: 15px;
+      padding: 5px 30px;
+      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+      .stores_cart_align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .charity_cart {
+    background-color: rgb(179 230 231 / 30%);
+    margin-top: 15px;
+    /* height: 200px; */
+
+    .explore_head {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 500;
+      padding-top: 12px;
+    }
+
+    .explore_subhead {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      color: rgb(7 149 7 / 66%);
+    }
+
+    .exp_imgs {
+      height: 200px;
+      width: 140px;
+      border: 1px solid gray;
+    }
+  }
+}
