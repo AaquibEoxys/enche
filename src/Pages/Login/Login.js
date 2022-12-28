@@ -1,5 +1,5 @@
 import React from "react";
-import SubHeader from "../subHead/SubHeader";
+import SubHeader from "../../components/subHead/SubHeader";
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
 import "./login.scss";

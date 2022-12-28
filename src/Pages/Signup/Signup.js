@@ -1,7 +1,7 @@
 import React from "react";
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
-import SubHeader from "../subHead/SubHeader";
+import SubHeader from "../../components/subHead/SubHeader";
 
 const Signup = () => {
   return (
