@@ -1,8 +1,9 @@
 import React from "react";
-import SubHeader from "../subHead/SubHeader";
+
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
 import "./login.scss";
+import SubHeader from "../../components/subHead/SubHeader";
 
 const Login = () => {
   return (

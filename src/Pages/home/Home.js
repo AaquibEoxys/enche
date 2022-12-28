@@ -1,12 +1,13 @@
 import React from "react";
-import SubHeader from "../subHead/SubHeader";
+
 import Images from "../../components/Images/Images";
+import SubHeader from "../../components/subHead/SubHeader";
 import "./home.scss";
 
 const Home = () => {
   return (
     <>
-      {/* <SubHeader /> */}
+      <SubHeader />
       <div className="home_banner">
         <div className="container">
           <div className="banner_back row">

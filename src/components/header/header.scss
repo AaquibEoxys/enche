@@ -43,3 +43,22 @@
     }
   }
 }
+.home_page .home_Head .home_pageSearch .trac_btn {
+  background-color: rgba(7, 149, 7, 0.56);
+  padding: 0px;
+  font-size: -4px;
+  border-radius: -3px;
+  color: #fff;
+  font-size: 9px;
+  /* max-width: 169px; */
+  width: 278px;
+  height: 33px;
+  display: flex;
+  gap: 7px;
+
+  align-items: center;
+}
+.search_icon {
+  height: 18px;
+  margin-left: 5px;
+}

@@ -1,0 +1,234 @@
+.banner2-img {
+  width: 100%;
+  height: 254px;
+  margin-top: 0%;
+}
+
+.term-cond-merc {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 8px 24px;
+  // box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin: 20px auto;
+}
+
+.banner-content {
+  background-color: white;
+  .banner-h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 37px;
+    margin-top: 4%;
+  }
+  .banner-h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 37px;
+  }
+  .banner-h5 {
+    text-align: center;
+
+    color: #818181;
+  }
+  .banner-h {
+    text-align: center;
+    margin-top: 40px;
+    color: #818181;
+  }
+  .banner-btn {
+    background-color: rgba(7, 149, 7, 0.56);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    width: 145px;
+    height: 51px;
+    font-size: 19px;
+    margin-left: 45%;
+    margin-top: 3%;
+  }
+}
+
+.enche-market {
+  text-align: center;
+  color: rgba(7, 149, 7, 0.56);
+  margin-top: 6%;
+  font-weight: 700;
+  font-size: 32px;
+}
+.enche-h5 {
+  text-align: center;
+  color: #818181;
+}
+.enche-market-img {
+  text-align: center;
+}
+.ourvision-ench {
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 /30%);
+  width: 39%;
+  height: 200px;
+  border-radius: 20px;
+}
+.ourposition-ench {
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 30%);
+  width: 39%;
+  height: 200px;
+  border-radius: 20px;
+}
+.vision-card {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+  padding-top: 35px;
+}
+.our-vrn-head {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 5%;
+}
+.our-vrn {
+  text-align: center;
+  color: #818181;
+}
+.our-pos-head {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 5%;
+}
+.our-post {
+  text-align: center;
+  color: #818181;
+}
+.layalty-img {
+  text-align: center;
+}
+.layalty-text {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 700;
+}
+.loyalty-h6 {
+  text-align: center;
+  color: #818181;
+}
+
+.layalty-ex {
+  text-align: center;
+  color: #818181;
+}
+.layalty-ex > span {
+  color: black;
+  font-weight: 700;
+}
+.loyalty-para {
+  padding-top: 25px;
+}
+
+@media (min-width: 240px) and (max-width: 640px) {
+  .banner2-img {
+    width: 100%;
+    height: 136px;
+  }
+  .banner-content .banner-h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 4%;
+  }
+  .banner-content .banner-h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  .banner-content .banner-h {
+    text-align: center;
+    margin-top: 40px;
+    color: #818181;
+    font-size: 12px;
+  }
+  .banner-content .banner-h5 {
+    text-align: center;
+    color: #818181;
+    font-size: 12px;
+  }
+  .banner-content .banner-btn {
+    background-color: rgba(7, 149, 7, 0.56);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    width: 128px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 28%;
+    margin-top: 3%;
+  }
+  .enche-market {
+    text-align: center;
+    color: rgba(7, 149, 7, 0.56);
+    margin-top: 6%;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .enche-h5 {
+    text-align: center;
+    color: #818181;
+    font-size: 12px;
+  }
+  #enche-mart-img {
+    width: 200px;
+  }
+  #layal-img {
+    width: 300px;
+    margin-top: 10%;
+  }
+  .layalty-text {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 19px;
+  }
+  .loyalty-h6 {
+    text-align: center;
+    color: #818181;
+    font-size: 12px;
+  }
+  .layalty-ex {
+    text-align: center;
+    color: #818181;
+    font-size: 12px;
+  }
+  .term-cond-merc {
+    width: 90%;
+    margin-left: 21%;
+  }
+  .ourvision-ench {
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 30%);
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .ourposition-ench {
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 30%);
+    width: 101%;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .ourposition-ench {
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 30%);
+    width: 101%;
+    height: 200px;
+    border-radius: 20px;
+  }
+  .ourposition-ench {
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 30%);
+    width: 101%;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .vision-card {
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    padding-top: 35px;
+    display: contents;
+  }
+}

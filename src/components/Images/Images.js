@@ -3,14 +3,17 @@ import face from "../../assets/images/face.svg";
 import gmail from "../../assets/images/gmail.svg";
 import lock from "../../assets/images/lock.svg";
 import banners from "../../assets/images/banners.svg";
-import charity from "../../assets/images/charity.svg"
-import enchepre from "../../assets/images/enchepre.svg"
-import encheff from "../../assets/images/encheff.svg"
-import b2b from "../../assets/images/b2b.svg"
-import fluencer from "../../assets/images/fluencer.svg"
-import b2c from "../../assets/images/b2c.svg"
-import C2C from "../../assets/images/C2C.svg"
-import Dropship from "../../assets/images/Dropship.svg"
+import charity from "../../assets/images/charity.svg";
+import enchepre from "../../assets/images/enchepre.svg";
+import encheff from "../../assets/images/encheff.svg";
+import b2b from "../../assets/images/b2b.svg";
+import fluencer from "../../assets/images/fluencer.svg";
+import b2c from "../../assets/images/b2c.svg";
+import C2C from "../../assets/images/C2C.svg";
+import Dropship from "../../assets/images/Dropship.svg";
+import Banner2 from "../../assets/images/banner2.png";
+import computer from "../../assets/images/computer.png";
+import loyalty from "../../assets/images/loyalty.png";
 
 const Images = {
   google,
@@ -25,7 +28,10 @@ const Images = {
   fluencer,
   b2c,
   C2C,
-  Dropship
+  Dropship,
+  Banner2,
+  computer,
+  loyalty,
 };
 
 export default Images;
