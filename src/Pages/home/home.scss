@@ -1,7 +1,6 @@
 .home_banner {
   height: 150px;
   background-color: rgb(216 214 214 / 43%);
-
   .banner_back {
     text-align: center;
     padding: 12px;
@@ -42,6 +41,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 22px 10px;
 
         img {
           height: 50px;
@@ -54,6 +54,7 @@
   .charity_cart {
     background-color: rgb(179 230 231 / 30%);
     margin-top: 15px;
+    padding-bottom: 15px;
     /* height: 200px; */
 
     .explore_head {
@@ -70,10 +71,171 @@
       color: rgb(7 149 7 / 66%);
     }
 
-    .exp_imgs {
-      height: 200px;
-      width: 140px;
-      border: 1px solid gray;
+    .charity_flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .exp_imgs {
+        position: relative;
+        height: 300px;
+        width: 190px;
+        border: 1px solid gray;
+        border: none;
+        border-radius: 5px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 8px;
+        }
+        span {
+          position: absolute;
+          left: 50%;
+          bottom: 13px;
+          transform: translate(-50%, 0);
+          font-weight: 600;
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .arrival_div {
+    padding-bottom: 20px;
+
+    .arrival_head {
+      text-align: start;
+      font-size: 18px;
+      font-weight: 600;
+      color: #6e6b6b;
+      padding: 8px 20px;
+    }
+    .arrival_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .card_arrival {
+        width: 175px;
+        border-radius: 7px;
+        border: 1px solid gray;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .card_arrival_Img img {
+          height: 145px;
+          width: 100%;
+          border-radius: 5px;
+        }
+        .card_text {
+          font-size: 13px;
+          color: gray;
+          padding: 5px 7px;
+        }
+        .card_x_price {
+          text-decoration: line-through;
+          padding: 0 7px;
+          font-size: 13px;
+          font-weight: 500;
+          color: gray;
+        }
+        .card_price {
+          font-weight: 700;
+          padding: 1px 7px;
+          font-size: 15px;
+        }
+        // .star_icons
+      }
+    }
+  }
+  .category_section {
+    .category_head {
+      text-align: start;
+      font-size: 18px;
+      font-weight: 600;
+      color: #6e6b6b;
+      padding: 0px 20px;
+    }
+
+    .category_div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .categories_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        height: 178px;
+        width: 130px;
+        justify-content: center;
+
+        img {
+          height: 100px;
+          width: 100px;
+        }
+        span {
+          font-size: 12px;
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .art_tailor {
+    width: 100%;
+    height: 248px;
+    border-radius: 5px;
+  }
+  .banner_div {
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 10px;
+
+    .bannerYellow {
+      height: 300px;
+      width: 100%;
+      background-color: #e8b86c;
+    }
+    .explore_div {
+      // height: 500px;
+      background-color: #a8a2a236;
+      .cards_box {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 27px 0px;
+      }
+      .explore_card {
+        min-height: 335px;
+        width: 275px;
+        border: 1px solid rgba(123, 119, 119, 0.2901960784);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        img {
+          height: 195px;
+          width: 100%;
+          border-radius: 8px;
+          border-bottom: 1px solid #fff;
+        }
+        .explore_text {
+          font-weight: 600;
+          color: #4d4d4d;
+          padding: 5px 10px;
+        }
+        .star_icons {
+          padding: 0px 10px;
+        }
+        .card_price {
+          padding: 0px 10px;
+          font-weight: 700;
+        }
+      }
     }
   }
 }

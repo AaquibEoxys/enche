@@ -61,11 +61,11 @@ const Header = () => {
                 // value={data.level}
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
               >
-                <option selected hidden>
+                <option defaultValue="English" hidden>
                   English
                 </option>
-                {langaugeList.map((item) => (
-                  <option value={item.name} className="curencyOption">
+                {langaugeList.map((item, key) => (
+                  <option value={item.name} className="curencyOption" key={key}>
                     {item.name}
                   </option>
                 ))}
@@ -76,7 +76,7 @@ const Header = () => {
                 // value={data.level}
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
               >
-                <option selected hidden>
+                <option defaultValue="Join As" hidden>
                   Join As
                 </option>
                 <option value="abc" className="curencyOption">

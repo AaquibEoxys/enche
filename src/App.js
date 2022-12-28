@@ -5,6 +5,7 @@ import About from "./Pages/about/About";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Signup/Signup";
 // import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
   return (
