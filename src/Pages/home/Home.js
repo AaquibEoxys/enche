@@ -238,7 +238,10 @@ const Home = () => {
             </div>
           </div>
           <div className="arrival_div">
-            <div className="arrival_head">Artisan Craft</div>
+            <div className="arrival_head">
+              <div> Artisan Craft </div>
+              <div> See More &gt; </div>
+            </div>
             <div className="row">
               <div className="col-lg-8">
                 <div className="arrival_content">
@@ -262,7 +265,19 @@ const Home = () => {
             </div>
           </div>
           <div className="banner_div">
-            <div className="bannerYellow"></div>
+            <div className="bannerYellow">
+              <div className="col-lg-7 explore_card">
+                <div className="explore_head_text">
+                  <div className="just_for"> JUST FOR YOU </div>
+                  <div className="exp_all_pro"> Explore All Products </div>
+                  <div className="find_prod"> Finding Products </div>
+                </div>
+                <div className="brows_btn">
+                  <button className="banner_btn"> Browse More </button>
+                </div>
+              </div>
+              <div className="col-lg-5"></div>
+            </div>
             <div className="explore_div">
               <div className="cards_box">
                 {craftBox.map((item, key) => (
@@ -276,6 +291,13 @@ const Home = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+          <div className="news_search">
+            <div className="news_search_head"> We will deliver the latest product trends and industry news straight to your inbox. </div>
+            <div className="news_search_box">
+              <input type="text" placeholder="Your Email" className="news_search_inp" />
+              <button className="subscribe_btn">Subscribe</button>
             </div>
           </div>
         </div>
