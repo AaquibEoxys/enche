@@ -14,6 +14,18 @@ import Dropship from "../../assets/images/Dropship.svg";
 import Banner2 from "../../assets/images/banner2.png";
 import computer from "../../assets/images/computer.png";
 import loyalty from "../../assets/images/loyalty.png";
+import Deals from "../../assets/images/Deals.svg";
+import Food from "../../assets/images/Food.svg";
+import General from "../../assets/images/General.svg";
+import Orders from "../../assets/images/Orders.svg";
+import Returns from "../../assets/images/Returns.svg";
+import Payments from "../../assets/images/Payments.svg";
+import Sellers from "../../assets/images/Sellers.svg";
+import shop from "../../assets/images/shop.svg";
+import search from "../../assets/images/search.svg";
+import user from "../../assets/images/user.svg";
+import logo from "../../assets/images/logo.svg";
+import profile from "../../assets/images/profile.svg";
 
 const Images = {
   google,
@@ -32,6 +44,18 @@ const Images = {
   Banner2,
   computer,
   loyalty,
+  Deals,
+  Food,
+  General,
+  Orders,
+  Returns,
+  Payments,
+  Sellers,
+  shop,
+  search,
+  user,
+  logo,
+  profile,
 };
 
 export default Images;

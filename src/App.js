@@ -5,6 +5,8 @@ import About from "./Pages/about/About";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Signup/Signup";
 import TermAndConditionMercant from "./Pages/Termandconditonmercant/TermAndConditionMercant";
+import Faq from "./Pages/FAQ/Faq";
+import HelpPage from "./Pages/HelpPage/HelpPage";
 // import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           path="/termandconditionmarcant"
           element={<TermAndConditionMercant />}
         />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/helppage" element={<HelpPage />} />
       </Routes>
       {/* <Footer /> */}
     </Router>
