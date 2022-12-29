@@ -172,15 +172,53 @@ const Home = () => {
     <>
       <SubHeader />
       <div className="home_banner">
+        <div className="back_banner"></div>
         <div className="container">
           <div className="banner_back row">
-            <div className="d-flex">
-              <div className="col-lg-2">bjkkb</div>
-              <div className="col-lg-10">
+            <div className="d-flex home_banner_card">
+              <div className="col-lg-2 col-md-3 banner_links">
+                <div className="banner_link">
+                  <span>Artisan Craft</span>
+                  <span>&#62;</span>
+                </div>
+                <div className="banner_link">
+                  <span>Automotive</span>
+                  <span>&#62;</span>
+                </div>
+                <div className="banner_link">
+                  <span>B2B</span>
+                  <span>&#62;</span>
+                </div>
+                <div className="banner_link">
+                  <span>Health & Beauty</span>
+                  <span>&#62;</span>
+                </div>
+                <div className="banner_link">
+                  <span>Charity</span>
+                  <span>&#62;</span>
+                </div>
+                <div className="banner_link">
+                  <span>Electrical Tools</span>
+                  <span>&#62;</span>
+                </div>
+                <div className="banner_link">
+                  <span>Enterainment</span>
+                  <span>&#62;</span>
+                </div>
+                <div className="banner_link">
+                  <span>Fabric & Textile</span>
+                  <span>&#62;</span>
+                </div>
+                <div className="banner_link">
+                  <span>All Categories</span>
+                  <span>&#62;</span>
+                </div>
+              </div>
+              <div className="col-lg-10 col-md-9">
                 <img src={Images?.banners} alt="" className="banner_img" />
               </div>
             </div>
-            <div>
+            <div className="stores_row">
               <div className="stores_title"> Stores For You </div>
               <div className="stores_cart">
                 {storesFiles?.map((item, key) => (
@@ -238,7 +276,10 @@ const Home = () => {
             </div>
           </div>
           <div className="arrival_div">
-            <div className="arrival_head">Artisan Craft</div>
+            <div className="arrival_head">
+              <div> Artisan Craft </div>
+              <div> See More &gt; </div>
+            </div>
             <div className="row">
               <div className="col-lg-8">
                 <div className="arrival_content">
@@ -262,7 +303,23 @@ const Home = () => {
             </div>
           </div>
           <div className="banner_div">
-            <div className="bannerYellow"></div>
+            <div className="bannerYellow d-flex">
+              <div className="col-lg-8">
+                <div className="explore_card">
+                  <div className="explore_head_text">
+                    <div className="just_for"> JUST FOR YOU </div>
+                    <div className="exp_all_pro"> Explore All Products </div>
+                    <div className="find_prod"> Finding Products </div>
+                  </div>
+                  <div className="brows_btn">
+                    <button className="banner_btn"> Browse More </button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 yello_Img">
+                <img src={Images.seekpng} alt="" />
+              </div>
+            </div>
             <div className="explore_div">
               <div className="cards_box">
                 {craftBox.map((item, key) => (
@@ -276,6 +333,20 @@ const Home = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+          <div className="news_search">
+            <div className="news_search_head">
+              We will deliver the latest product trends and industry news
+              straight to your inbox.
+            </div>
+            <div className="news_search_box">
+              <input
+                type="text"
+                placeholder="Your Email"
+                className="news_search_inp"
+              />
+              <button className="subscribe_btn">Subscribe</button>
             </div>
           </div>
         </div>

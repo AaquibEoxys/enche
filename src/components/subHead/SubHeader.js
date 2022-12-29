@@ -14,7 +14,6 @@ const SubHeader = () => {
         <div className="home_Head">
           <div className="container home_pageSearch">
             <div>
-              {/* <SVG path="assets/logo.svg" /> */}
               <img src={logo} alt="" className="search_svg" />
             </div>
             <div className="search_bar">
@@ -30,7 +29,7 @@ const SubHeader = () => {
                 </div>
               </div>
             </div>
-            <div className="trac_btn">
+            <div className="trac_btn" title="track my order">
               <img src={truck} alt="" className="search_icon" />
               <span> TRACK MY ORDER </span>
             </div>

@@ -1,10 +1,40 @@
 .home_banner {
-  height: 150px;
-  background-color: rgb(216 214 214 / 43%);
+  // background-color: rgb(216 214 214 / 43%);
+  .back_banner {
+    position: absolute;
+    background: rgba(216, 214, 214, 0.43);
+    height: 225px;
+    width: 100%;
+    z-index: -1;
+  }
+
   .banner_back {
     text-align: center;
     padding: 12px;
-
+    .home_banner_card {
+      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      padding: 0px !important;
+    }
+    .banner_links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background: #fff;
+    }
+    .banner_link {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 20px;
+      background: #fff;
+      cursor: pointer;
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(82, 81, 81);
+        font-family: "Poppins";
+      }
+    }
     .banner_img {
       height: 350px;
       object-fit: cover;
@@ -14,8 +44,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      // box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      //   rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     }
 
     .stores_title {
@@ -49,6 +79,10 @@
         }
       }
     }
+    .stores_row {
+      padding: 0px;
+      margin-top: 25px;
+    }
   }
 
   .charity_cart {
@@ -79,7 +113,7 @@
       .exp_imgs {
         position: relative;
         height: 300px;
-        width: 190px;
+        width: 15%;
         border: 1px solid gray;
         border: none;
         border-radius: 5px;
@@ -102,20 +136,24 @@
       }
     }
   }
+
   .arrival_div {
     padding-bottom: 20px;
 
     .arrival_head {
-      text-align: start;
       font-size: 18px;
       font-weight: 600;
       color: #6e6b6b;
       padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
     }
+
     .arrival_content {
       display: flex;
       align-items: center;
       justify-content: space-around;
+
       .card_arrival {
         width: 175px;
         border-radius: 7px;
@@ -129,11 +167,13 @@
           width: 100%;
           border-radius: 5px;
         }
+
         .card_text {
           font-size: 13px;
           color: gray;
           padding: 5px 7px;
         }
+
         .card_x_price {
           text-decoration: line-through;
           padding: 0 7px;
@@ -141,157 +181,16 @@
           font-weight: 500;
           color: gray;
         }
+
         .card_price {
           font-weight: 700;
           padding: 1px 7px;
           font-size: 15px;
         }
-        // .star_icons
-      }
-    }
-  }
-  .category_section {
-    .category_head {
-      text-align: start;
-      font-size: 18px;
-      font-weight: 600;
-      color: #6e6b6b;
-      padding: 0px 20px;
-    }
 
-    .category_div {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-
-      .categories_icon {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 7px;
-        height: 178px;
-        width: 130px;
-        justify-content: center;
-
-        img {
-          height: 100px;
-          width: 100px;
-        }
-        span {
-          font-size: 12px;
-          font-weight: 500;
-          text-align: center;
-        }
-      }
-    }
-  }
-  .art_tailor {
-    width: 100%;
-    height: 248px;
-    border-radius: 5px;
-  }
-  .banner_div {
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    border-radius: 10px;
-
-    .bannerYellow {
-      height: 300px;
-      width: 100%;
-      background-color: #e8b86c;
-    }
-    .explore_div {
-      // height: 500px;
-      background-color: #a8a2a236;
-      .cards_box {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 27px 0px;
-      }
-      .explore_card {
-        min-height: 335px;
-        width: 275px;
-        border: 1px solid rgba(123, 119, 119, 0.2901960784);
-        display: flex;
-        flex-direction: column;
-        border-radius: 5px;
-        img {
-          height: 195px;
-          width: 100%;
-          border-radius: 8px;
-          border-bottom: 1px solid #fff;
-        }
-        .explore_text {
-          font-weight: 600;
-          color: #4d4d4d;
-          padding: 5px 10px;
-        }
         .star_icons {
-          padding: 0px 10px;
+          padding: 0px 6px;
         }
-        .card_price {
-          padding: 0px 10px;
-          font-weight: 700;
-        }
-      }
-    }
-  }
-
-  .arrival_div {
-    padding-bottom: 20px;
-
-    .arrival_head {
-      font-size: 18px;
-      font-weight: 600;
-      color: #6e6b6b;
-      padding: 8px 20px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .arrival_content {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-
-      .card_arrival {
-        width: 175px;
-        border-radius: 7px;
-        border: 1px solid gray;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-
-        .card_arrival_Img img {
-          height: 145px;
-          width: 100%;
-          border-radius: 5px;
-        }
-
-        .card_text {
-          font-size: 13px;
-          color: gray;
-          padding: 5px 7px;
-        }
-
-        .card_x_price {
-          text-decoration: line-through;
-          padding: 0 7px;
-          font-size: 13px;
-          font-weight: 500;
-          color: gray;
-        }
-
-        .card_price {
-          font-weight: 700;
-          padding: 1px 7px;
-          font-size: 15px;
-        }
-
-        // .star_icons
       }
     }
   }
@@ -348,7 +247,7 @@
     .bannerYellow {
       height: 300px;
       width: 100%;
-      background-color: #e8b86c;
+      background-color: #eba12bfc;
 
       .explore_card {
         display: flex;
@@ -369,7 +268,7 @@
       }
 
       .just_for {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 600;
         height: 40px;
 
@@ -380,7 +279,7 @@
           margin-top: 24px;
           position: absolute;
           width: 8%;
-          left: 18%;
+          left: 23%;
         }
 
         &:after {
@@ -390,7 +289,7 @@
           margin-top: 24px;
           position: absolute;
           width: 8%;
-          right: 54%;
+          right: 812px;
         }
       }
 
@@ -413,6 +312,14 @@
         font-size: 24px;
         font-weight: 500;
       }
+      .yello_Img {
+        img {
+          height: 100%;
+          width: 100%;
+          padding-top: 14px;
+          padding-right: 10px;
+        }
+      }
     }
 
     .explore_div {
@@ -423,12 +330,12 @@
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 20px;
-        padding: 27px 0px;
+        padding: 30px 35px;
       }
 
       .explore_card {
         min-height: 335px;
-        width: 275px;
+        width: 23%;
         border: 1px solid rgba(123, 119, 119, 0.2901960784);
         display: flex;
         flex-direction: column;
@@ -498,3 +405,173 @@
     }
   }
 }
+
+/* css for mobile devices start */
+
+@media (max-width: 1440px) {
+  .home_page {
+    .home_Head {
+      .home_news {
+        max-width: 900px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .charity_cart {
+    .explore_head {
+    }
+
+    .explore_subhead {
+    }
+
+    .charity_flex {
+      flex-wrap: wrap;
+      gap: 40px 0px;
+      justify-content: space-between !important;
+      // padding: 20px 59px;
+
+      .exp_imgs {
+        height: 360px !important;
+        width: 30% !important;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        span {
+        }
+      }
+    }
+  }
+  .home_banner {
+    .arrival_div {
+      .arrival_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 29px;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        .card_arrival {
+          width: 280px;
+          height: 319px;
+          .card_arrival_Img {
+            img {
+              height: 200px;
+            }
+          }
+        }
+      }
+      .arrival_head {
+        padding: 12px 5px;
+      }
+    }
+    .banner_back {
+      .banner_link {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 8px;
+        background: #fff;
+        cursor: pointer;
+      }
+    }
+    .category_section {
+      .category_div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+        .categories_icon {
+          width: 133px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .home_banner {
+    .banner_back {
+      .banner_img {
+        height: 245px;
+      }
+      .banner_link {
+        padding: 0 20px;
+        span {
+          font-size: 12px;
+        }
+      }
+      .stores_cart {
+        .stores_cart_align {
+          padding: 15px 4px;
+          img {
+            height: 40px;
+            width: 44px;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .back_banner {
+      height: 145px;
+    }
+    .arrival_div {
+      .arrival_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 29px;
+        flex-wrap: wrap;
+        width: 73%;
+        margin: auto;
+      }
+      .arrival_head {
+        padding: 12px 75px;
+      }
+    }
+  }
+  .charity_cart {
+    .explore_head {
+    }
+
+    .explore_subhead {
+    }
+
+    .charity_flex {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  .charity_cart {
+    .explore_head {
+    }
+
+    .explore_subhead {
+    }
+
+    .charity_flex {
+      padding: 20px 0px;
+      gap: 20px 10px;
+
+      .exp_imgs {
+        height: 250px !important;
+        width: 47% !important;
+
+        span {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+}
+
+/* css for mobile devices end*/

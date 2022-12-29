@@ -34,6 +34,25 @@ import toolHome from "../../assets/images/toolHome.svg";
 import sportsAndHobbies from "../../assets/images/sportsAndHobbies.svg";
 import bracelet from "../../assets/images/bracelet.jpg";
 import tailor from "../../assets/images/tailor.jpg";
+import seekpng from "../../assets/images/SeekPng.png";
+import visa from "../../assets/images/visa.svg";
+import FPX from "../../assets/images/FPX.svg";
+import maybank2u from "../../assets/images/maybank2u.svg";
+import CIMB from "../../assets/images/CIMB.svg";
+import bankislam from "../../assets/images/bankislam.svg";
+import connect from "../../assets/images/connect.svg";
+import amonline from "../../assets/images/amonline.svg";
+import webcash from "../../assets/images/webcash.svg";
+import eleven from "../../assets/images/eleven.svg";
+import esa from "../../assets/images/esa.svg";
+import RHB from "../../assets/images/RHB.svg";
+import Bcard from "../../assets/images/Bcard.svg";
+import paypal from "../../assets/images/paypal.svg";
+import pbank from "../../assets/images/PB bank.svg";
+import fb from "../../assets/images/fb.svg";
+import insta from "../../assets/images/insta.svg";
+import twitter from "../../assets/images/twitter.svg";
+import youtube from "../../assets/images/youtube.svg";
 
 const Images = {
   google,
@@ -72,6 +91,25 @@ const Images = {
   sportsAndHobbies,
   bracelet,
   tailor,
+  seekpng,
+  visa,
+  FPX,
+  maybank2u,
+  CIMB,
+  bankislam,
+  connect,
+  amonline,
+  webcash,
+  eleven,
+  esa,
+  RHB,
+  Bcard,
+  paypal,
+  pbank,
+  fb,
+  insta,
+  twitter,
+  youtube
 };
 
 export default Images;
