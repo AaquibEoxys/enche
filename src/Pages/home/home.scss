@@ -1,4 +1,5 @@
 .home_banner {
+
   // background-color: rgb(216 214 214 / 43%);
   .back_banner {
     position: absolute;
@@ -11,23 +12,27 @@
   .banner_back {
     text-align: center;
     padding: 12px;
+
     .home_banner_card {
       box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
         rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
       padding: 0px !important;
     }
+
     .banner_links {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       background: #fff;
     }
+
     .banner_link {
       display: flex;
       justify-content: space-between;
       padding: 5px 20px;
       background: #fff;
       cursor: pointer;
+
       span {
         font-size: 14px;
         font-weight: 500;
@@ -35,6 +40,7 @@
         font-family: "Poppins";
       }
     }
+
     .banner_img {
       height: 350px;
       object-fit: cover;
@@ -79,6 +85,7 @@
         }
       }
     }
+
     .stores_row {
       padding: 0px;
       margin-top: 25px;
@@ -312,6 +319,7 @@
         font-size: 24px;
         font-weight: 500;
       }
+
       .yello_Img {
         img {
           height: 100%;
@@ -420,11 +428,9 @@
 
 @media (max-width: 1199px) {
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       flex-wrap: wrap;
@@ -435,17 +441,18 @@
       .exp_imgs {
         height: 360px !important;
         width: 30% !important;
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
 
-        span {
-        }
+        span {}
       }
     }
   }
+
   .home_banner {
     .arrival_div {
       .arrival_content {
@@ -456,9 +463,11 @@
         flex-wrap: wrap;
         width: 100%;
         margin: auto;
+
         .card_arrival {
           width: 280px;
           height: 319px;
+
           .card_arrival_Img {
             img {
               height: 200px;
@@ -466,10 +475,12 @@
           }
         }
       }
+
       .arrival_head {
         padding: 12px 5px;
       }
     }
+
     .banner_back {
       .banner_link {
         display: flex;
@@ -479,12 +490,14 @@
         cursor: pointer;
       }
     }
+
     .category_section {
       .category_div {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: start;
+
         .categories_icon {
           width: 133px;
         }
@@ -499,19 +512,24 @@
       .banner_img {
         height: 245px;
       }
+
       .banner_link {
         padding: 0 20px;
+
         span {
           font-size: 12px;
         }
       }
+
       .stores_cart {
         .stores_cart_align {
           padding: 15px 4px;
+
           img {
             height: 40px;
             width: 44px;
           }
+
           span {
             font-size: 12px;
             font-weight: 500;
@@ -519,44 +537,124 @@
         }
       }
     }
+
     .back_banner {
       height: 145px;
     }
+
     .arrival_div {
       .arrival_content {
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         gap: 29px;
         flex-wrap: wrap;
-        width: 73%;
+        width: 100%;
         margin: auto;
+
+        .card_arrival {
+          width: 205px;
+          height: 325px;
+
+          .card_arrival_Img {
+            img {
+              height: 200px;
+            }
+          }
+        }
       }
       .arrival_head {
-        padding: 12px 75px;
+        padding: 14px 2px 8px 2px;
+      }
+    }
+    .category_section {
+      .category_div {
+        .categories_icon {
+          width: 139px;
+          height: 150px;
+        }
+      }
+    }
+    .banner_div {
+  
+      .bannerYellow {
+  
+        .explore_card {
+  
+          .explore_head_text {
+          }
+  
+          .brows_btn {
+          }
+        }
+  
+        .just_for {
+  
+          &:before {
+          }
+  
+          &:after {
+          }
+        }
+  
+        .exp_all_pro {
+          font-size: 35px;
+        }
+  
+        .find_prod {
+        }
+  
+        .banner_btn {
+        }
+  
+        .yello_Img {
+          img {
+          }
+        }
+      }
+  
+      .explore_div {
+  
+        .cards_box {
+          justify-content: space-between;
+          gap: 42px;
+        }
+  
+        .explore_card {
+          width: unset;
+  
+          img {
+          }
+  
+          .explore_text {
+          }
+  
+          .star_icons {
+          }
+  
+          .card_price {
+          }
+        }
       }
     }
   }
-  .charity_cart {
-    .explore_head {
-    }
 
-    .explore_subhead {
-    }
+  .charity_cart {
+    .explore_head {}
+
+    .explore_subhead {}
 
     .charity_flex {
-      padding: 20px;
+      // padding: 20px;
     }
   }
 }
 
 @media (max-width: 481px) {
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       padding: 20px 0px;
