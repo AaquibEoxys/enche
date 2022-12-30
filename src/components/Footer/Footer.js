@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer">
           <Row className="footer_padd">
-            <div className="col-lg-8 d-flex">
-              <Col lg={3}>
+            <div className="col-lg-12 col-xl-8 col-md-12 row">
+              <Col xl={3} md={3}>
                 <div className="footer_head">
                   <h3>About enche</h3>
                 </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col xl={3} md={3}>
                 <div className="footer_head">
                   <h3>Term & Conditions</h3>
                 </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col xl={3} md={3}>
                 <div className="footer_head">
                   <h3>Support</h3>
                 </div>
@@ -93,7 +93,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col xl={3} md={3}>
                 <div className="footer_head">
                   <h3>Connect with Us</h3>
                 </div>
@@ -119,7 +119,7 @@ const Footer = () => {
                 </div>
               </Col>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-12 col-xl-4 col-md-12 ">
               <div className="footer_head">
                 <h3>Payment Method</h3>
                 <div className="footer_payment">

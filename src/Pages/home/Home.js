@@ -170,7 +170,7 @@ const Home = () => {
 
   return (
     <>
-      <SubHeader />
+      {/* <SubHeader /> */}
       <div className="home_banner">
         <div className="back_banner"></div>
         <div className="container">
@@ -223,7 +223,9 @@ const Home = () => {
               <div className="stores_cart">
                 {storesFiles?.map((item, key) => (
                   <div className="stores_cart_align" key={key}>
-                    <img src={item?.img} alt="" />
+                    <div>
+                      <img src={item?.img} alt="" />
+                    </div>
                     <span>{item.label}</span>
                   </div>
                 ))}
@@ -248,9 +250,12 @@ const Home = () => {
         <div className="container">
           <div className="arrival_div">
             <div className="arrival_head">New Arrival</div>
-            <div className="arrival_content">
+            <div className="arrival_content arrival_resp row">
               {newArrival.map((item, key) => (
-                <div className="card_arrival" key={key}>
+                <div
+                  className="card_arrival col-xl-2 col-lg-4 col-md-4 "
+                  key={key}
+                >
                   <div className="card_arrival_Img">
                     <img src={item?.img} alt="" />
                   </div>
@@ -275,36 +280,37 @@ const Home = () => {
               ))}
             </div>
           </div>
-          <div className="arrival_div">
-            <div className="arrival_head">
+          <div className="artisan_div">
+            <div className="artisan_head">
               <div> Artisan Craft </div>
               <div> See More &gt; </div>
             </div>
             <div className="row">
-              <div className="col-lg-8">
-                <div className="arrival_content">
-                  {craft.map((item, key) => (
-                    <div className="card_arrival" key={key}>
-                      <div className="card_arrival_Img">
-                        <img src={item?.img} alt="" />
-                      </div>
-                      <div className="card_text">{item.label}</div>
-                      <div className="star_icons">
-                        <StarRating rating={item.rating} />
-                      </div>
-                      <div className="card_price">{item.price}</div>
+              {craft.map((item, key) => (
+                <div
+                  className="artisan_content col-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6 "
+                  key={key}
+                >
+                  <div className="card_artisan">
+                    <div className="card_artisan_Img">
+                      <img src={item?.img} alt="" />
                     </div>
-                  ))}
+                    <div className="card_text">{item.label}</div>
+                    <div className="star_icons">
+                      <StarRating rating={item.rating} />
+                    </div>
+                    <div className="card_price">{item.price}</div>
+                  </div>
                 </div>
-              </div>
-              <div className="col-lg-4">
+              ))}
+              <div className="col-xl-4 col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
                 <img src={Images.tailor} alt="" className="art_tailor" />
               </div>
             </div>
           </div>
           <div className="banner_div">
             <div className="bannerYellow d-flex">
-              <div className="col-lg-8">
+              <div className="col-lg-8 col-sm-7 banner_resp">
                 <div className="explore_card">
                   <div className="explore_head_text">
                     <div className="just_for"> JUST FOR YOU </div>
@@ -316,7 +322,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 yello_Img">
+              <div className="col-lg-4 col-sm-5 yello_Img">
                 <img src={Images.seekpng} alt="" />
               </div>
             </div>
@@ -324,7 +330,9 @@ const Home = () => {
               <div className="cards_box">
                 {craftBox.map((item, key) => (
                   <div className="explore_card" key={key}>
-                    <img src={item?.img} alt="" />
+                    <div className="explore_div_img">
+                      <img src={item?.img} alt="" />
+                    </div>
                     <div className="explore_text">{item.label}</div>
                     <div className="star_icons">
                       <StarRating rating={item.rating} />
