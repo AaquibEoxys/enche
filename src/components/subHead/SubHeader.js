@@ -8,6 +8,12 @@ import cart from "../../assets/images/cart.svg";
 import "./subHeader.scss";
 
 const SubHeader = () => {
+  const langaugeList = [
+    { name: "English" },
+    { name: "Hindi" },
+    { name: "Arabic" },
+    { name: "French" },
+  ];
   return (
     <>
       <div className="home_page">
@@ -45,6 +51,22 @@ const SubHeader = () => {
             <div> Help </div>
             <div> Contact Us </div>
             <div> About Us </div>
+          </div>
+          <div className="responsive_lang">
+            <select
+              className="curreny_option navigation_link"
+              name="level"
+              // value={data.level}
+            >
+              <option defaultValue="English" hidden>
+                English
+              </option>
+              {langaugeList.map((item, key) => (
+                <option value={item.name} className="curencyOption" key={key}>
+                  {item.name}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </div>

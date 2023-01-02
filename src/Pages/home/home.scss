@@ -1,5 +1,4 @@
 .home_banner {
-
   // background-color: rgb(216 214 214 / 43%);
   .back_banner {
     position: absolute;
@@ -528,7 +527,6 @@
 }
 
 @media (max-width: 1399px) and (min-width: 1200px) {
-
   .home_banner {
     .banner_div {
       .bannerYellow {
@@ -557,9 +555,11 @@
 
 @media (max-width: 1199px) {
   .charity_cart {
-    .explore_head {}
+    .explore_head {
+    }
 
-    .explore_subhead {}
+    .explore_subhead {
+    }
 
     .charity_flex {
       flex-wrap: wrap;
@@ -577,7 +577,8 @@
           object-fit: cover;
         }
 
-        span {}
+        span {
+        }
       }
     }
   }
@@ -703,8 +704,6 @@
   }
 }
 
-
-
 @media (max-width: 1023px) {
   .home_banner {
     .banner_back {
@@ -784,9 +783,11 @@
     .banner_div {
       .bannerYellow {
         .explore_card {
-          .explore_head_text {}
+          .explore_head_text {
+          }
 
-          .brows_btn {}
+          .brows_btn {
+          }
         }
 
         .just_for {
@@ -813,7 +814,8 @@
           font-size: 30px;
         }
 
-        .banner_btn {}
+        .banner_btn {
+        }
 
         .yello_Img {
           img {
@@ -831,22 +833,28 @@
         .explore_card {
           width: unset;
 
-          img {}
+          img {
+          }
 
-          .explore_text {}
+          .explore_text {
+          }
 
-          .star_icons {}
+          .star_icons {
+          }
 
-          .card_price {}
+          .card_price {
+          }
         }
       }
     }
   }
 
   .charity_cart {
-    .explore_head {}
+    .explore_head {
+    }
 
-    .explore_subhead {}
+    .explore_subhead {
+    }
 
     .charity_flex {
       // padding: 20px;
@@ -855,7 +863,6 @@
 }
 
 @media (max-width: 1023px) and (min-width: 950px) {
-
   .home_banner {
     .banner_div {
       .bannerYellow {
@@ -1011,9 +1018,11 @@
   }
 
   .charity_cart {
-    .explore_head {}
+    .explore_head {
+    }
 
-    .explore_subhead {}
+    .explore_subhead {
+    }
 
     .charity_flex {
       padding: 20px 0px;
@@ -1098,8 +1107,8 @@
       .stores_cart {
         .stores_cart_align {
           img {
-            // height: auto;
-            // max-width: 100%;
+            height: auto;
+            width: 24px;
           }
         }
       }

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-// import { Col, Row } from "react-bootstrap";
-// import Container from "react-bootstrap/Container";
-// import Nav from "react-bootstrap/Nav";
-// import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import "./header.scss";
 import "../../assets/css/style.css";
+import Images from "../Images/Images";
+import $ from "jquery";
 
 const Header = () => {
   const [value, setValue] = useState({ currency: "usd" });
+  const [menu, setMenu] = useState(false);
+  const [searchTab, setSearchTab] = useState(false);
+
   const currencyList = [
     {
       value: "USD",
@@ -30,6 +30,13 @@ const Header = () => {
     { name: "Arabic" },
     { name: "French" },
   ];
+
+  $(document).mouseup(function (e) {
+    if ($(e.target).closest("#menu_barContract").length === 0) {
+      setMenu(false);
+    }
+  });
+
   return (
     <>
       <div className="navbar_ui col-lg-12 col-md-12">
@@ -89,72 +96,60 @@ const Header = () => {
               <Link to="/signup" className="navigation_link nav_signIn">
                 <span>Sign Up</span>
               </Link>
-              {/* <div className="sign_divider"> | </div> */}
               <Link to="/signin" className="navigation_link">
                 Login
               </Link>
             </div>
           </div>
+          <div className="resp_navbar">
+            <div className="">
+              <img src={Images.menu} alt="" onClick={() => setMenu(true)} />
+            </div>
+            <div className="homepage_logo">
+              <Link to="/">
+                <img src={Images.logo} alt="" />
+              </Link>
+            </div>
+            <div className="search_icon">
+              <img
+                src={Images.search}
+                alt=""
+                onClick={() => setSearchTab(true)}
+              />
+            </div>
+            {menu ? (
+              <div id="menu_barContract" className="toggle_menu">
+                <div className="menu_category_list">
+                  <div className="menu_category"> Select Category</div>
+                  <span className="list_category"> Fashion </span>
+                  <span className="list_category">Beauty & Personal Care</span>
+                  <span className="list_category"> Mommy & Babies </span>
+                  <span className="list_category"> Home Appliance </span>
+                  <span className="list_category"> Health & Wellness </span>
+                  <span className="list_category"> Pets </span>
+                  <span className="list_category"> Service </span>
+                  <span className="list_category">
+                    Tool & Home Improvenment
+                  </span>
+                  <span className="list_category"> Sports and Hobbies </span>
+                  <span className="list_category"> Automotive </span>
+                  <span className="list_category">Electronics Accessories</span>
+                  <span className="list_category"> Muslim Fashion </span>
+                  <span className="list_category"> Agriculture </span>
+                </div>
+              </div>
+            ) : null}
+            {searchTab ? (
+              <div id="menu_barContract" className="toggle_menu">
+                <div className="menu_category_list">
+                  <div className="menu_category"> Select Category</div>
+                  <span className="list_category"> Fashion </span>
+                </div>
+              </div>
+            ) : null}
+          </div>
         </div>
       </div>
-      <>
-        {/* <Navbar className="navbar_ui" expand="lg">
-        <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Link to="/" className="nav-link">
-                DOWNLOAD ENCHE APPS
-              </Link>
-            </Nav>
-            <Nav>
-              <select
-                value={value?.currency}
-                name="currency"
-                onChange={(e) => setValue({ [e.target.name]: e.target.value })}
-                className="curreny_option nav-link"
-              >
-                {currencyList?.map((item, key) => (
-                  <option
-                    value={item?.value}
-                    key={key}
-                    className="curencyOption"
-                  >
-                    {item.value}
-                  </option>
-                ))}
-              </select>
-              <NavDropdown
-                title="English"
-                id="basic-nav-dropdown"
-                className="nav-link"
-              >
-                <NavDropdown.Item href="#action/3.4">Arabic</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">English</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Hindi</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                title="Join As"
-                id="basic-nav-dropdown"
-                className="nav-link"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
-      </>
     </>
   );
 };

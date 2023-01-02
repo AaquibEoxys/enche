@@ -170,7 +170,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <SubHeader /> */}
+      <SubHeader />
       <div className="home_banner">
         <div className="back_banner"></div>
         <div className="container">

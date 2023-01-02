@@ -53,6 +53,9 @@ import fb from "../../assets/images/fb.svg";
 import insta from "../../assets/images/insta.svg";
 import twitter from "../../assets/images/twitter.svg";
 import youtube from "../../assets/images/youtube.svg";
+import search from "../../assets/images/search.svg";
+import logo from "../../assets/images/logo.svg";
+import menu from "../../assets/images/menu.svg";
 
 const Images = {
   google,
@@ -109,7 +112,10 @@ const Images = {
   fb,
   insta,
   twitter,
-  youtube
+  youtube,
+  search,
+  logo,
+  menu,
 };
 
 export default Images;

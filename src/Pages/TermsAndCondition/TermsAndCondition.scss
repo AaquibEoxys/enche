@@ -1,0 +1,92 @@
+.terms_page {
+  background-color: rgba(216, 214, 214, 0.43);
+  padding: 35px;
+  .terms_tag {
+    background-color: #fff;
+    padding: 20px;
+    .terms_lebel {
+      // display: flex;
+      // gap: 20px;
+    }
+    .terms_head {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 500;
+      color: #383737;
+      font-family: "Poppins";
+    }
+    .terms_lebel {
+      font-size: 18px;
+      font-weight: 500;
+      color: #383737;
+      font-family: "Poppins";
+      margin-top: 25px;
+      .terms_paragraph {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+        text-align: justify;
+        line-height: 25px;
+      }
+      .terms_paragraph_two {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        text-align: justify;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+  padding-left: 0 !important;
+  li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+    &:before {
+      content: counters(item, ".") ". ";
+      padding-right: 0.6em;
+    }
+    ol {
+      li {
+        margin: 0;
+        &:before {
+          content: counters(item, ".") " ";
+          display: table-cell;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) and (min-width: 370px) {
+  .terms_page {
+    padding: 15px 0px 30px 0px;
+    .terms_tag {
+      padding: 10px;
+      .terms_head {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 369px) and (min-width: 275px) {
+  .terms_page {
+    padding: 15px 0px 30px 0px;
+    .terms_tag {
+      padding: 10px;
+      .terms_head {
+        font-size: 23px;
+        padding-top: 10px;
+      }
+    }
+  }
+}

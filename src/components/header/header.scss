@@ -43,3 +43,62 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .resp_navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar_ui {
+    .navbar_align {
+      display: none;
+    }
+  }
+  .resp_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .homepage_logo {
+      width: 60px;
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+    .search_icon {
+      width: 18px;
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+    .toggle_menu {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 80%;
+      top: 0;
+      background: #fff;
+      .menu_category_list {
+        display: flex;
+        flex-direction: column;
+        .menu_category {
+          font-size: 17px;
+          font-weight: 500;
+          font-family: "Poppins";
+          text-align: center;
+          padding: 8px;
+          border-bottom: 1px solid rgb(0 0 0 / 10%);
+        }
+        .list_category {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: "Poppins";
+          padding: 9px;
+          border-bottom: 1px solid rgb(0 0 0 / 10%);
+        }
+      }
+    }
+  }
+}

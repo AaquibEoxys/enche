@@ -43,7 +43,7 @@ const Signup = () => {
               <input type="checkbox" id="rememberMe" />
               <label htmlFor="rememberMe" className="remberMe">
                 I agree with
-                <Link> Terms </Link>
+                <Link to="/terms"> Terms </Link>
                 and
                 <Link> Privacy </Link>
               </label>
