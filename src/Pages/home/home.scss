@@ -1,4 +1,5 @@
 .home_banner {
+
   // background-color: rgb(216 214 214 / 43%);
   .back_banner {
     position: absolute;
@@ -158,7 +159,9 @@
     .arrival_content {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 auto;
 
       .card_arrival {
         width: 193px;
@@ -480,7 +483,7 @@
 
 /* css for home page responsive view start */
 
-@media (max-width: 1440px) {
+@media (max-width: 1440px) and (min-width: 1100px) {
   .home_page {
     .home_Head {
       .home_news {
@@ -488,6 +491,7 @@
       }
     }
   }
+
   .home_banner {
     .banner_div {
       .bannerYellow {
@@ -496,9 +500,55 @@
             height: 4px;
             left: 20%;
           }
+
           &:after {
             right: 718px;
           }
+        }
+      }
+    }
+
+    .arrival_div {
+      .arrival_content {
+        .card_arrival {
+          width: 192px;
+        }
+      }
+    }
+
+    .category_section {
+      .category_div {
+        .categories_icon {
+          gap: 9px;
+          width: 124px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+
+  .home_banner {
+    .banner_div {
+      .bannerYellow {
+        .just_for {
+          &:before {
+            height: 4px;
+            left: 20%;
+          }
+
+          &:after {
+            right: 718px;
+          }
+        }
+      }
+    }
+
+    .arrival_div {
+      .arrival_content {
+        .card_arrival {
+          width: 165px;
         }
       }
     }
@@ -507,11 +557,9 @@
 
 @media (max-width: 1199px) {
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       flex-wrap: wrap;
@@ -529,8 +577,7 @@
           object-fit: cover;
         }
 
-        span {
-        }
+        span {}
       }
     }
   }
@@ -561,12 +608,14 @@
       .arrival_head {
         padding: 12px 5px;
       }
+
       .arrival_content {
         .card_arrival {
           max-width: 100%;
         }
       }
     }
+
     .artisan_div {
       .artisan_resp {
         display: flex;
@@ -592,10 +641,12 @@
       .artisan_head {
         padding: 12px 5px;
       }
+
       .artisan_content {
         .card_artisan {
           max-width: 100%;
           height: 320px;
+
           .card_artisan_Img {
             img {
               height: 200px;
@@ -627,9 +678,11 @@
         }
       }
     }
+
     .art_tailor {
       height: 318px;
     }
+
     .banner_div {
       .bannerYellow {
         .just_for {
@@ -638,6 +691,7 @@
             width: 8%;
             left: 17%;
           }
+
           &:after {
             height: 3px;
             width: 8%;
@@ -648,6 +702,8 @@
     }
   }
 }
+
+
 
 @media (max-width: 1023px) {
   .home_banner {
@@ -706,10 +762,12 @@
           }
         }
       }
+
       .arrival_head {
         padding: 14px 2px 8px 2px;
       }
     }
+
     .category_section {
       .category_div {
         .categories_icon {
@@ -718,21 +776,22 @@
         }
       }
     }
+
     .art_tailor {
       // height: 245px;
     }
+
     .banner_div {
       .bannerYellow {
         .explore_card {
-          .explore_head_text {
-          }
+          .explore_head_text {}
 
-          .brows_btn {
-          }
+          .brows_btn {}
         }
 
         .just_for {
           font-size: 22px;
+
           &:before {
             height: 2px;
             width: 7%;
@@ -754,8 +813,7 @@
           font-size: 30px;
         }
 
-        .banner_btn {
-        }
+        .banner_btn {}
 
         .yello_Img {
           img {
@@ -773,31 +831,54 @@
         .explore_card {
           width: unset;
 
-          img {
-          }
+          img {}
 
-          .explore_text {
-          }
+          .explore_text {}
 
-          .star_icons {
-          }
+          .star_icons {}
 
-          .card_price {
-          }
+          .card_price {}
         }
       }
     }
   }
 
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       // padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+
+  .home_banner {
+    .banner_div {
+      .bannerYellow {
+        .just_for {
+          &:before {
+            height: 4px;
+            left: 20%;
+          }
+
+          &:after {
+            right: 718px;
+          }
+        }
+      }
+    }
+
+    .arrival_div {
+      .arrival_content {
+        .card_arrival {
+          width: 250px;
+          height: 325px;
+        }
+      }
     }
   }
 }
@@ -813,9 +894,11 @@
         justify-content: space-around;
         padding: 5px 8px;
       }
+
       .banner_links {
         display: none;
       }
+
       .banner_img {
         width: 100%;
         height: 100%;
@@ -832,6 +915,7 @@
         .card_arrival {
           width: 185px;
           height: 271px;
+
           .card_arrival_Img {
             img {
               height: 150px;
@@ -839,29 +923,35 @@
           }
         }
       }
+
       .arrival_content {
         .card_arrival {
           margin-bottom: 0px;
         }
       }
     }
+
     .category_section {
       .category_div {
         justify-content: space-between;
+
         .categories_icon {
           width: 130px;
           height: 150px;
         }
       }
+
       .category_head {
         padding: 0px 5px;
       }
     }
+
     .artisan_div {
       .artisan_content {
         width: 50%;
       }
     }
+
     .banner_div {
       .explore_div {
         .cards_box {
@@ -871,38 +961,46 @@
           gap: 37px;
           padding: 30px 12px;
         }
+
         .explore_card {
           min-height: unset;
           width: 45%;
         }
       }
+
       .bannerYellow {
         .banner_resp {
           width: 100%;
         }
+
         .yello_Img {
           img {
             display: none;
           }
         }
+
         .just_for {
           &::before {
             left: 100px;
           }
+
           &::after {
             left: 294px;
           }
         }
       }
     }
+
     .art_tailor {
       display: none;
     }
+
     .news_search {
       .news_search_box {
         .news_search_inp {
           width: unset;
         }
+
         .subscribe_btn {
           padding: 13px;
           font-size: 14px;
@@ -913,11 +1011,9 @@
   }
 
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       padding: 20px 0px;
@@ -940,18 +1036,22 @@
     .arrival_div {
       .arrival_resp {
         gap: 21px;
+
         .card_arrival {
           width: 47%;
           height: 271px;
         }
       }
     }
+
     .category_section {
       .category_div {
         justify-content: unset;
+
         .categories_icon {
           width: 115px;
           height: 150px;
+
           img {
             height: auto;
             max-width: 100%;
@@ -959,6 +1059,7 @@
         }
       }
     }
+
     .banner_div {
       .bannerYellow {
         .just_for {
@@ -966,19 +1067,23 @@
             left: 70px;
             width: 10%;
           }
+
           &::after {
             left: 270px;
             width: 10%;
           }
         }
+
         .banner_btn {
           width: 275px;
         }
       }
+
       .explore_div {
         .explore_card {
           width: 47%;
         }
+
         .cards_box {
           gap: 18px;
         }
@@ -999,22 +1104,26 @@
         }
       }
     }
+
     .charity_cart {
       .charity_flex {
         .exp_imgs {
           height: 356px !important;
           width: 100% !important;
+
           span {
             font-size: 24px !important;
           }
         }
       }
     }
+
     .arrival_div {
       .arrival_resp {
         .card_arrival {
           width: 100%;
           height: 290px;
+
           .card_arrival_Img {
             img {
               height: 185px;
@@ -1023,6 +1132,7 @@
         }
       }
     }
+
     .category_section {
       .category_div {
         .categories_icon {
@@ -1032,42 +1142,51 @@
         }
       }
     }
+
     .artisan_div {
       .artisan_content {
         width: 100%;
       }
     }
+
     .banner_div {
       .bannerYellow {
         .find_prod {
           font-size: 24px;
         }
+
         .exp_all_pro {
           font-size: 27px;
         }
+
         .just_for {
           &::before {
             left: 50px;
             width: 10%;
           }
+
           &::after {
             left: 242px;
             width: 10%;
           }
         }
       }
+
       .explore_div {
         .explore_card {
           width: 100%;
         }
       }
     }
+
     .news_search {
       height: 215px;
+
       .news_search_box {
         display: flex;
         gap: 8px;
         flex-direction: column;
+
         .news_search_inp {
           width: 85%;
         }
