@@ -65,7 +65,6 @@ const Header = () => {
               <select
                 className="curreny_option navigation_link"
                 name="level"
-                // value={data.level}
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
               >
                 <option defaultValue="English" hidden>
@@ -140,10 +139,28 @@ const Header = () => {
               </div>
             ) : null}
             {searchTab ? (
-              <div id="menu_barContract" className="toggle_menu">
-                <div className="menu_category_list">
-                  <div className="menu_category"> Select Category</div>
-                  <span className="list_category"> Fashion </span>
+              <div className="search_back">
+                <div id="menu_barContract" className="search_menu">
+                  <div className="menu_search_list">
+                    <div className="menu_category">
+                      <select
+                        className="curreny_option"
+                        name="level"
+                      >
+                        <option defaultValue="All" hidden>
+                          All
+                        </option>
+                        <option value="abc" className="curencyOption">
+                          Buyer
+                        </option>
+                        <option value="abc" className="curencyOption">
+                          Seller
+                        </option>
+                      </select>
+                    </div>
+                    <div className="menu_search_div"> <input type="text" placeholder="Search for products" className="menu_inp" /> </div>
+                    <div className="cross_icon"> <img src={Images.cross} alt="" onClick={() => setSearchTab(false)} /> </div>
+                  </div>
                 </div>
               </div>
             ) : null}

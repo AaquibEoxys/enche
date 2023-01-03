@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SubHeader from "../../components/subHead/SubHeader";
 import Images from "../../components/Images/Images";
 import "./home.scss";
 import StarRating from "../../components/Rating/Rating";
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = "Home"
+ }, []);
+
   const storesFiles = [
     { img: Images.charity, label: "Charity Cart" },
     { img: Images.enchepre, label: "enchepreneur" },

@@ -56,6 +56,7 @@ import youtube from "../../assets/images/youtube.svg";
 import search from "../../assets/images/search.svg";
 import logo from "../../assets/images/logo.svg";
 import menu from "../../assets/images/menu.svg";
+import cross from "../../assets/images/cross.svg"
 
 const Images = {
   google,
@@ -116,6 +117,7 @@ const Images = {
   search,
   logo,
   menu,
+  cross
 };
 
 export default Images;
