@@ -119,7 +119,17 @@ const Header = () => {
             {menu ? (
               <div id="menu_barContract" className="toggle_menu">
                 <div className="menu_category_list">
-                  <div className="menu_category"> Select Category</div>
+                  <div className="menu_category">
+                    {" "}
+                    Select Category{" "}
+                    <span className="cross_icon">
+                      <img
+                        src={Images.cross}
+                        alt=""
+                        onClick={() => setMenu(false)}
+                      />
+                    </span>{" "}
+                  </div>
                   <span className="list_category"> Fashion </span>
                   <span className="list_category">Beauty & Personal Care</span>
                   <span className="list_category"> Mommy & Babies </span>

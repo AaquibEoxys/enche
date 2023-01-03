@@ -6,6 +6,7 @@ import bell from "../../assets/images/bell.svg";
 import heart from "../../assets/images/heart.svg";
 import cart from "../../assets/images/cart.svg";
 import "./subHeader.scss";
+import { Link } from "react-router-dom";
 
 const SubHeader = () => {
   const langaugeList = [
@@ -18,31 +19,35 @@ const SubHeader = () => {
     <>
       <div className="home_page">
         <div className="home_Head">
-          <div className="container home_pageSearch">
-            <div>
-              <img src={logo} alt="" className="search_svg" />
-            </div>
-            <div className="search_bar">
-              <div className="home_search">
-                <input
-                  type="text"
-                  placeholder="Search for products, brand or shop"
-                  className="home_inp"
-                />
-                <div className="inputSearch">
-                  <img src={search} alt="" className="search_icon" />
-                  <span> SEARCH </span>
+          <div className="container">
+            <div className="home_pageSearch">
+              <div>
+                <Link to="/">
+                  <img src={logo} alt="" className="search_svg" />
+                </Link>
+              </div>
+              <div className="search_bar">
+                <div className="home_search">
+                  <input
+                    type="text"
+                    placeholder="Search for products, brand or shop"
+                    className="home_inp"
+                  />
+                  <div className="inputSearch">
+                    <img src={search} alt="" className="search_icon" />
+                    <span> SEARCH </span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="trac_btn" title="track my order">
-              <img src={truck} alt="" className="search_icon" />
-              <span> TRACK MY ORDER </span>
-            </div>
-            <div className="home_icons">
-              <img src={bell} alt="" />
-              <img src={heart} alt="" />
-              <img src={cart} alt="" />
+              <div className="trac_btn" title="track my order">
+                <img src={truck} alt="" className="search_icon" />
+                <span> TRACK MY ORDER </span>
+              </div>
+              <div className="home_icons">
+                <img src={bell} alt="" />
+                <img src={heart} alt="" />
+                <img src={cart} alt="" />
+              </div>
             </div>
           </div>
           <div className="home_news">

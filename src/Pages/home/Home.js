@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import SubHeader from "../../components/subHead/SubHeader";
 import Images from "../../components/Images/Images";
 import "./home.scss";

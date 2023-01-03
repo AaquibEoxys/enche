@@ -126,6 +126,7 @@ const Images = {
   cross,
   home,
   cart,
+  heart,
   heart2,
   profile,
   shopping,
