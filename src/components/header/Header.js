@@ -139,7 +139,7 @@ const Header = () => {
               </div>
             ) : null}
             {searchTab ? (
-              <div className="search_back">
+              <>
                 <div id="menu_barContract" className="search_menu">
                   <div className="menu_search_list">
                     <div className="menu_category">
@@ -156,46 +156,63 @@ const Header = () => {
                       </select>
                     </div>
                     <div className="menu_search_div">
-                      {" "}
                       <input
                         type="text"
                         placeholder="Search for products"
                         className="menu_inp"
-                      />{" "}
+                      />
                     </div>
                     <div className="cross_icon">
-                      {" "}
                       <img
                         src={Images.cross}
                         alt=""
                         onClick={() => setSearchTab(false)}
-                      />{" "}
+                      />
                     </div>
                   </div>
                 </div>
-              </div>
+                <div className="search_back"></div>
+              </>
             ) : null}
           </div>
-          {/* <div className="fixed_navbar">
-            <div className="fixed_list">
-              <div className="fixed_icon">
-                <img src={Images.home} alt="" />
+          <div className="fixed_navbar">
+            <div className="container">
+              <div className="fixed_list">
+                <div className="icon_align">
+                  <div className="fixed_icon">
+                    <img src={Images.home} alt="" />
+                  </div>
+                  <Link to="/" className="fixed_icon_lebel">
+                    <div className="icon_lebel">Home</div>
+                  </Link>
+                </div>
+                <div className="icon_align">
+                  <div className="fixed_icon">
+                    <img src={Images.heart2} alt="" />
+                  </div>
+                  <Link className="fixed_icon_lebel">
+                    <div className="icon_lebel">Wishlist</div>
+                  </Link>
+                </div>
+                <div className="icon_align">
+                  <div className="fixed_icon">
+                    <img src={Images.shopping} alt="" />
+                  </div>
+                  <Link className="fixed_icon_lebel">
+                    <div className="icon_lebel">Cart</div>
+                  </Link>
+                </div>
+                <div className="icon_align">
+                  <div className="fixed_icon">
+                    <img src={Images.profile} alt="" />
+                  </div>
+                  <Link to="/signup" className="fixed_icon_lebel">
+                    <div className="icon_lebel">Account</div>
+                  </Link>
+                </div>
               </div>
-              <div>Home</div>
-              <div>
-                <img src={Images.heart} alt="" />
-              </div>
-              <div>Wishlist</div>
-              <div>
-                <img src={Images.cart} alt="" />
-              </div>
-              <div>Cart</div>
-              <div>
-                <img src={Images.profile} alt="" />
-              </div>
-              <div>Account</div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>

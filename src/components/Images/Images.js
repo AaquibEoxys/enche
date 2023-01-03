@@ -56,7 +56,13 @@ import youtube from "../../assets/images/youtube.svg";
 import search from "../../assets/images/search.svg";
 import logo from "../../assets/images/logo.svg";
 import menu from "../../assets/images/menu.svg";
-import cross from "../../assets/images/cross.svg"
+import cross from "../../assets/images/cross.svg";
+import home from "../../assets/images/home.svg";
+import cart from "../../assets/images/cart.svg";
+import profile from "../../assets/images/profile.svg";
+import heart from "../../assets/images/heart.svg";
+import heart2 from "../../assets/images/heart2.svg";
+import shopping from "../../assets/images/shopping-cart2.svg";
 
 const Images = {
   google,
@@ -117,7 +123,12 @@ const Images = {
   search,
   logo,
   menu,
-  cross
+  cross,
+  home,
+  cart,
+  heart2,
+  profile,
+  shopping,
 };
 
 export default Images;

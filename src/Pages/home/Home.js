@@ -5,11 +5,6 @@ import "./home.scss";
 import StarRating from "../../components/Rating/Rating";
 
 const Home = () => {
-
-  useEffect(() => {
-    document.title = "Home"
- }, []);
-
   const storesFiles = [
     { img: Images.charity, label: "Charity Cart" },
     { img: Images.enchepre, label: "enchepreneur" },
