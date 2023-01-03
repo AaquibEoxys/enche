@@ -104,8 +104,9 @@
       // width: 100%;
       // height: 100%;
       // background-color: black;
+      // position: absolute;
       // opacity: 0.5;
-      // z-index: 1;
+      // z-index: -1;
       .search_menu {
         position: absolute;
         left: 0;
@@ -145,6 +146,26 @@
               outline: none;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed_navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .fixed_navbar {
+    .fixed_list {
+      display: flex;
+      .fixed_icon {
+        img {
+          height: auto;
+          max-width: 100%;
         }
       }
     }

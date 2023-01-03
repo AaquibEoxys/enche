@@ -143,10 +143,7 @@ const Header = () => {
                 <div id="menu_barContract" className="search_menu">
                   <div className="menu_search_list">
                     <div className="menu_category">
-                      <select
-                        className="curreny_option"
-                        name="level"
-                      >
+                      <select className="curreny_option" name="level">
                         <option defaultValue="All" hidden>
                           All
                         </option>
@@ -158,13 +155,47 @@ const Header = () => {
                         </option>
                       </select>
                     </div>
-                    <div className="menu_search_div"> <input type="text" placeholder="Search for products" className="menu_inp" /> </div>
-                    <div className="cross_icon"> <img src={Images.cross} alt="" onClick={() => setSearchTab(false)} /> </div>
+                    <div className="menu_search_div">
+                      {" "}
+                      <input
+                        type="text"
+                        placeholder="Search for products"
+                        className="menu_inp"
+                      />{" "}
+                    </div>
+                    <div className="cross_icon">
+                      {" "}
+                      <img
+                        src={Images.cross}
+                        alt=""
+                        onClick={() => setSearchTab(false)}
+                      />{" "}
+                    </div>
                   </div>
                 </div>
               </div>
             ) : null}
           </div>
+          {/* <div className="fixed_navbar">
+            <div className="fixed_list">
+              <div className="fixed_icon">
+                <img src={Images.home} alt="" />
+              </div>
+              <div>Home</div>
+              <div>
+                <img src={Images.heart} alt="" />
+              </div>
+              <div>Wishlist</div>
+              <div>
+                <img src={Images.cart} alt="" />
+              </div>
+              <div>Cart</div>
+              <div>
+                <img src={Images.profile} alt="" />
+              </div>
+              <div>Account</div>
+            </div>
+          </div> */}
         </div>
       </div>
     </>
