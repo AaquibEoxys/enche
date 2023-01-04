@@ -27,12 +27,15 @@
 
           .home_inp {
             border: none;
-            width: 780px;
+            width: 100%;
             padding: 8px;
             border-radius: 5px;
-
             &:active {
               outline: none;
+            }
+            &::placeholder {
+              font-size: 14px;
+              color: rgb(180, 178, 178);
             }
           }
 
@@ -50,6 +53,9 @@
 
             .search_icon {
               height: 18px;
+            }
+            span {
+              font-size: 12px;
             }
           }
         }
@@ -82,7 +88,7 @@
       max-width: 1000px;
       margin: 0 auto;
       font-size: 14px;
-      font-family: "Poppins";
+      color: #000000;
     }
   }
 }
@@ -94,9 +100,9 @@
       padding-left: 31px;
       .home_pageSearch {
         .trac_btn {
-          padding: 5px;
+          padding: 12px 5px;
           font-size: 10px;
-          gap: 10px;
+          gap: 4px;
         }
         .search_bar {
           width: 65%;
@@ -122,6 +128,9 @@
       }
       .home_pageSearch {
         width: 100%;
+      }
+      .home_news {
+        width: 60%;
       }
     }
   }
@@ -231,7 +240,7 @@
         .curreny_option {
           background-color: #eeeded;
           border: none;
-          font-size: 12px;
+          font-size: 14px;
           font-family: "Poppins";
         }
       }
@@ -246,9 +255,19 @@
       padding: 14px;
       .home_news {
         padding: 4px 0px;
+        margin-top: 10px;
       }
       .responsive_lang {
         margin-left: 0px;
+      }
+    }
+  }
+  .home_banner {
+    .banner_back {
+      .stores_cart {
+        .stores_cart_align {
+          padding: 15px 0px;
+        }
       }
     }
   }
@@ -260,7 +279,12 @@
       padding: 6px 1px;
       .home_news {
         font-size: 12px;
-        margin-top: 45px;
+        margin-top: 23px;
+        padding: 0px 12px;
+        gap: 11px;
+      }
+      .responsive_lang {
+        margin-left: 8px;
       }
     }
   }

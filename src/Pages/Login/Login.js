@@ -30,6 +30,8 @@ const Login = () => {
     let errorExist = false;
     let errorsObject = {};
 
+    // Validations("email", values?.email, setErrors, errors, "email")
+    //   Validations("password", values?.password, setErrors, errors, "password")
     if (
       values?.email === "" ||
       values?.email === null ||

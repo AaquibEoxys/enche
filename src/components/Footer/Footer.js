@@ -105,7 +105,7 @@ const Footer = () => {
                     <li>
                       <Link to="/">Email : inquiry@enche.com</Link>
                     </li>
-                    <div className="footer_head">
+                    <div className="footer_head resp_head">
                       <h3>Follow Us</h3>
                     </div>
                     <div className="footer_social">

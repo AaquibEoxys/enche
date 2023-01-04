@@ -77,6 +77,8 @@
         flex-direction: column;
         align-items: center;
         padding: 22px 10px;
+        gap: 10px;
+        font-weight: 500;
 
         img {
           height: 50px;
@@ -92,7 +94,7 @@
   }
 
   .charity_cart {
-    background-color: rgb(179 230 231 / 30%);
+    background-color: #6dad5430;
     margin-top: 15px;
     padding-bottom: 15px;
     /* height: 200px; */
@@ -101,20 +103,23 @@
       text-align: center;
       font-size: 22px;
       font-weight: 500;
-      padding-top: 12px;
+      padding-top: 24px;
+      line-height: 22px;
     }
 
     .explore_subhead {
       text-align: center;
-      font-size: 40px;
+      font-size: 52px;
       font-weight: 700;
-      color: rgba(7, 149, 7, 0.56);
+      color: #a3ce2d;
+      padding-bottom: 20px;
     }
 
     .charity_flex {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: 15px;
 
       .exp_imgs {
         position: relative;
@@ -150,7 +155,7 @@
       font-size: 18px;
       font-weight: 600;
       color: #6e6b6b;
-      padding: 8px 20px;
+      padding: 8px 0px;
       display: flex;
       justify-content: space-between;
     }
@@ -170,17 +175,19 @@
         display: flex;
         flex-direction: column;
         padding: 0px;
+        line-height: 20px;
 
         .card_arrival_Img img {
-          height: 160px;
+          height: 150px;
           width: 100%;
           border-radius: 5px;
         }
 
         .card_text {
           font-size: 13px;
-          color: gray;
-          padding: 5px 7px;
+          color: #000000;
+          padding: 5px 5px 0px 5px;
+          font-weight: 400;
         }
 
         .card_x_price {
@@ -188,7 +195,7 @@
           padding: 0 7px;
           font-size: 13px;
           font-weight: 500;
-          color: gray;
+          color: #000000;
         }
 
         .card_price {
@@ -211,7 +218,7 @@
       font-size: 18px;
       font-weight: 600;
       color: #6e6b6b;
-      padding: 8px 20px;
+      padding: 8px 2px;
       display: flex;
       justify-content: space-between;
     }
@@ -237,8 +244,9 @@
 
         .card_text {
           font-size: 13px;
-          color: gray;
+          color: #000000;
           padding: 5px 7px;
+          font-weight: 400;
         }
 
         .card_x_price {
@@ -392,6 +400,7 @@
 
     .explore_div {
       background-color: #a8a2a236;
+      border-radius: 10px;
 
       .cards_box {
         display: flex;
@@ -483,7 +492,6 @@
 /* css for home page responsive view start */
 
 @media (max-width: 1440px) and (min-width: 1100px) {
-
   .home_banner {
     .banner_div {
       .bannerYellow {
@@ -1033,6 +1041,79 @@
   }
 }
 
+@media (max-width: 424px) and (min-width: 374px) {
+  .home_banner {
+    .arrival_div {
+      .arrival_resp {
+        gap: 21px;
+
+        .card_arrival {
+          width: 47%;
+          height: 271px;
+        }
+      }
+    }
+
+    .category_section {
+      .category_div {
+        justify-content: space-between;
+
+        .categories_icon {
+          width: 115px;
+          height: 150px;
+
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .banner_div {
+      .bannerYellow {
+        .just_for {
+          &::before {
+            left: 82px;
+            width: 10%;
+          }
+
+          &::after {
+            left: 292px;
+            width: 10%;
+          }
+        }
+
+        .banner_btn {
+          width: 275px;
+        }
+      }
+
+      .explore_div {
+        .explore_card {
+          width: 47%;
+        }
+
+        .cards_box {
+          gap: 18px;
+        }
+      }
+    }
+    .news_search {
+      .news_search_head {
+        padding: 17px 10px;
+      }
+      .news_search_box {
+        .subscribe_btn {
+          padding: 13px;
+          font-size: 12px;
+          width: 86px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .home_banner {
     .arrival_div {
@@ -1077,7 +1158,8 @@
         }
 
         .banner_btn {
-          width: 275px;
+          width: 240px;
+          padding: 5px;
         }
       }
 

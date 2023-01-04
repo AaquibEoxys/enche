@@ -63,6 +63,11 @@ import profile from "../../assets/images/profile.svg";
 import heart from "../../assets/images/heart.svg";
 import heart2 from "../../assets/images/heart2.svg";
 import shopping from "../../assets/images/shopping-cart2.svg";
+import vi from "../../assets/images/vi.png";
+import indonesia from "../../assets/images/indonesia.png";
+import usa from "../../assets/images/usa.png";
+import turkey from "../../assets/images/turkey.png";
+import langLogo from "../../assets/images/langLogo.svg";
 
 const Images = {
   google,
@@ -130,6 +135,11 @@ const Images = {
   heart2,
   profile,
   shopping,
+  vi,
+  turkey,
+  indonesia,
+  usa,
+  langLogo,
 };
 
 export default Images;

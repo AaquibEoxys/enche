@@ -9,31 +9,42 @@ const Header = () => {
   const [value, setValue] = useState({ currency: "usd" });
   const [menu, setMenu] = useState(false);
   const [searchTab, setSearchTab] = useState(false);
-
+  const [drop, setDrop] = useState(false);
+  const [currDrop, setCurrDrop] = useState(false);
+  const [selectedCurrency, setSelectedCurrency] = useState({
+    logo: Images.usa,
+    language: "USD",
+  });
+  const [selectedLang, setSelectedLang] = useState({
+    logo: Images.langLogo,
+    language: "Select Langauge",
+  });
   const currencyList = [
     {
-      value: "USD",
+      name: "TRY",
+      img: Images.turkey,
     },
     {
-      value: "INR",
+      name: "IDR",
+      img: Images.vi,
     },
     {
-      value: "DHR",
-    },
-    {
-      value: "KD",
+      name: "BND",
+      img: Images.vi,
     },
   ];
   const langaugeList = [
-    { name: "English" },
-    { name: "Hindi" },
-    { name: "Arabic" },
-    { name: "French" },
+    { name: "English", img: Images.usa },
+    { name: "Turkey", img: Images.turkey },
+    { name: "Arabic", img: Images.indonesia },
+    { name: "French", img: Images.vi },
   ];
 
   $(document).mouseup(function (e) {
     if ($(e.target).closest("#menu_barContract").length === 0) {
       setMenu(false);
+      setCurrDrop(false);
+      setDrop(false);
     }
   });
 
@@ -46,13 +57,13 @@ const Header = () => {
               <div> DOWNLOAD ENCHE APPS </div>
             </Link>
             <div className="nav_right">
-              <select
+              <div
                 value={value?.currency}
                 name="currency"
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
-                className="curreny_option navigation_link"
+                className="curreny_option navigation_link lang_drop"
               >
-                {currencyList?.map((item, key) => (
+                {/* {currencyList?.map((item, key) => (
                   <option
                     value={item?.value}
                     key={key}
@@ -60,26 +71,81 @@ const Header = () => {
                   >
                     {item.value}
                   </option>
-                ))}
-              </select>
-              <select
-                className="curreny_option navigation_link"
+                ))} */}
+                <div className="nav_lang_div">
+                  <div className="nav_lang_img">
+                    <img src={selectedCurrency?.logo} alt="" />
+                  </div>
+                  <div
+                    className="nav_lang_lebel"
+                    onClick={() => setCurrDrop(!currDrop)}
+                  >
+                    {selectedCurrency?.language}
+                  </div>
+                </div>
+                {currDrop ? (
+                  <div id="menu_barContract" className="curr_option">
+                    {currencyList.map((item, key) => (
+                      <div
+                        className="option_with_flag"
+                        onClick={(e) => {
+                          setSelectedCurrency({
+                            logo: item.img,
+                            language: item.name,
+                          });
+                        }}
+                        key={key}
+                      >
+                        <div className="country_flag">
+                          <img src={item.img} alt="" />
+                        </div>
+                        <div className="country_langaue">{item.name}</div>
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+              <div
+                className="curreny_option navigation_link lang_drop"
                 name="level"
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
               >
-                <option defaultValue="English" hidden>
-                  English
-                </option>
-                {langaugeList.map((item, key) => (
-                  <option value={item.name} className="curencyOption" key={key}>
-                    {item.name}
-                  </option>
-                ))}
-              </select>
+                <div className="nav_lang_div">
+                  <div className="nav_lang_img">
+                    <img src={selectedLang?.logo} alt="" />
+                  </div>
+                  <div
+                    className="nav_lang_lebel"
+                    onClick={() => setDrop(!drop)}
+                  >
+                    {selectedLang?.language}
+                  </div>
+                </div>
+                {drop ? (
+                  <div id="menu_barContract" className="drop_down">
+                    {langaugeList.map((item, key) => (
+                      <div
+                        className="option_with_flag"
+                        onClick={(e) => {
+                          setSelectedLang({
+                            logo: item.img,
+                            language: item.name,
+                          });
+                        }}
+                        key={key}
+                      >
+                        <div className="country_flag">
+                          <img src={item.img} alt="" />
+                        </div>
+                        <div className="country_langaue">{item.name}</div>
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
               <select
                 className="curreny_option navigation_link"
                 name="level"
-                // value={data.level}
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
               >
                 <option defaultValue="Join As" hidden>
@@ -92,12 +158,14 @@ const Header = () => {
                   Seller
                 </option>
               </select>
-              <Link to="/signup" className="navigation_link nav_signIn">
-                <span>Sign Up</span>
-              </Link>
-              <Link to="/signin" className="navigation_link">
-                Login
-              </Link>
+              <div className="nav_sign">
+                <Link to="/signup" className="navigation_link nav_signIn">
+                  <span>Sign Up</span>
+                </Link>
+                <Link to="/signin" className="navigation_link">
+                  <span> Login </span>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="resp_navbar">
@@ -120,15 +188,14 @@ const Header = () => {
               <div id="menu_barContract" className="toggle_menu">
                 <div className="menu_category_list">
                   <div className="menu_category">
-                    {" "}
-                    Select Category{" "}
+                    Select Category
                     <span className="cross_icon">
                       <img
                         src={Images.cross}
                         alt=""
                         onClick={() => setMenu(false)}
                       />
-                    </span>{" "}
+                    </span>
                   </div>
                   <span className="list_category"> Fashion </span>
                   <span className="list_category">Beauty & Personal Care</span>
