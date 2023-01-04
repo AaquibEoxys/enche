@@ -63,7 +63,7 @@ const Login = () => {
       return false;
     }
   };
-  console.log(" email", errors)
+  console.log(" email", errors);
 
   return (
     <>
@@ -88,16 +88,28 @@ const Login = () => {
               <span className="login_inpSvg">
                 <img src={Images?.gmail} alt="" className="google_logo" />
               </span>
-              <input type="text" placeholder="Enter username" name="email" value={values?.email} onChange={(e) => handleChange(e)} />
+              <input
+                type="text"
+                placeholder="Enter username"
+                name="email"
+                value={values?.email}
+                onChange={(e) => handleChange(e)}
+              />
             </div>
-            <p> {errors?.email} </p>
+            <div className="login_error"> {errors?.email} </div>
             <div className="loginInp">
               <span className="login_inpSvg">
                 <img src={Images?.lock} alt="" className="google_logo" />
               </span>
-              <input type="password" placeholder="Password" name="password" value={values?.password} onChange={(e) => handleChange(e)} />
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={values?.password}
+                onChange={(e) => handleChange(e)}
+              />
             </div>
-            <p> {errors?.password} </p>
+            <div className="login_error"> {errors?.password} </div>
             <div className="remberDev">
               <input type="checkbox" id="rememberMe" />
               <label htmlFor="rememberMe" className="remberMe">
@@ -105,7 +117,10 @@ const Login = () => {
               </label>
             </div>
             <div>
-              <button className="login_btn" onClick={onSubmit}> Log in </button>
+              <button className="login_btn" onClick={onSubmit}>
+                {" "}
+                Log in{" "}
+              </button>
             </div>
             <div className="notYet_div">
               <div className="not_yet_text"> Not member yet? </div>
