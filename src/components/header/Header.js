@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
 import "../../assets/css/style.css";
@@ -11,6 +11,7 @@ const Header = () => {
   const [searchTab, setSearchTab] = useState(false);
   const [drop, setDrop] = useState(false);
   const [currDrop, setCurrDrop] = useState(false);
+  const [openSlide, setopenSlide] = useState(""); 
   const [selectedCurrency, setSelectedCurrency] = useState({
     logo: Images.usa,
     language: "USD",
@@ -47,6 +48,16 @@ const Header = () => {
       setDrop(false);
     }
   });
+
+  const catMenu = useRef(null)
+
+  const closeOpenMenus = (e)=>{
+    if(catMenu.current && openSlide && !catMenu.current.contains(e.target)){
+      setopenSlide(false)
+    }
+}
+
+// document.addEventListener('mousedown',closeOpenMenus)
 
   return (
     <>
