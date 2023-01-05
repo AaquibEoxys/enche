@@ -3,8 +3,14 @@ import SubHeader from "../../components/subHead/SubHeader";
 import Images from "../../components/Images/Images";
 import "./home.scss";
 import StarRating from "../../components/Rating/Rating";
+import Title from "../../components/Title/Title";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    Title(" | Homepage");
+  }, []);
+
   const storesFiles = [
     { img: Images.charity, label: "Charity Cart" },
     { img: Images.enchepre, label: "enchepreneur" },

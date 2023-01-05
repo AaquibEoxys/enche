@@ -889,6 +889,30 @@
     }
   }
 }
+@media (max-width: 900px) and (min-width: 750px) {
+  .home_banner {
+    .banner_div {
+      .explore_div {
+        .explore_card {
+          width: 30%;
+        }
+        .cards_box {
+          gap: 22px;
+          padding: 30px 20px;
+        }
+      }
+    }
+
+    .arrival_div {
+      .arrival_content {
+        .card_arrival {
+          width: 250px;
+          height: 325px;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 481px) {
   .home_banner {

@@ -45,6 +45,9 @@
         padding-top: 20px;
       }
     }
+    .support_footer {
+      padding-left: 48px;
+    }
   }
 
   .copy_right_row {
@@ -56,6 +59,14 @@
       line-height: 12px;
       color: green;
       text-align: center;
+    }
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .footer_padd {
+    .support_footer {
+      padding: 13px !important;
     }
   }
 }

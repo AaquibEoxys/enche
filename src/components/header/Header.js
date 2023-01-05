@@ -57,7 +57,7 @@ const Header = () => {
     }
 }
 
-// document.addEventListener('mousedown',closeOpenMenus)
+document.addEventListener('mousedown',closeOpenMenus)
 
   return (
     <>

@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import SubHeader from "../../components/subHead/SubHeader";
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
+import Title from "../../components/Title/Title";
 import "./login.scss";
 
 const Login = () => {
   const [values, setValues] = useState(null);
   const [errors, setErrors] = useState({});
+  Title(" | My Account ");
 
   const handleChange = (e) => {
     if (

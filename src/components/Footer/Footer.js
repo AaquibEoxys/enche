@@ -66,7 +66,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col xl={3} md={3}>
+              <Col xl={3} md={3} className="support_footer">
                 <div className="footer_head">
                   <h3>Support</h3>
                 </div>

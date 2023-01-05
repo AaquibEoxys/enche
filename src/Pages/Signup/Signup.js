@@ -2,8 +2,10 @@ import React from "react";
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
 import SubHeader from "../../components/subHead/SubHeader";
+import Title from "../../components/Title/Title";
 
 const Signup = () => {
+  Title(" | Signup");
   return (
     <>
       <SubHeader />
