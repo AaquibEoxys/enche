@@ -63,6 +63,9 @@ import profile from "../../assets/images/profile.svg";
 import heart from "../../assets/images/heart.svg";
 import heart2 from "../../assets/images/heart2.svg";
 import shopping from "../../assets/images/shopping-cart2.svg";
+import Asset from "../../assets/images/Asset.png";
+import laptop1 from "../../assets/images/laptop1.webp";
+import laptop3 from "../../assets/images/laptop3.png";
 
 const Images = {
   google,
@@ -130,6 +133,9 @@ const Images = {
   heart2,
   profile,
   shopping,
+  Asset,
+  laptop1,
+  laptop3,
 };
 
 export default Images;
