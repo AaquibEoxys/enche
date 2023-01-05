@@ -11,7 +11,7 @@ const Header = () => {
   const [searchTab, setSearchTab] = useState(false);
   const [drop, setDrop] = useState(false);
   const [currDrop, setCurrDrop] = useState(false);
-  const [openSlide, setopenSlide] = useState(""); 
+  const [openSlide, setopenSlide] = useState("");
   const [selectedCurrency, setSelectedCurrency] = useState({
     logo: Images.usa,
     language: "USD",
@@ -31,7 +31,7 @@ const Header = () => {
     },
     {
       name: "BND",
-      img: Images.vi,
+      img: Images.indonesia,
     },
   ];
   const langaugeList = [
@@ -42,22 +42,25 @@ const Header = () => {
   ];
 
   $(document).mouseup(function (e) {
-    if ($(e.target).closest("#menu_barContract").length === 0) {
+    if (
+      $(e.target).closest("#menu_barContract, #language, #currency").length ===
+      0
+    ) {
       setMenu(false);
       setCurrDrop(false);
       setDrop(false);
     }
   });
 
-  const catMenu = useRef(null)
+  const catMenu = useRef(null);
 
-  const closeOpenMenus = (e)=>{
-    if(catMenu.current && openSlide && !catMenu.current.contains(e.target)){
-      setopenSlide(false)
+  const closeOpenMenus = (e) => {
+    if (catMenu.current && openSlide && !catMenu.current.contains(e.target)) {
+      setopenSlide(false);
     }
-}
+  };
 
-document.addEventListener('mousedown',closeOpenMenus)
+  document.addEventListener("mousedown", closeOpenMenus);
 
   return (
     <>
@@ -74,28 +77,25 @@ document.addEventListener('mousedown',closeOpenMenus)
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
                 className="curreny_option navigation_link lang_drop"
               >
-                {/* {currencyList?.map((item, key) => (
-                  <option
-                    value={item?.value}
-                    key={key}
-                    className="curencyOption"
-                  >
-                    {item.value}
-                  </option>
-                ))} */}
-                <div className="nav_lang_div">
+                <div
+                  className="nav_lang_div"
+                  id="currency"
+                  onMouseEnter={() => setCurrDrop(true)}
+                >
                   <div className="nav_lang_img">
                     <img src={selectedCurrency?.logo} alt="" />
                   </div>
-                  <div
-                    className="nav_lang_lebel"
-                    onClick={() => setCurrDrop(!currDrop)}
-                  >
-                    {selectedCurrency?.language}
+                  <div className="nav_lang_lebel">
+                    {selectedCurrency?.language} &nbsp;
+                    <i className="fa fa-chevron-down"></i>
                   </div>
                 </div>
-                {currDrop ? (
-                  <div id="menu_barContract" className="curr_option">
+                {currDrop && (
+                  <div
+                    id="menu_barContract"
+                    className="curr_option"
+                    onMouseLeave={() => setCurrDrop(false)}
+                  >
                     {currencyList.map((item, key) => (
                       <div
                         className="option_with_flag"
@@ -114,7 +114,7 @@ document.addEventListener('mousedown',closeOpenMenus)
                       </div>
                     ))}
                   </div>
-                ) : null}
+                )}
               </div>
               <div
                 className="curreny_option navigation_link lang_drop"
@@ -127,9 +127,11 @@ document.addEventListener('mousedown',closeOpenMenus)
                   </div>
                   <div
                     className="nav_lang_lebel"
+                    id="language"
                     onClick={() => setDrop(!drop)}
                   >
-                    {selectedLang?.language}
+                    {selectedLang?.language}&nbsp;
+                    <i className="fa fa-chevron-down"></i>
                   </div>
                 </div>
                 {drop ? (

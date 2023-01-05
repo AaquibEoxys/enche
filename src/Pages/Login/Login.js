@@ -122,8 +122,7 @@ const Login = () => {
             </div>
             <div>
               <button className="login_btn" onClick={onSubmit}>
-                {" "}
-                Log in{" "}
+                Log in
               </button>
             </div>
             <div className="notYet_div">

@@ -38,7 +38,7 @@ const StarRating = ({ rating }) => {
               <g clipPath="url(#clip0_147_48)">
                 <path
                   d="M5.18 0L6.4 3.96H10.36L7.16 6.41L8.38 10.36L5.18 7.92L1.98 10.36L3.2 6.41L0 3.96H3.96L5.18 0Z"
-                  fill="#F4EBD0"
+                  fill="#ced4da"
                 />
               </g>
               <defs>
