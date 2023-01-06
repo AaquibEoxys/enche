@@ -11,6 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
 import AboutEnche from "./components/Footer/FooterPages/AboutEnche";
+import AboutEnchepreneur from "./components/Footer/FooterPages/AboutEnchepreneur";
 // const Home = React.lazy(() => import("./Pages/home/Home"));
 // const Header = React.lazy(() => import("./components/header/Header"));
 // const About = React.lazy(() => import("./Pages/about/About"));
@@ -32,6 +33,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/terms" element={<TermsAndCondition />} />
         <Route path='/aboutenche' element={<AboutEnche />} />
+        <Route path='/aboutenchepreneur' element={<AboutEnchepreneur />} />
       </Routes>
       <Footer />
     </HashRouter>

@@ -66,6 +66,13 @@ import shopping from "../../assets/images/shopping-cart2.svg";
 import Asset from "../../assets/images/Asset.png";
 import laptop1 from "../../assets/images/laptop1.webp";
 import laptop3 from "../../assets/images/laptop3.png";
+import JoinEnche1 from "../../assets/images/JoinEnche1.jpg"
+import icon01 from "../../assets/images/icon01.png"
+import icon02 from "../../assets/images/icon02.png"
+import icon03 from "../../assets/images/icon03.png"
+import icon05 from "../../assets/images/icon05.png"
+import icon06 from "../../assets/images/icon06.png"
+import icon07 from "../../assets/images/icon07.png"
 
 const Images = {
   google,
@@ -136,6 +143,13 @@ const Images = {
   Asset,
   laptop1,
   laptop3,
+  JoinEnche1,
+  icon01,
+  icon02,
+  icon03,
+  icon05,
+  icon06,
+  icon07,
 };
 
 export default Images;
