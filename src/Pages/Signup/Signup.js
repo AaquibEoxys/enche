@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./signup.scss"
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
 import SubHeader from "../../components/subHead/SubHeader";
@@ -94,10 +95,12 @@ const Signup = () => {
               <span> Log in with Facebook </span>
             </div>
             <div className="loginInp">
-              <span className="login_inpSvg"></span>
+              <span className="login_inpSvg">
+                <img src={Images.user} alt="" className="google_logo" />
+              </span>
               <input
                 type="text"
-                placeholder="Enter name"
+                placeholder="Type your name"
                 name="username"
                 value={values?.username}
                 onChange={(e) => handleChange(e)}
@@ -110,7 +113,7 @@ const Signup = () => {
               </span>
               <input
                 type="text"
-                placeholder="Enter email"
+                placeholder="Enter your email"
                 name="email"
                 value={values?.email}
                 onChange={(e) => handleChange(e)}
@@ -141,8 +144,7 @@ const Signup = () => {
             </div>
             <div className="log_btn_div">
               <button className="login_btn" onClick={onSubmit}>
-                {" "}
-                Sign up{" "}
+                Sign up
               </button>
             </div>
             <div className="notYet_div">

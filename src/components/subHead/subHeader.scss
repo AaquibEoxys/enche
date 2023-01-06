@@ -1,3 +1,6 @@
+$green_code: #6dad54;
+$secondary_green_code: #a3ce2d;
+
 .home_page {
   background-color: rgb(216 214 214 / 43%);
   height: 110px;
@@ -41,7 +44,7 @@
           }
 
           .inputSearch {
-            background-color: #a3ce2d;
+            background-color: $green_code;
             width: 100px;
             color: #fff;
             font-size: 14px;
@@ -63,7 +66,7 @@
       }
 
       .trac_btn {
-        background-color: #a3ce2d;
+        background-color: $green_code;
         padding: 10px;
         font-size: 12px;
         border-radius: 5px;
@@ -80,6 +83,30 @@
         align-items: center;
         height: 25px;
         width: 25px;
+        .subhead_icon {
+          position: relative;
+          img {
+            width: 25px;
+            height: 25px;
+          }
+          .notification {
+            position: absolute;
+            left: 15px;
+            background: red;
+            border-radius: 100%;
+            padding: 0px 5px;
+            font-size: 10px;
+            color: #fff;
+            font-weight: 500;
+            height: 18px;
+            width: 18px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 13px;
+          }
+        }
       }
     }
 
@@ -94,15 +121,13 @@
       }
 
       .search_bar {
-        // background-color: #fff;
         padding: 3px;
         width: 65%;
 
         .home_search {
           display: flex;
-          gap: 10px;
-          // border: 1px solid #00000042;
-          // border-radius: 5px;
+          gap: 20px;
+          font-size: 14px;
 
           .home_inp {
             border: none;
@@ -120,7 +145,6 @@
           }
 
           .inputSearch {
-            // background-color: #a3ce2d;
             width: 100px;
             color: #fff;
             font-size: 14px;
@@ -142,7 +166,7 @@
       }
 
       .trac_btn {
-        // background-color: #a3ce2d;
+        // background-color: $green_code;
         padding: 10px;
         font-size: 12px;
         border-radius: 5px;
@@ -334,6 +358,25 @@
       }
       .news_contain {
         display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .home_banner {
+    .banner_div {
+      .explore_div {
+        .cards_box {
+          .explore_card {
+            min-height: 320px;
+            width: 45%;
+            border: 1px solid rgba(123, 119, 119, 0.2901960784);
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+          }
+        }
       }
     }
   }

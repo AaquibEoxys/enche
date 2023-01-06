@@ -44,9 +44,18 @@ const SubHeader = () => {
                 <span> TRACK MY ORDER </span>
               </div>
               <div className="home_icons">
-                <img src={bell} alt="" />
-                <img src={heart} alt="" />
-                <img src={cart} alt="" />
+                <div className="subhead_icon">
+                  <img src={bell} alt="" />
+                  <div className="notification">2</div>
+                </div>
+                <div className="subhead_icon">
+                  <img src={heart} alt="" />
+                  <div className="notification">3</div>
+                </div>
+                <div className="subhead_icon">
+                  <img src={cart} alt="" />
+                  <div className="notification">5</div>
+                </div>
               </div>
             </div>
           </div>

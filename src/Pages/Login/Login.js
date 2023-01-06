@@ -8,7 +8,7 @@ import "./login.scss";
 const Login = () => {
   const [values, setValues] = useState(null);
   const [errors, setErrors] = useState({});
-  Title(" | My Account ");
+  Title(" | Login ");
 
   const handleChange = (e) => {
     if (
