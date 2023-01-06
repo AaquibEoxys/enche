@@ -147,10 +147,39 @@
       gap: 3px;
       font-size: 12px;
     }
+
     .login_error {
       color: red;
       font-size: 14px;
-      font-weight: "Poppins", Sans-serif;
+    }
+  }
+}
+
+@media (max-width: 414px) and (min-width: 270px) {
+  .sign_body {
+    .cardBody {
+      width: 92%;
+    }
+    .card_padd {
+      padding: 22px, 14px;
+    }
+  }
+}
+
+@media (max-width: 351px) and (min-width: 280px) {
+  .sign_body {
+    .card_padd {
+      .login_subHead {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: 270px) and (max-width: 295px) {
+  .sign_body {
+    .card_padd {
+      padding: 14px;
     }
   }
 }

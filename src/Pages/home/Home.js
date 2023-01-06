@@ -3,8 +3,14 @@ import SubHeader from "../../components/subHead/SubHeader";
 import Images from "../../components/Images/Images";
 import "./home.scss";
 import StarRating from "../../components/Rating/Rating";
+import Title from "../../components/Title/Title";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    Title(" | Homepage");
+  }, []);
+
   const storesFiles = [
     { img: Images.charity, label: "Charity Cart" },
     { img: Images.enchepre, label: "enchepreneur" },
@@ -258,6 +264,7 @@ const Home = () => {
                 >
                   <div className="card_arrival_Img">
                     <img src={item?.img} alt="" />
+                    <span className="offer_discount"> -15% OFF </span>
                   </div>
                   <div className="card_text">{item.label}</div>
                   <div className="star_icons">
@@ -294,6 +301,7 @@ const Home = () => {
                   <div className="card_artisan">
                     <div className="card_artisan_Img">
                       <img src={item?.img} alt="" />
+                      <span className="offer_discount"> -15% OFF </span>
                     </div>
                     <div className="card_text">{item.label}</div>
                     <div className="star_icons">
@@ -332,6 +340,7 @@ const Home = () => {
                   <div className="explore_card" key={key}>
                     <div className="explore_div_img">
                       <img src={item?.img} alt="" />
+                      <span className="offer_discount"> -15% OFF </span>
                     </div>
                     <div className="explore_text">{item.label}</div>
                     <div className="star_icons">

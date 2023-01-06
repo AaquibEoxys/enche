@@ -27,12 +27,16 @@
 
           .home_inp {
             border: none;
-            width: 780px;
+            width: 100%;
             padding: 8px;
             border-radius: 5px;
-
+            outline: none;
             &:active {
               outline: none;
+            }
+            &::placeholder {
+              font-size: 14px;
+              color: rgb(180, 178, 178);
             }
           }
 
@@ -50,6 +54,9 @@
 
             .search_icon {
               height: 18px;
+            }
+            span {
+              font-size: 12px;
             }
           }
         }
@@ -76,13 +83,92 @@
       }
     }
 
+    .news_contain {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .search_svg {
+        width: 129px;
+        max-width: 100%;
+      }
+
+      .search_bar {
+        // background-color: #fff;
+        padding: 3px;
+        width: 65%;
+
+        .home_search {
+          display: flex;
+          gap: 10px;
+          // border: 1px solid #00000042;
+          // border-radius: 5px;
+
+          .home_inp {
+            border: none;
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            outline: none;
+            &:active {
+              outline: none;
+            }
+            &::placeholder {
+              font-size: 14px;
+              color: rgb(180, 178, 178);
+            }
+          }
+
+          .inputSearch {
+            // background-color: #a3ce2d;
+            width: 100px;
+            color: #fff;
+            font-size: 14px;
+            padding: 8px;
+            margin: 2px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .search_icon {
+              height: 18px;
+            }
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .trac_btn {
+        // background-color: #a3ce2d;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 5px;
+        color: #fff;
+        max-width: 158px;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+      }
+
+      .home_icons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+      }
+    }
+
     .home_news {
       display: flex;
       gap: 13px;
       max-width: 1000px;
       margin: 0 auto;
       font-size: 14px;
-      font-family: "Poppins";
+      color: #000000bd;
     }
   }
 }
@@ -94,9 +180,9 @@
       padding-left: 31px;
       .home_pageSearch {
         .trac_btn {
-          padding: 5px;
+          padding: 12px 5px;
           font-size: 10px;
-          gap: 10px;
+          gap: 4px;
         }
         .search_bar {
           width: 65%;
@@ -122,6 +208,9 @@
       }
       .home_pageSearch {
         width: 100%;
+      }
+      .home_news {
+        width: 60%;
       }
     }
   }
@@ -203,11 +292,20 @@
 //         padding-top: 3px;
 //         font-size: 13px;
 //         margin: 0px 106px;
-//         font-family: "Poppins";
 //       }
 //     }
 //   }
 // }
+
+@media (min-width: 769px) {
+  .home_page {
+    .home_Head {
+      .home_news {
+        display: none;
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .home_page {
@@ -231,9 +329,11 @@
         .curreny_option {
           background-color: #eeeded;
           border: none;
-          font-size: 12px;
-          font-family: "Poppins";
+          font-size: 14px;
         }
+      }
+      .news_contain {
+        display: none;
       }
     }
   }
@@ -246,9 +346,19 @@
       padding: 14px;
       .home_news {
         padding: 4px 0px;
+        margin-top: 10px;
       }
       .responsive_lang {
         margin-left: 0px;
+      }
+    }
+  }
+  .home_banner {
+    .banner_back {
+      .stores_cart {
+        .stores_cart_align {
+          padding: 15px 0px;
+        }
       }
     }
   }
@@ -260,7 +370,12 @@
       padding: 6px 1px;
       .home_news {
         font-size: 12px;
-        margin-top: 45px;
+        margin-top: 23px;
+        padding: 0px 12px;
+        gap: 11px;
+      }
+      .responsive_lang {
+        margin-left: 8px;
       }
     }
   }

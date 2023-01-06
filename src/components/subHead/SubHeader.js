@@ -50,6 +50,22 @@ const SubHeader = () => {
               </div>
             </div>
           </div>
+          <div className="container">
+            <div className="news_contain">
+              <div className="search_svg"></div>
+              <div className="search_bar">
+                <div className="home_search">
+                  <div> KUDOS </div>
+                  <div> Newsletter </div>
+                  <div> Help </div>
+                  <div> Contact Us </div>
+                  <div> About Us </div>
+                </div>
+              </div>
+              <div className="trac_btn" title="track my order"></div>
+              <div className="home_icons"></div>
+            </div>
+          </div>
           <div className="home_news">
             <div> KUDOS </div>
             <div> Newsletter </div>

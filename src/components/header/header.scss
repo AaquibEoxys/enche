@@ -28,6 +28,17 @@
 
         .curencyOption {
           color: black;
+          .option_with_flag {
+            display: flex;
+            .country_flag {
+              height: 30px;
+              width: 30px;
+              img {
+                height: auto;
+                max-width: 100%;
+              }
+            }
+          }
         }
       }
 
@@ -38,6 +49,101 @@
           border-right: 1.5px solid #fff;
           line-height: 12px;
           padding: 0 10px;
+          margin-right: 5px;
+        }
+      }
+      .nav_sign {
+        display: flex;
+      }
+    }
+    .lang_drop {
+      position: relative;
+      .nav_lang_lebel {
+        cursor: pointer;
+      }
+      .nav_lang_div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        .nav_lang_img {
+          height: 20px;
+          width: 20px;
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+      .drop_down {
+        position: absolute;
+        background: #fff;
+        color: #000;
+        top: 28px;
+        width: 200px;
+        padding: 1px 0;
+        .option_with_flag {
+          display: flex;
+          gap: 13px;
+          align-items: center;
+          cursor: pointer;
+          padding: 1px 9px;
+          &:hover {
+            background-color: rgb(241, 239, 239);
+          }
+          .country_langaue {
+            font-size: 15px;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .lang_drop {
+      position: relative;
+      .nav_lang_lebel {
+        cursor: pointer;
+      }
+      .nav_lang_div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &:hover {
+        }
+
+        .nav_lang_img {
+          height: 20px;
+          width: 20px;
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+      .curr_option {
+        position: absolute;
+        background: #fff;
+        color: #000;
+        top: 22px;
+        width: 115px;
+        left: -25px;
+        padding: 1px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .option_with_flag {
+          display: flex;
+          gap: 13px;
+          align-items: center;
+          cursor: pointer;
+          padding: 1px 9px;
+          min-width: 80px;
+          &:hover {
+            background-color: rgb(241, 239, 239);
+          }
+          .country_langaue {
+            font-size: 15px;
+            color: #000000;
+          }
         }
       }
     }
@@ -98,7 +204,6 @@
         .menu_category {
           font-size: 17px;
           font-weight: 500;
-          font-family: "Poppins";
           text-align: center;
           display: flex;
           justify-content: space-between;
@@ -116,7 +221,6 @@
         .list_category {
           font-size: 15px;
           font-weight: 400;
-          font-family: "Poppins";
           padding: 9px;
           border-bottom: 1px solid rgb(0 0 0 / 10%);
         }
@@ -224,7 +328,6 @@
           text-decoration: none;
           .icon_lebel {
             font-size: 14px;
-            font-family: "Poppins";
           }
         }
       }
@@ -251,7 +354,6 @@
           text-decoration: none;
           .icon_lebel {
             font-size: 12px;
-            font-family: "Poppins";
           }
         }
       }

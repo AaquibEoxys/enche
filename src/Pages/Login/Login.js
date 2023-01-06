@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import SubHeader from "../../components/subHead/SubHeader";
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
+import Title from "../../components/Title/Title";
 import "./login.scss";
 
 const Login = () => {
   const [values, setValues] = useState(null);
   const [errors, setErrors] = useState({});
+  Title(" | My Account ");
 
   const handleChange = (e) => {
     if (
@@ -30,6 +32,8 @@ const Login = () => {
     let errorExist = false;
     let errorsObject = {};
 
+    // Validations("email", values?.email, setErrors, errors, "email")
+    //   Validations("password", values?.password, setErrors, errors, "password")
     if (
       values?.email === "" ||
       values?.email === null ||
@@ -118,8 +122,7 @@ const Login = () => {
             </div>
             <div>
               <button className="login_btn" onClick={onSubmit}>
-                {" "}
-                Log in{" "}
+                Log in
               </button>
             </div>
             <div className="notYet_div">

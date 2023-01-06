@@ -73,6 +73,11 @@ import icon03 from "../../assets/images/icon03.png"
 import icon05 from "../../assets/images/icon05.png"
 import icon06 from "../../assets/images/icon06.png"
 import icon07 from "../../assets/images/icon07.png"
+import vi from "../../assets/images/vi.png";
+import indonesia from "../../assets/images/indonesia.png";
+import usa from "../../assets/images/usa.png";
+import turkey from "../../assets/images/turkey.png";
+import langLogo from "../../assets/images/langLogo.svg";
 
 const Images = {
   google,
@@ -150,6 +155,11 @@ const Images = {
   icon05,
   icon06,
   icon07,
+  vi,
+  turkey,
+  indonesia,
+  usa,
+  langLogo,
 };
 
 export default Images;
