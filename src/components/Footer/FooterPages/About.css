@@ -1,27 +1,4 @@
 
-@media screen and(min-width:374px) {
-    img{
-        height: auto;
-        width: 370px;
-    }
-    /* h1,h2,h3,h4,h5,h6{
-        text-align: center;
-    } */
-    /* .secion_3_enche_text{
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-    }
-    .section_1_enche{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    } */
-   
-    
-}
-@media screen and (min-width:1041px){
     .section_1_enche{
         display: flex;
         align-items: center;
@@ -73,11 +50,23 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        height: auto;
+        width: 100%;
     }
-    .section_6_enche{
-        padding-left: 10%;
-        padding-right: 10%;
+    .s_5_header{
+        text-align: center;
     }
+    .s_5_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .s_5_img >img{
+        height: auto;
+        width: 60%;
+    }
+
+   
     .secion_3_enche img{
         height: auto;
         width: 100%;
@@ -93,108 +82,51 @@
     .aboutenchepreneur_section_3{
         text-align: center;
     }
+    .abt_enpnr{
+        /* text-align: center; */
+    }
+    .epnr_abt_sec_2{
+        text-align: center;
+    }
+    .epnr_abt_sec_3{
+        text-align: center;
+    }
+    .enpr_abt_sec_4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .enpr_s_4_header{
+        text-align: center;
+    }
+    .enpr_s_5_header{
+        text-align: center;
+    }
+    
+@media screen and (max-width:420px) {
+    .s_5_img >img{
+        height: auto;
+        width: 100%;
+    }
+    .s_5_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
 }
-@media screen and (min-width:1042px){
-.section_1_enche{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    width: 100%;
-    background-image: url(../../../assets/images/enche-apps-logo-3.png);
-    background-repeat: no-repeat;
-    background-position: center 80px;
-    background-size: 17%;
-}
-
-.section_1_enche h1{
-font-weight: bold;
-}
-.section_1_enche_1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top:15%;
-    padding-bottom: 7%;
-    background-color: #fff;
-    opacity: 0.8;
-    font-weight: 500;
-}
-.section_2_enche{
-    height: auto;
-    width: 100%;
-    padding-top:5%;
-    padding-bottom: 10%;
-}
-.section_2_enche>img{
-    width: 100%;
-}
-.secion_3_enche_text{
-    width: 100%;
-    height: auto;
-}
-.section_4_enche{
-    height: auto;
-    width: 100%;
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 8%;
-}
-.green-text{
-    color:  #6DAD54;
-}
-.section_5_enche{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.section_6_enche{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.secion_3_enche img{
-    height: auto;
-    width: 100%;
-}
-.section_2_enche img{
-    height: auto;
-    width: 100%;
-}
-.about_section_2{
-    text-align: center;
-}
-.about_section_3{
-    text-align: center;
-    margin-top:10vh;
-}
-.header_form{
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.aboutus_form{
-    margin-top: 5%;
-}
-}
-
-.section_4{
-    display: flex;
-   text-align: center;
-    flex-direction: column;
-    margin-top: 15vh;
+@media screen and (max-width:575px) {
+    .icon_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     
-}
-.icon_section{
-    display: flex;
-    font-size: 1.2rem;
-    
-}
-.section_5{
-    margin-top: 15vh;
-}
-.abt_enpnr{
-    width: 100%;
 }

@@ -1,6 +1,5 @@
-
 import { HashRouter } from "react-router-dom";
-import React, { Suspense } from 'react';
+import React, { Suspense } from "react";
 import Home from "./Pages/home/Home";
 import Header from "./components/header/Header";
 import About from "./Pages/about/About";
@@ -12,6 +11,7 @@ import "./App.css";
 import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
 import AboutEnche from "./components/Footer/FooterPages/AboutEnche";
 import AboutEnchepreneur from "./components/Footer/FooterPages/AboutEnchepreneur";
+import AllProducts from "./Pages/AllProducts/AllProducts";
 // const Home = React.lazy(() => import("./Pages/home/Home"));
 // const Header = React.lazy(() => import("./components/header/Header"));
 // const About = React.lazy(() => import("./Pages/about/About"));
@@ -19,7 +19,6 @@ import AboutEnchepreneur from "./components/Footer/FooterPages/AboutEnchepreneur
 // const Signup = React.lazy(() => ("./Pages/Signup/Signup"));
 // const Footer = React.lazy(() => ("./components/Footer/Footer"));
 // const TermsAndCondition = React.lazy(() => ("./components/TermsAndCondition/TermsAndCondition"));
-
 
 function App() {
   return (
@@ -32,8 +31,9 @@ function App() {
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/terms" element={<TermsAndCondition />} />
-        <Route path='/aboutenche' element={<AboutEnche />} />
-        <Route path='/aboutenchepreneur' element={<AboutEnchepreneur />} />
+        <Route path="/aboutenche" element={<AboutEnche />} />
+        <Route path="/aboutenchepreneur" element={<AboutEnchepreneur />} />
+        <Route path="/allproducts" element={<AllProducts />} />
       </Routes>
       <Footer />
     </HashRouter>

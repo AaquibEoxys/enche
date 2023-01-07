@@ -20,10 +20,10 @@ const AboutEnche = () => {
                 </div>
                 <div className='section_2_enche'>
                     <div className='row'>
-                        <div className='col'>
+                        <div className='col-sm-6'>
                             <img src={Images.laptop1} alt='laptopscreen' />
                         </div>
-                        <div className='col' >
+                        <div className='col-sm-6' >
                             <div className='section_2_enche_right'>
                                 <h1>Our Vision</h1>
                                 <p className='fw-bold'>To make enche as a one-stop digital shopping center for the global audience.</p>
@@ -34,7 +34,7 @@ const AboutEnche = () => {
                 </div>
                 <div className='secion_3_enche'>
                     <div className='row'>
-                        <div className='secion_3_enche_text col'>
+                        <div className='secion_3_enche_text col-sm-6'>
                             <div>
                                 <div className='h1 '>Our Mission</div>
                                 <div className='h2 mt-4'>Easy.Reliable.Supportive</div>
@@ -44,7 +44,7 @@ const AboutEnche = () => {
                             </div>
                         </div>
 
-                        <div className='col'>
+                        <div className='col-sm-6'>
                             <img src={Images?.laptop3} alt="laptopscreen" />
                         </div>
 
@@ -58,17 +58,19 @@ const AboutEnche = () => {
                     </div>
                 </div>
 
-                <div className='section_5_enche'>
-                    <h1>Our Core Values</h1>
-                    <div className='mb-5'>
+                <div className='section_5_enche row'>
+                    <div className='s_5_header'>
+                        <h1>Our Core Values</h1>
+                    </div>
+                    <div className='mb-5 s_5_img'>
                         <img src={Images?.Asset} alt="" className='mt-5' />
                     </div>
 
                 </div>
                 <div className='section_6_enche'>
                     <div className='row'>
-                        <div className='col'><span className="fw-bold">Trustworthiness, Courage, Discipline, Diligence, and Loyalty</span> – At enche, all employees share five fundamental values to form the roots of company corporate culture. We are convinced that only in an environment shaped by these values can accentuate and develop services better, provide a positive outcome of solutions as well as obtain a well-grounded team of peers.</div>
-                        <div className='col'>
+                        <div className='col-sm-6'><span className="fw-bold">Trustworthiness, Courage, Discipline, Diligence, and Loyalty</span> – At enche, all employees share five fundamental values to form the roots of company corporate culture. We are convinced that only in an environment shaped by these values can accentuate and develop services better, provide a positive outcome of solutions as well as obtain a well-grounded team of peers.</div>
+                        <div className='col-sm-6'>
                             <span className='fw-bold'>enche.com </span>aims to develop role models within the company with admirable quality to support, secure and give back to the society, by working closely with the community, non-profit and charity organization. It is hoped that through CSR programs, skills and teamwork can be nurtured across the generations whilst doing something positive for the community. The “do good, feel good” phenomenon, would be an experience of a warm feeling from acts of altruism and charity at some point in our lives.
                         </div>
                     </div>
