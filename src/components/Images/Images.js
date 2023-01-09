@@ -72,6 +72,7 @@ import langLogo from "../../assets/images/langLogo.svg";
 import heart3 from "../../assets/images/heart3.svg";
 import cart2 from "../../assets/images/cart2.svg";
 import user from "../../assets/images/user.svg";
+import user2 from "../../assets/images/user2.svg";
 
 const Images = {
   google,
@@ -148,6 +149,7 @@ const Images = {
   heart3,
   cart2,
   user,
+  user2,
 };
 
 export default Images;

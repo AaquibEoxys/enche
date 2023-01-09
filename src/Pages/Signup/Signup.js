@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./signup.scss"
+import "./signup.scss";
 import Images from "../../components/Images/Images";
 import { Link } from "react-router-dom";
 import SubHeader from "../../components/subHead/SubHeader";
@@ -10,7 +10,12 @@ const Signup = () => {
   const [errors, setErrors] = useState({});
   Title(" | Signup");
   const handleChange = (e) => {
-    if (
+    if (e.target.name === "agree_terms") {
+      setErrors({ ...errors, [e.target.name]: false });
+      e.target.checked
+        ? setValues({ ...values, [e.target.name]: 1 })
+        : setValues({ ...values, [e.target.name]: 0 });
+    } else if (
       (values?.[e.target.name]?.length === undefined ||
         values?.[e.target.name]?.length === 0) &&
       e.target.value == " "
@@ -64,8 +69,29 @@ const Signup = () => {
     ) {
       errorsObject.password = "Please enter password";
       errorExist = true;
-    } else if (values?.password.length < 6) {
-      errorsObject.password = "Password must be longer then 6 character";
+    } else if (
+      !/^(?=.*\d)(?=.*[!@#$%^&*()_+])[0-9a-zA-Z!@#$%^&*()_+]{8,}$/.test(
+        values?.password
+      )
+    ) {
+      errorsObject.password =
+        "Password must be at least 8 characters with Alphanumeric and Special Character  ";
+      errorExist = true;
+    }
+    if (
+      values?.confirmPassword === "" ||
+      values?.confirmPassword === null ||
+      values?.confirmPassword === undefined
+    ) {
+      errorsObject.confirmPassword = "Please enter confirm password";
+      errorExist = true;
+    } else if (values?.password !== values?.confirmPassword) {
+      errorsObject.confirmPassword =
+        "The confirm password is not matching with password";
+      errorExist = true;
+    }
+    if (values?.agree_terms == 0) {
+      errorsObject.agree_terms = "Please Agree Terms and Conditions";
       errorExist = true;
     }
 
@@ -89,7 +115,7 @@ const Signup = () => {
               <img src={Images?.google} alt="" className="google_logo" />
               <span> Log in with Google </span>
             </div>
-            <div class="sign_in_or">or</div>
+            <div className="sign_in_or">or</div>
             <div className="loginWithFacebook">
               <img src={Images?.face} alt="" className="google_logo" />
               <span> Log in with Facebook </span>
@@ -133,8 +159,27 @@ const Signup = () => {
               />
             </div>
             <div className="login_error"> {errors?.password} </div>
+            <div className="loginInp">
+              <span className="login_inpSvg">
+                <img src={Images?.lock} alt="" className="google_logo" />
+              </span>
+              <input
+                type="text"
+                placeholder="Confirm Password"
+                name="confirmPassword"
+                value={values?.confirmPassword}
+                onChange={(e) => handleChange(e)}
+              />
+            </div>
+            <div className="login_error"> {errors?.confirmPassword} </div>
             <div className="remberDev">
-              <input type="checkbox" id="rememberMe" />
+              <input
+                type="checkbox"
+                name="agree_terms"
+                value={values?.agree_terms}
+                onChange={(e) => handleChange(e)}
+                id="rememberMe"
+              />
               <label htmlFor="rememberMe" className="remberMe">
                 I agree with
                 <Link to="/terms"> Terms </Link>
@@ -142,6 +187,7 @@ const Signup = () => {
                 <Link> Privacy </Link>
               </label>
             </div>
+            <div className="login_error">{errors?.agree_terms}</div>
             <div className="log_btn_div">
               <button className="login_btn" onClick={onSubmit}>
                 Sign up

@@ -583,25 +583,25 @@ $secondary_green_code: #a3ce2d;
         font-size: 28px;
         font-weight: 600;
         height: 40px;
+        position: relative;
+        width: 200px;
 
-        &:before {
+        .before {
           background-color: black;
-          content: " ";
           height: 4px;
           margin-top: 24px;
           position: absolute;
-          width: 8%;
-          left: 23%;
+          width: 125px;
+          right: 205px;
         }
 
-        &:after {
+        .after {
           background-color: black;
-          content: " ";
           height: 4px;
           margin-top: 24px;
           position: absolute;
-          width: 8%;
-          right: 812px;
+          width: 125px;
+          left: 205px;
         }
       }
 
