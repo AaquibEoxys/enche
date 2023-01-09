@@ -1,10 +1,11 @@
 import React from "react";
+import "./ByRating.scss";
 
-const ByCategory = () => {
+const ByRating = () => {
   return (
-    <div>
-      <div className="fw-bold">By Category</div>
-      <div className="form-check">
+    <div className="main">
+      <div className="fw-bold">By Rating</div>
+      <div className="form-check mt-3">
         <input
           className="form-check-input"
           type="checkbox"
@@ -15,7 +16,7 @@ const ByCategory = () => {
           Default checkbox
         </label>
       </div>
-      <div className="form-check">
+      <div className="form-check mt-3">
         <input
           className="form-check-input"
           type="checkbox"
@@ -26,7 +27,7 @@ const ByCategory = () => {
           Checked checkbox
         </label>
       </div>
-      <div className="form-check">
+      <div className="form-check mt-3">
         <input
           className="form-check-input"
           type="checkbox"
@@ -37,7 +38,7 @@ const ByCategory = () => {
           Default checkbox
         </label>
       </div>
-      <div className="form-check">
+      <div className="form-check mt-3">
         <input
           className="form-check-input"
           type="checkbox"
@@ -48,7 +49,7 @@ const ByCategory = () => {
           Checked checkbox
         </label>
       </div>
-      <div className="more">
+      <div className="more mt-3 mb-3">
         <select>
           <option>More</option>
         </select>
@@ -58,4 +59,4 @@ const ByCategory = () => {
   );
 };
 
-export default ByCategory;
+export default ByRating;

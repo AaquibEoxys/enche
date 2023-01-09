@@ -11,18 +11,10 @@ import "./App.css";
 import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
 import AboutEnche from "./components/Footer/FooterPages/AboutEnche";
 import AboutEnchepreneur from "./components/Footer/FooterPages/AboutEnchepreneur";
-import AllProducts from "./Pages/AllProducts/AllProducts";
-// const Home = React.lazy(() => import("./Pages/home/Home"));
-// const Header = React.lazy(() => import("./components/header/Header"));
-// const About = React.lazy(() => import("./Pages/about/About"));
-// const Login = React.lazy(() => import("./Pages/Login/Login"));
-// const Signup = React.lazy(() => ("./Pages/Signup/Signup"));
-// const Footer = React.lazy(() => ("./components/Footer/Footer"));
-// const TermsAndCondition = React.lazy(() => ("./components/TermsAndCondition/TermsAndCondition"));
+import AllProducts from "./Pages/AllProductsPages/AllProduct/AllProducts";
 
 function App() {
   return (
-    // <Suspense fallback={<div>Loading....</div>}>
     <HashRouter>
       <Header />
       <Routes>
@@ -37,7 +29,6 @@ function App() {
       </Routes>
       <Footer />
     </HashRouter>
-    // </Suspense>
   );
 }
 

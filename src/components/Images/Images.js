@@ -66,19 +66,22 @@ import shopping from "../../assets/images/shopping-cart2.svg";
 import Asset from "../../assets/images/Asset.png";
 import laptop1 from "../../assets/images/laptop1.webp";
 import laptop3 from "../../assets/images/laptop3.png";
-import JoinEnche1 from "../../assets/images/JoinEnche1.jpg"
-import icon01 from "../../assets/images/icon01.png"
-import icon02 from "../../assets/images/icon02.png"
-import icon03 from "../../assets/images/icon03.png"
-import icon05 from "../../assets/images/icon05.png"
-import icon06 from "../../assets/images/icon06.png"
-import icon07 from "../../assets/images/icon07.png"
+import JoinEnche1 from "../../assets/images/JoinEnche1.jpg";
+import icon01 from "../../assets/images/icon01.png";
+import icon02 from "../../assets/images/icon02.png";
+import icon03 from "../../assets/images/icon03.png";
+import icon05 from "../../assets/images/icon05.png";
+import icon06 from "../../assets/images/icon06.png";
+import icon07 from "../../assets/images/icon07.png";
 import vi from "../../assets/images/vi.png";
 import indonesia from "../../assets/images/indonesia.png";
 import usa from "../../assets/images/usa.png";
 import turkey from "../../assets/images/turkey.png";
 import langLogo from "../../assets/images/langLogo.svg";
-
+import back from "../../assets/images/back.svg";
+import filter_1 from "../../assets/images/filter_1.svg";
+import next from "../../assets/images/next.svg";
+import searchResult from "../../assets/images/searchResult.svg";
 const Images = {
   google,
   face,
@@ -160,6 +163,10 @@ const Images = {
   indonesia,
   usa,
   langLogo,
+  back,
+  filter_1,
+  next,
+  searchResult,
 };
 
 export default Images;

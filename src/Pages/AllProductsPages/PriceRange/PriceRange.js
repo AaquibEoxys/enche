@@ -1,27 +1,29 @@
 import React from "react";
-import "./AllProduct.scss";
+import "./PriceRange.scss";
 
 const PriceRange = () => {
   return (
     <>
       <div className="row">
-        <div className="col-sm">
+        <div className="fw-bold mb-3">Price Range</div>
+        <div className="col-sm-6">
           <input
             class="form-control"
             type="number"
             placeholder="RM MIN"
           ></input>
         </div>
-        <div className="col-sm">
+        <div className="col-sm-6">
           <input
             class="form-control"
             type="number"
             placeholder="RM MAX"
           ></input>
         </div>
-        <div className="col-xs">
-          <button className="btn green-btn">Apply</button>
+        <div className="col-sm-12 btn-mid mt-3 mb-3">
+          <button className="btn-grn btn">Apply</button>
         </div>
+        <hr />
       </div>
     </>
   );

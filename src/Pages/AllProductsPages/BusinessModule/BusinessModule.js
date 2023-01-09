@@ -1,11 +1,11 @@
 import React from "react";
-import "./AllProduct.scss";
+import "./BusinessModule.scss";
 
 const BusinessModule = () => {
   return (
     <>
       <div className="fw-bold">Business Module</div>
-      <div className="form-check">
+      <div className="form-check mt-3">
         <input
           className="form-check-input"
           type="checkbox"
@@ -16,7 +16,7 @@ const BusinessModule = () => {
           Default checkbox
         </label>
       </div>
-      <div className="form-check">
+      <div className="form-check mt-3">
         <input
           className="form-check-input"
           type="checkbox"
@@ -27,7 +27,7 @@ const BusinessModule = () => {
           Checked checkbox
         </label>
       </div>
-      <div className="form-check">
+      <div className="form-check mt-3">
         <input
           className="form-check-input"
           type="checkbox"
@@ -38,7 +38,7 @@ const BusinessModule = () => {
           Default checkbox
         </label>
       </div>
-      <div className="form-check">
+      <div className="form-check mt-3">
         <input
           className="form-check-input"
           type="checkbox"
@@ -49,6 +49,7 @@ const BusinessModule = () => {
           Checked checkbox
         </label>
       </div>
+      <hr />
     </>
   );
 };
