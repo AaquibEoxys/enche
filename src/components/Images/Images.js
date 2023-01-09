@@ -74,6 +74,7 @@ import icon05 from "../../assets/images/icon05.png";
 import icon06 from "../../assets/images/icon06.png";
 import icon07 from "../../assets/images/icon07.png";
 import vi from "../../assets/images/vi.png";
+import US from "../../assets/images/US.png";
 import indonesia from "../../assets/images/indonesia.png";
 import usa from "../../assets/images/usa.png";
 import turkey from "../../assets/images/turkey.png";
@@ -82,6 +83,10 @@ import back from "../../assets/images/back.svg";
 import filter_1 from "../../assets/images/filter_1.svg";
 import next from "../../assets/images/next.svg";
 import searchResult from "../../assets/images/searchResult.svg";
+import heart3 from "../../assets/images/heart3.svg";
+import cart2 from "../../assets/images/cart2.svg";
+import user from "../../assets/images/user.svg";
+
 const Images = {
   google,
   face,
@@ -167,6 +172,10 @@ const Images = {
   filter_1,
   next,
   searchResult,
+  US,
+  heart3,
+  cart2,
+  user,
 };
 
 export default Images;

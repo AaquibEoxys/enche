@@ -143,7 +143,7 @@ const Footer = () => {
           </Row>
           <Row className="copy_right_row">
             <div className="copy_right_para">
-              Copyright © 2022 enche. All Rights Reserved
+              Copyright © 2022 enche. All Rights Reserved.
             </div>
           </Row>
         </div>

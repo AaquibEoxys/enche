@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.svg";
 import search from "../../assets/images/search.svg";
 import truck from "../../assets/images/truck.svg";
 import bell from "../../assets/images/bell.svg";
 import heart from "../../assets/images/heart.svg";
 import cart from "../../assets/images/cart.svg";
+import Images from "../Images/Images";
 import "./subHeader.scss";
 import { Link } from "react-router-dom";
 
 const SubHeader = () => {
+  const [drop, setDrop] = useState(false)
+  const [selectedLang, setSelectedLang] = useState({
+    // logo: Images.langLogo,
+    language: "Select Langauge",
+  });
   const langaugeList = [
-    { name: "English" },
-    { name: "Hindi" },
-    { name: "Arabic" },
-    { name: "French" },
+    { name: "Malay", img: Images.usa },
+    { name: "Turkey", img: Images.turkey },
+    { name: "English", img: Images.US },
+    { name: "Indonesia", img: Images.indonesia },
+    { name: "Vietnamese", img: Images.vi },
   ];
   return (
     <>
@@ -44,9 +51,18 @@ const SubHeader = () => {
                 <span> TRACK MY ORDER </span>
               </div>
               <div className="home_icons">
-                <img src={bell} alt="" />
-                <img src={heart} alt="" />
-                <img src={cart} alt="" />
+                <div className="subhead_icon">
+                  <img src={bell} alt="" />
+                  <div className="notification">2</div>
+                </div>
+                <div className="subhead_icon">
+                  <img src={heart} alt="" />
+                  <div className="notification">3</div>
+                </div>
+                <div className="subhead_icon">
+                  <img src={cart} alt="" />
+                  <div className="notification">5</div>
+                </div>
               </div>
             </div>
           </div>
@@ -72,22 +88,49 @@ const SubHeader = () => {
             <div> Help </div>
             <div> Contact Us </div>
             <div> About Us </div>
+            <div
+              className="header_resp_lang"
+              name="level"
+            >
+              <div className="nav_lang_div">
+                <div className="nav_lang_img">
+                    <img src={selectedLang?.logo} alt="" />
+                  </div>
+                <div
+                  className="nav_lang_lebel"
+                  // id="language"
+                  onClick={() => setDrop(!drop)}
+                >
+                  {selectedLang?.language}&nbsp;
+                  <i className="fa fa-chevron-down"></i>
+                </div>
+                {drop ? (
+                  <div id="menu_barContract" className="drop_down">
+                    {langaugeList.map((item, key) => (
+                      <div
+                        className="option_with_flag"
+                        onClick={(e) => {
+                          setSelectedLang({
+                            logo: item.img,
+                            language: item.name,
+                          });
+                        }}
+                        key={key}
+                      >
+                        <div className="resp_lang_option">
+                          <div className="country_flag">
+                            <img src={item.img} alt="" />
+                          </div>
+                          <div className="country_langaue">{item.name}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+            </div>
           </div>
           <div className="responsive_lang">
-            <select
-              className="curreny_option navigation_link"
-              name="level"
-              // value={data.level}
-            >
-              <option defaultValue="English" hidden>
-                English
-              </option>
-              {langaugeList.map((item, key) => (
-                <option value={item.name} className="curencyOption" key={key}>
-                  {item.name}
-                </option>
-              ))}
-            </select>
           </div>
         </div>
       </div>

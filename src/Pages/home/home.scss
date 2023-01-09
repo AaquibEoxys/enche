@@ -1,3 +1,6 @@
+$green_code: #6dad54;
+$secondary_green_code: #a3ce2d;
+
 .home_banner {
   // background-color: rgb(216 214 214 / 43%);
   .back_banner {
@@ -40,22 +43,18 @@
     }
 
     .banner_img {
-      height: 350px;
+      height: 380px;
       object-fit: cover;
       width: 100%;
-      /* min-height: 100%; */
-      /* background-position: center center;  */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      // box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-      //   rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     }
 
     .stores_title {
       text-align: start;
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 600;
       padding: 10px 4px;
       color: gray;
     }
@@ -93,7 +92,7 @@
   }
 
   .charity_cart {
-    background-color: #6dad5430;
+    background-color: #dafcd28a;
     margin-top: 15px;
     padding-bottom: 15px;
     /* height: 200px; */
@@ -110,7 +109,7 @@
       text-align: center;
       font-size: 60px;
       font-weight: 700;
-      color: #a3ce2d;
+      color: $green_code;
       padding-bottom: 20px;
     }
 
@@ -123,7 +122,7 @@
       .exp_imgs {
         position: relative;
         height: 300px;
-        width: 202px;
+        width: 16%;
         border: 1px solid gray;
         border: none;
         border-radius: 5px;
@@ -141,7 +140,9 @@
           transform: translate(-50%, 0);
           font-weight: 600;
           color: #fff;
+          width: 100%;
           font-size: 20px;
+          text-align: center;
         }
       }
     }
@@ -178,21 +179,109 @@
 
         .card_arrival_Img {
           position: relative;
+
           img {
             height: 150px;
             width: 100%;
             border-radius: 5px;
           }
+
           .offer_discount {
             position: absolute;
             left: 11px;
             top: 10px;
             color: #fff;
-            background-color: #a3ce2d;
+            background-color: $green_code;
             padding: 2px 8px;
             font-size: 11px;
             border-radius: 16px;
           }
+
+          .hover_icons {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            display: none;
+
+            img {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+            }
+          }
+
+          .heart_icons {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.514);
+            padding: 3px;
+            border-radius: 3px;
+
+            &:hover {
+              background-color: $green_code;
+            }
+
+            svg {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+
+              path {
+                fill: $green_code;
+              }
+            }
+
+            &:hover {
+              svg {
+                background-color: $green_code;
+
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+
+          .cart_icons {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.466);
+            padding: 3px;
+            border-radius: 3px;
+
+            &:hover {
+              background-color: $green_code;
+            }
+
+            svg {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+
+              path {
+                fill: $green_code;
+              }
+            }
+
+            &:hover {
+              svg {
+                background-color: $green_code;
+
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover .hover_icons {
+          display: flex;
+          gap: 5px;
         }
 
         .card_text {
@@ -233,6 +322,16 @@
       padding: 8px 2px;
       display: flex;
       justify-content: space-between;
+
+      div {
+        &:first-child {
+          font-weight: 600;
+        }
+
+        &:nth-child(2) {
+          font-weight: 500;
+        }
+      }
     }
 
     .artisan_content {
@@ -253,28 +352,124 @@
           background: #f6f4f5;
           text-align: center;
           border-radius: 10px;
+
           .offer_discount {
             position: absolute;
             left: 11px;
             top: 10px;
             color: #fff;
-            background-color: #a3ce2d;
+            background-color: $green_code;
             padding: 2px 8px;
             font-size: 11px;
             border-radius: 16px;
           }
+
           img {
             height: 145px;
             width: 145px;
             border-radius: 10px;
           }
+
+          .hover_icons {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            display: none;
+
+            // display: flex;
+            // gap: 3px;
+            // width: 30px;
+            // height: 30px;
+            // background-color: #fff;
+            // border: 1px solid rgba(0, 0, 0, 0.61);
+            // padding: 3px;
+            // border-radius: 3px;
+            img {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+            }
+          }
+
+          .heart_icons {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.514);
+            padding: 3px;
+            border-radius: 3px;
+            margin-right: 5px;
+
+            &:hover {
+              background-color: $green_code;
+            }
+
+            svg {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+
+              path {
+                fill: $green_code;
+              }
+            }
+
+            &:hover {
+              svg {
+                background-color: $green_code;
+
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+
+          .cart_icons {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.466);
+            padding: 3px;
+            border-radius: 3px;
+
+            &:hover {
+              background-color: $green_code;
+            }
+
+            svg {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+
+              path {
+                fill: $green_code;
+              }
+            }
+
+            &:hover {
+              svg {
+                background-color: $green_code;
+
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover .hover_icons {
+          display: flex;
         }
 
         .card_text {
           font-size: 13px;
           color: #000000;
           padding: 5px 7px;
-          font-weight: 400;
+          font-weight: 500;
         }
 
         .card_x_price {
@@ -300,6 +495,7 @@
 
   .category_section {
     margin-bottom: 25px;
+
     .category_head {
       text-align: start;
       font-size: 18px;
@@ -369,6 +565,17 @@
 
         .brows_btn {
           margin: 20px 10px;
+
+          .banner_btn {
+            &:hover {
+              background-color: #000;
+            }
+          }
+
+          // &:hover {
+          //   // background-color: #6e6b6b;
+          //   color: #4d4d4d;
+          // }
         }
       }
 
@@ -436,10 +643,11 @@
 
       .cards_box {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 25px;
         padding: 30px 35px;
+
         .explore_card {
           min-height: 320px;
           width: 23%;
@@ -456,12 +664,13 @@
             background: #f6f4f5;
             position: relative;
             text-align: center;
+
             .offer_discount {
               position: absolute;
               left: 11px;
               top: 10px;
               color: #fff;
-              background-color: #a3ce2d;
+              background-color: $green_code;
               padding: 2px 8px;
               font-size: 11px;
               border-radius: 16px;
@@ -494,10 +703,10 @@
   }
 
   .news_search {
-    height: 200px;
+    height: 155px;
     background-color: rgba(216, 214, 214, 0.43);
     margin-top: 50px;
-    padding-top: 20px;
+    padding-top: 15px;
 
     .news_search_head {
       text-align: center;
@@ -571,7 +780,7 @@
   }
 }
 
-@media (max-width: 1399px) and (min-width: 1200px) {
+@media (max-width: 1399px) and (min-width: 1024px) {
   .home_banner {
     .banner_div {
       .bannerYellow {
@@ -583,6 +792,17 @@
 
           &:after {
             right: 718px;
+          }
+        }
+      }
+
+      .explore_div {
+        .cards_box {
+          justify-content: flex-start;
+          gap: 17px;
+
+          .explore_card {
+            width: 32%;
           }
         }
       }
@@ -817,6 +1037,7 @@
         .categories_icon {
           width: 139px;
           height: 150px;
+          margin-top: 15px;
         }
       }
     }
@@ -877,32 +1098,8 @@
 
         .explore_card {
           width: unset;
-
-          img {
-          }
-
-          .explore_text {
-          }
-
-          .star_icons {
-          }
-
-          .card_price {
-          }
         }
       }
-    }
-  }
-
-  .charity_cart {
-    .explore_head {
-    }
-
-    .explore_subhead {
-    }
-
-    .charity_flex {
-      // padding: 20px;
     }
   }
 }
@@ -927,25 +1124,51 @@
     .arrival_div {
       .arrival_content {
         .card_arrival {
-          width: 250px;
+          width: 31%;
           height: 325px;
+        }
+      }
+    }
+
+    .category_section {
+      .category_div {
+        justify-content: space-between;
+        gap: 15px;
+        padding-top: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 800px) {
+  .home_banner {
+    .banner_div {
+      .explore_div {
+        .cards_box {
+          gap: 30px;
+          justify-content: flex-start;
+
+          .explore_card {
+            width: 30%;
+          }
         }
       }
     }
   }
 }
-@media (max-width: 900px) and (min-width: 750px) {
+
+@media (max-width: 900px) {
   .home_banner {
     .banner_div {
       .explore_div {
-        .explore_card {
-          width: 32% !important;
-        }
         .cards_box {
           gap: 13px;
           padding: 30px 20px;
           flex-wrap: wrap;
           justify-content: flex-start;
+          .explore_card {
+            width: 31%;
+          }
         }
       }
     }
@@ -961,7 +1184,73 @@
   }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 767px) {
+  .home_page {
+    .home_Head {
+      .home_news {
+        max-width: 540px;
+        margin: auto;
+        padding-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  .home_banner {
+    .arrival_div {
+      .arrival_content {
+        .card_arrival {
+          width: 29%;
+        }
+      }
+    }
+
+    .category_section {
+      .category_div {
+        justify-content: flex-start;
+        gap: 13px;
+
+        .categories_icon {
+          width: 23%;
+        }
+      }
+    }
+
+    .banner_div {
+      .explore_div {
+        .cards_box {
+          .explore_card {
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) and (min-width: 480px) {
+  .home_banner {
+    .banner_div {
+      .explore_div {
+        .cards_box {
+          .explore_card {
+            width: 45%;
+            .explore_div_img {
+              img {
+                width: 165px;
+                height: 165px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 481px) and (min-width: 400px) {
   .home_banner {
     .banner_back {
       .stores_cart {
@@ -1014,7 +1303,7 @@
         justify-content: space-between;
 
         .categories_icon {
-          width: 130px;
+          width: 30%;
           height: 150px;
         }
       }
@@ -1034,10 +1323,18 @@
       .explore_div {
         .cards_box {
           display: flex;
-          // justify-content: space-around;
           flex-wrap: wrap;
-          gap: 37px;
-          padding: 30px 12px;
+          gap: 13px;
+          padding: 30px 23px;
+          .explore_card {
+            .explore_div_img {
+              img {
+                width: 165px;
+                height: 165px;
+                margin: auto;
+              }
+            }
+          }
         }
 
         .explore_card {
@@ -1097,11 +1394,11 @@
 
     .charity_flex {
       padding: 20px 0px;
-      gap: 20px 10px;
+      gap: 20px 2px;
 
       .exp_imgs {
         height: 250px !important;
-        width: 47% !important;
+        width: 49% !important;
 
         span {
           font-size: 15px !important;
@@ -1111,7 +1408,7 @@
   }
 }
 
-@media (max-width: 424px) and (min-width: 374px) {
+@media (max-width: 424px) and (min-width: 376px) {
   .home_banner {
     .arrival_div {
       .arrival_resp {
@@ -1169,10 +1466,12 @@
         }
       }
     }
+
     .news_search {
       .news_search_head {
         padding: 17px 10px;
       }
+
       .news_search_box {
         .subscribe_btn {
           padding: 13px;
@@ -1181,18 +1480,54 @@
         }
       }
     }
+    .banner_back {
+      .banner_img {
+        height: 165px;
+      }
+      .banner_link {
+        display: none;
+      }
+      .stores_cart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 6px;
+        padding: 0px 10px;
+      }
+    }
+    // .charity_cart {
+    //   .charity_flex {
+    //     .exp_imgs {
+    //       width: 45%;
+    //     }
+    //   }
+    // }
   }
 }
 
 @media (max-width: 375px) {
   .home_banner {
+    .banner_back {
+      .stores_cart {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 5px 5px;
+      }
+      .banner_img {
+        height: 162px;
+      }
+      .banner_link {
+        display: none;
+      }
+    }
     .arrival_div {
       .arrival_resp {
         gap: 21px;
 
         .card_arrival {
           width: 47%;
-          height: 271px;
+          height: 47%;
         }
       }
     }
@@ -1202,7 +1537,7 @@
         justify-content: unset;
 
         .categories_icon {
-          width: 115px;
+          width: 30%;
           height: 150px;
 
           img {
@@ -1226,6 +1561,9 @@
             width: 10%;
           }
         }
+        .yello_Img {
+          display: none;
+        }
 
         .banner_btn {
           width: 240px;
@@ -1234,12 +1572,34 @@
       }
 
       .explore_div {
-        .explore_card {
-          width: 47%;
-        }
-
         .cards_box {
           gap: 18px;
+          .explore_card {
+            width: 47%;
+            .explore_div_img {
+              img {
+                width: 144px;
+                height: 144px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .charity_cart {
+      .charity_flex {
+        gap: 27px 0px;
+        .exp_imgs {
+          height: 260px !important;
+          width: 49% !important;
+        }
+      }
+    }
+    .news_search {
+      .news_search_box {
+        padding: 5px 10px;
+        .news_search_inp {
+          width: 100%;
         }
       }
     }
@@ -1290,7 +1650,7 @@
     .category_section {
       .category_div {
         .categories_icon {
-          width: 98px;
+          width: 90px;
           height: 142px;
           padding: 10px;
         }
@@ -1327,8 +1687,10 @@
       }
 
       .explore_div {
-        .explore_card {
-          width: 100%;
+        .cards_box {
+          .explore_card {
+            width: 100%;
+          }
         }
       }
     }

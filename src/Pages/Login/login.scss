@@ -1,3 +1,6 @@
+$green_code: #6dad54;
+$secondary_green_code: #a3ce2d;
+
 .sign_body {
   background-color: rgb(216 214 214 / 43%);
   border-top: 1px solid #847e7e45;
@@ -130,7 +133,7 @@
 
     .login_btn {
       width: 100%;
-      background-color: #a3ce2d;
+      background-color: $green_code;
       border: none;
       padding: 8px;
       border-radius: 5px;

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
 import "../../assets/css/style.css";
@@ -10,11 +10,9 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   const [searchTab, setSearchTab] = useState(false);
   const [drop, setDrop] = useState(false);
-  const [currDrop, setCurrDrop] = useState(false);
-  const [openSlide, setopenSlide] = useState("");
   const [selectedCurrency, setSelectedCurrency] = useState({
     logo: Images.usa,
-    language: "USD",
+    language: "MYR",
   });
   const [selectedLang, setSelectedLang] = useState({
     logo: Images.langLogo,
@@ -27,18 +25,19 @@ const Header = () => {
     },
     {
       name: "IDR",
-      img: Images.vi,
+      img: Images.indonesia,
     },
     {
-      name: "BND",
-      img: Images.indonesia,
+      name: "VND",
+      img: Images.vi,
     },
   ];
   const langaugeList = [
-    { name: "English", img: Images.usa },
+    { name: "Malay", img: Images.usa },
     { name: "Turkey", img: Images.turkey },
-    { name: "Arabic", img: Images.indonesia },
-    { name: "French", img: Images.vi },
+    { name: "English", img: Images.US },
+    { name: "Indonesia", img: Images.indonesia },
+    { name: "Vietnamese", img: Images.vi },
   ];
 
   $(document).mouseup(function (e) {
@@ -47,25 +46,14 @@ const Header = () => {
       0
     ) {
       setMenu(false);
-      setCurrDrop(false);
       setDrop(false);
     }
   });
 
-  const catMenu = useRef(null);
-
-  const closeOpenMenus = (e) => {
-    if (catMenu.current && openSlide && !catMenu.current.contains(e.target)) {
-      setopenSlide(false);
-    }
-  };
-
-  document.addEventListener("mousedown", closeOpenMenus);
-
   return (
     <>
       <div className="navbar_ui col-lg-12 col-md-12">
-        <div className="container">
+        <div className="container" style={{ height: "100%" }}>
           <div className="navbar_align">
             <Link to="/" className="navigation_link">
               <div> DOWNLOAD ENCHE APPS </div>
@@ -77,11 +65,7 @@ const Header = () => {
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
                 className="curreny_option navigation_link lang_drop"
               >
-                <div
-                  className="nav_lang_div"
-                  id="currency"
-                  onMouseEnter={() => setCurrDrop(true)}
-                >
+                <div className="nav_lang_div" id="currency">
                   <div className="nav_lang_img">
                     <img src={selectedCurrency?.logo} alt="" />
                   </div>
@@ -89,13 +73,7 @@ const Header = () => {
                     {selectedCurrency?.language} &nbsp;
                     <i className="fa fa-chevron-down"></i>
                   </div>
-                </div>
-                {currDrop && (
-                  <div
-                    id="menu_barContract"
-                    className="curr_option"
-                    onMouseLeave={() => setCurrDrop(false)}
-                  >
+                  <div id="menu_barContract" className="curr_option">
                     {currencyList.map((item, key) => (
                       <div
                         className="option_with_flag"
@@ -114,7 +92,7 @@ const Header = () => {
                       </div>
                     ))}
                   </div>
-                )}
+                </div>
               </div>
               <div
                 className="curreny_option navigation_link lang_drop"
@@ -127,14 +105,12 @@ const Header = () => {
                   </div>
                   <div
                     className="nav_lang_lebel"
-                    id="language"
-                    onClick={() => setDrop(!drop)}
+                    // id="language"
+                    // onClick={() => setDrop(!drop)}
                   >
                     {selectedLang?.language}&nbsp;
                     <i className="fa fa-chevron-down"></i>
                   </div>
-                </div>
-                {drop ? (
                   <div id="menu_barContract" className="drop_down">
                     {langaugeList.map((item, key) => (
                       <div
@@ -154,7 +130,9 @@ const Header = () => {
                       </div>
                     ))}
                   </div>
-                ) : null}
+                </div>
+                {/* {drop ? ( */}
+                {/* ) : null} */}
               </div>
               <select
                 className="curreny_option navigation_link"
