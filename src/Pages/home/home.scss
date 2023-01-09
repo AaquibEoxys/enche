@@ -2,6 +2,7 @@ $green_code: #6dad54;
 $secondary_green_code: #a3ce2d;
 
 .home_banner {
+
   // background-color: rgb(216 214 214 / 43%);
   .back_banner {
     position: absolute;
@@ -122,7 +123,7 @@ $secondary_green_code: #a3ce2d;
       .exp_imgs {
         position: relative;
         height: 300px;
-        width: 202px;
+        width: 16%;
         border: 1px solid gray;
         border: none;
         border-radius: 5px;
@@ -179,11 +180,13 @@ $secondary_green_code: #a3ce2d;
 
         .card_arrival_Img {
           position: relative;
+
           img {
             height: 150px;
             width: 100%;
             border-radius: 5px;
           }
+
           .offer_discount {
             position: absolute;
             left: 11px;
@@ -200,20 +203,14 @@ $secondary_green_code: #a3ce2d;
             left: 5px;
             bottom: 5px;
             display: none;
-            // display: flex;
-            // gap: 3px;
-            // width: 30px;
-            // height: 30px;
-            // background-color: #fff;
-            // border: 1px solid rgba(0, 0, 0, 0.61);
-            // padding: 3px;
-            // border-radius: 3px;
+
             img {
               height: auto;
               max-width: 100%;
               font-weight: 500;
             }
           }
+
           .heart_icons {
             width: 30px;
             height: 30px;
@@ -222,27 +219,32 @@ $secondary_green_code: #a3ce2d;
             border: 1px solid rgba(0, 0, 0, 0.514);
             padding: 3px;
             border-radius: 3px;
-            margin-right: 5px;
+
             &:hover {
               background-color: $green_code;
             }
+
             svg {
               height: auto;
               max-width: 100%;
               font-weight: 500;
+
               path {
                 fill: $green_code;
               }
             }
+
             &:hover {
               svg {
                 background-color: $green_code;
+
                 path {
                   fill: #fff;
                 }
               }
             }
           }
+
           .cart_icons {
             cursor: pointer;
             width: 30px;
@@ -251,20 +253,25 @@ $secondary_green_code: #a3ce2d;
             border: 1px solid rgba(0, 0, 0, 0.466);
             padding: 3px;
             border-radius: 3px;
+
             &:hover {
               background-color: $green_code;
             }
+
             svg {
               height: auto;
               max-width: 100%;
               font-weight: 500;
+
               path {
                 fill: $green_code;
               }
             }
+
             &:hover {
               svg {
                 background-color: $green_code;
+
                 path {
                   fill: #fff;
                 }
@@ -275,6 +282,7 @@ $secondary_green_code: #a3ce2d;
 
         &:hover .hover_icons {
           display: flex;
+          gap: 5px;
         }
 
         .card_text {
@@ -315,10 +323,12 @@ $secondary_green_code: #a3ce2d;
       padding: 8px 2px;
       display: flex;
       justify-content: space-between;
+
       div {
         &:first-child {
           font-weight: 600;
         }
+
         &:nth-child(2) {
           font-weight: 500;
         }
@@ -343,6 +353,7 @@ $secondary_green_code: #a3ce2d;
           background: #f6f4f5;
           text-align: center;
           border-radius: 10px;
+
           .offer_discount {
             position: absolute;
             left: 11px;
@@ -353,11 +364,106 @@ $secondary_green_code: #a3ce2d;
             font-size: 11px;
             border-radius: 16px;
           }
+
           img {
             height: 145px;
             width: 145px;
             border-radius: 10px;
           }
+
+          .hover_icons {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            display: none;
+
+            // display: flex;
+            // gap: 3px;
+            // width: 30px;
+            // height: 30px;
+            // background-color: #fff;
+            // border: 1px solid rgba(0, 0, 0, 0.61);
+            // padding: 3px;
+            // border-radius: 3px;
+            img {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+            }
+          }
+
+          .heart_icons {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.514);
+            padding: 3px;
+            border-radius: 3px;
+            margin-right: 5px;
+
+            &:hover {
+              background-color: $green_code;
+            }
+
+            svg {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+
+              path {
+                fill: $green_code;
+              }
+            }
+
+            &:hover {
+              svg {
+                background-color: $green_code;
+
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+
+          .cart_icons {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.466);
+            padding: 3px;
+            border-radius: 3px;
+
+            &:hover {
+              background-color: $green_code;
+            }
+
+            svg {
+              height: auto;
+              max-width: 100%;
+              font-weight: 500;
+
+              path {
+                fill: $green_code;
+              }
+            }
+
+            &:hover {
+              svg {
+                background-color: $green_code;
+
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover .hover_icons {
+          display: flex;
         }
 
         .card_text {
@@ -390,6 +496,7 @@ $secondary_green_code: #a3ce2d;
 
   .category_section {
     margin-bottom: 25px;
+
     .category_head {
       text-align: start;
       font-size: 18px;
@@ -459,11 +566,13 @@ $secondary_green_code: #a3ce2d;
 
         .brows_btn {
           margin: 20px 10px;
+
           .banner_btn {
             &:hover {
               background-color: #000;
             }
           }
+
           // &:hover {
           //   // background-color: #6e6b6b;
           //   color: #4d4d4d;
@@ -535,10 +644,11 @@ $secondary_green_code: #a3ce2d;
 
       .cards_box {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 25px;
         padding: 30px 35px;
+
         .explore_card {
           min-height: 320px;
           width: 23%;
@@ -555,6 +665,7 @@ $secondary_green_code: #a3ce2d;
             background: #f6f4f5;
             position: relative;
             text-align: center;
+
             .offer_discount {
               position: absolute;
               left: 11px;
@@ -632,6 +743,7 @@ $secondary_green_code: #a3ce2d;
   }
 }
 
+
 /* css for home page responsive view start */
 
 @media (max-width: 1440px) and (min-width: 1100px) {
@@ -670,7 +782,7 @@ $secondary_green_code: #a3ce2d;
   }
 }
 
-@media (max-width: 1399px) and (min-width: 1200px) {
+@media (max-width: 1399px) and (min-width: 1024px) {
   .home_banner {
     .banner_div {
       .bannerYellow {
@@ -682,6 +794,17 @@ $secondary_green_code: #a3ce2d;
 
           &:after {
             right: 718px;
+          }
+        }
+      }
+
+      .explore_div {
+        .cards_box {
+          justify-content: flex-start;
+          gap: 17px;
+
+          .explore_card {
+            width: 32%;
           }
         }
       }
@@ -699,11 +822,9 @@ $secondary_green_code: #a3ce2d;
 
 @media (max-width: 1199px) {
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       flex-wrap: wrap;
@@ -721,8 +842,7 @@ $secondary_green_code: #a3ce2d;
           object-fit: cover;
         }
 
-        span {
-        }
+        span {}
       }
     }
   }
@@ -916,6 +1036,7 @@ $secondary_green_code: #a3ce2d;
         .categories_icon {
           width: 139px;
           height: 150px;
+          margin-top: 15px;
         }
       }
     }
@@ -927,11 +1048,9 @@ $secondary_green_code: #a3ce2d;
     .banner_div {
       .bannerYellow {
         .explore_card {
-          .explore_head_text {
-          }
+          .explore_head_text {}
 
-          .brows_btn {
-          }
+          .brows_btn {}
         }
 
         .just_for {
@@ -958,8 +1077,7 @@ $secondary_green_code: #a3ce2d;
           font-size: 30px;
         }
 
-        .banner_btn {
-        }
+        .banner_btn {}
 
         .yello_Img {
           img {
@@ -976,32 +1094,8 @@ $secondary_green_code: #a3ce2d;
 
         .explore_card {
           width: unset;
-
-          img {
-          }
-
-          .explore_text {
-          }
-
-          .star_icons {
-          }
-
-          .card_price {
-          }
         }
       }
-    }
-  }
-
-  .charity_cart {
-    .explore_head {
-    }
-
-    .explore_subhead {
-    }
-
-    .charity_flex {
-      // padding: 20px;
     }
   }
 }
@@ -1026,25 +1120,51 @@ $secondary_green_code: #a3ce2d;
     .arrival_div {
       .arrival_content {
         .card_arrival {
-          width: 250px;
+          width: 31%;
           height: 325px;
+        }
+      }
+    }
+
+    .category_section {
+      .category_div {
+        justify-content: space-between;
+        gap: 15px;
+        padding-top: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 800px) {
+  .home_banner {
+    .banner_div {
+      .explore_div {
+        .cards_box {
+          gap: 30px;
+          justify-content: flex-start;
+
+          .explore_card {
+            width: 30%;
+          }
         }
       }
     }
   }
 }
+
 @media (max-width: 900px) {
   .home_banner {
     .banner_div {
       .explore_div {
-        .explore_card {
-          width: 32% !important;
-        }
         .cards_box {
           gap: 13px;
           padding: 30px 20px;
           flex-wrap: wrap;
           justify-content: flex-start;
+          .explore_card {
+            width: 31%;
+          }
         }
       }
     }
@@ -1059,6 +1179,7 @@ $secondary_green_code: #a3ce2d;
     }
   }
 }
+
 @media (max-width: 767px) {
   .home_page {
     .home_Head {
@@ -1066,7 +1187,50 @@ $secondary_green_code: #a3ce2d;
         max-width: 540px;
         margin: auto;
         padding-left: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
       }
+    }
+  }
+
+  .home_banner {
+    .arrival_div {
+      .arrival_content {
+        .card_arrival {
+          width: 29%;
+        }
+      }
+    }
+
+    .category_section {
+      .category_div {
+        justify-content: flex-start;
+        gap: 13px;
+
+        .categories_icon {
+          width: 23%;
+        }
+      }
+    }
+
+    .banner_div {
+      .explore_div {
+        .cards_box {
+          .explore_card {
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) and (min-width: 500px) {
+  .home_page_container {
+    .container {
+      max-width: 726px !important;
     }
   }
 }
@@ -1124,7 +1288,7 @@ $secondary_green_code: #a3ce2d;
         justify-content: space-between;
 
         .categories_icon {
-          width: 130px;
+          width: 30%;
           height: 150px;
         }
       }
@@ -1199,11 +1363,9 @@ $secondary_green_code: #a3ce2d;
   }
 
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       padding: 20px 0px;
@@ -1279,10 +1441,12 @@ $secondary_green_code: #a3ce2d;
         }
       }
     }
+
     .news_search {
       .news_search_head {
         padding: 17px 10px;
       }
+
       .news_search_box {
         .subscribe_btn {
           padding: 13px;

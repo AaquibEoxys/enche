@@ -304,13 +304,13 @@ $secondary_green_code: #a3ce2d;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .fixed_navbar {
     display: none;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .fixed_navbar {
     position: fixed;
     bottom: 0;

@@ -11,7 +11,7 @@ $secondary_green_code: #a3ce2d;
     .home_pageSearch {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
 
       .search_svg {
         width: 129px;
@@ -34,9 +34,11 @@ $secondary_green_code: #a3ce2d;
             padding: 8px;
             border-radius: 5px;
             outline: none;
+
             &:active {
               outline: none;
             }
+
             &::placeholder {
               font-size: 14px;
               color: rgb(180, 178, 178);
@@ -58,6 +60,7 @@ $secondary_green_code: #a3ce2d;
             .search_icon {
               height: 18px;
             }
+
             span {
               font-size: 12px;
             }
@@ -83,12 +86,15 @@ $secondary_green_code: #a3ce2d;
         align-items: center;
         height: 25px;
         width: 25px;
+
         .subhead_icon {
           position: relative;
+
           img {
             width: 25px;
             height: 25px;
           }
+
           .notification {
             position: absolute;
             left: 15px;
@@ -135,9 +141,11 @@ $secondary_green_code: #a3ce2d;
             padding: 8px;
             border-radius: 5px;
             outline: none;
+
             &:active {
               outline: none;
             }
+
             &::placeholder {
               font-size: 14px;
               color: rgb(180, 178, 178);
@@ -158,6 +166,7 @@ $secondary_green_code: #a3ce2d;
             .search_icon {
               height: 18px;
             }
+
             span {
               font-size: 12px;
             }
@@ -193,6 +202,34 @@ $secondary_green_code: #a3ce2d;
       margin: 0 auto;
       font-size: 14px;
       color: #000000bd;
+
+      .header_resp_lang {
+        .nav_lang_div {
+          display: flex;
+          gap: 6px;
+          // flex-direction: column;
+          position: relative;
+
+          // align-items: center;
+          .drop_down {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 22px;
+            z-index: 99;
+
+            .option_with_flag {
+              background-color: #fff;
+              padding: 2px 10px;
+
+              .resp_lang_option {
+                display: flex;
+                gap: 7px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -202,12 +239,14 @@ $secondary_green_code: #a3ce2d;
     .home_Head {
       width: 100%;
       padding-left: 31px;
+
       .home_pageSearch {
         .trac_btn {
           padding: 12px 5px;
           font-size: 10px;
           gap: 4px;
         }
+
         .search_bar {
           width: 65%;
         }
@@ -215,76 +254,91 @@ $secondary_green_code: #a3ce2d;
     }
   }
 }
+
 @media screen and (max-width: 1399px) and (min-width: 1200px) {
   .home_page {
     .home_Head {
       width: 100%;
       padding-left: 31px;
+
       .home_pageSearch {
         .trac_btn {
           padding: 10px;
           font-size: 10px;
           gap: 10px;
         }
+
         .search_bar {
           width: 59%;
         }
       }
+
       .home_pageSearch {
         width: 100%;
       }
+
       .home_news {
         width: 60%;
       }
     }
   }
 }
+
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
   .home_page {
     .home_Head {
       width: 100%;
       padding-left: 31px;
+
       .home_pageSearch {
         .trac_btn {
           padding: 10px;
           font-size: 10px;
           gap: 6px;
         }
+
         .search_bar {
           width: 51%;
         }
       }
+
       .home_pageSearch {
         width: 100%;
       }
     }
   }
 }
+
 @media screen and (max-width: 1023px) and (min-width: 992px) {
   .home_page {
     .home_Head {
       width: 100%;
       padding-left: 31px;
+
       .home_pageSearch {
         .trac_btn {
           padding: 10px;
           font-size: 10px;
           gap: 6px;
         }
+
         .search_bar {
           width: 51%;
         }
       }
+
       .home_pageSearch {
         width: 100%;
       }
     }
   }
 }
+
 @media (max-width: 1199px) {
   .home_page {
     .home_Head {
       width: 100%;
+
       .home_news {
         margin: 2px 125px;
         padding: 2px 10px;
@@ -292,6 +346,7 @@ $secondary_green_code: #a3ce2d;
     }
   }
 }
+
 @media screen and (min-width: 426px) {
   .responsive_lang {
     display: none;
@@ -321,6 +376,52 @@ $secondary_green_code: #a3ce2d;
 //   }
 // }
 
+@media (max-width: 950px) and (min-width: 800px) {
+  .home_page {
+    .home_Head {
+      .home_pageSearch {
+        .search_svg {
+          max-width: 100px;
+          // max-width: 100%;
+        }
+      }
+
+      .home_pageSearch {
+        .trac_btn {
+          padding: 10px 5px;
+          font-size: 11px;
+          text-align: center;
+
+          img {
+            display: none;
+          }
+        }
+        .search_bar {
+          width: 45%;
+          .home_search {
+            .home_inp {
+              font-size: 12px;
+              &::placeholder {
+                font-size: 12px;
+              }
+            }
+            .inputSearch {
+              .search_icon {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .news_contain {
+        .search_svg {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 769px) {
   .home_page {
     .home_Head {
@@ -334,10 +435,13 @@ $secondary_green_code: #a3ce2d;
 @media (max-width: 768px) {
   .home_page {
     height: unset;
+
     .home_Head {
       margin-top: 30px;
+
       .home_pageSearch {
         display: none;
+
         .search_bar {
           display: none;
         }
@@ -348,14 +452,17 @@ $secondary_green_code: #a3ce2d;
         width: 100%;
         padding: 0px 39px;
       }
+
       .responsive_lang {
         margin-left: 34px;
+
         .curreny_option {
           background-color: #eeeded;
           border: none;
           font-size: 14px;
         }
       }
+
       .news_contain {
         display: none;
       }
@@ -387,15 +494,18 @@ $secondary_green_code: #a3ce2d;
     .home_Head {
       width: 100%;
       padding: 14px;
+
       .home_news {
         padding: 4px 0px;
         margin-top: 10px;
       }
+
       .responsive_lang {
         margin-left: 0px;
       }
     }
   }
+
   .home_banner {
     .banner_back {
       .stores_cart {
@@ -406,17 +516,20 @@ $secondary_green_code: #a3ce2d;
     }
   }
 }
+
 @media (max-width: 374px) and (min-width: 250px) {
   .home_page {
     .home_Head {
       width: 100%;
       padding: 6px 1px;
+
       .home_news {
         font-size: 12px;
         margin-top: 23px;
         padding: 0px 12px;
         gap: 11px;
       }
+
       .responsive_lang {
         margin-left: 8px;
       }
