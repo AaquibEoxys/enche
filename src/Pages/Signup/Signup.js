@@ -91,7 +91,7 @@ const Signup = () => {
       errorExist = true;
     }
     if (values?.agree_terms == 0) {
-      errorsObject.agree_terms = "Please Agree Terms and Conditions";
+      errorsObject.agree_terms = "Please Agree Terms and Privacy";
       errorExist = true;
     }
 
