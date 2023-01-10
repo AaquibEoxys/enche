@@ -74,6 +74,7 @@ import cart2 from "../../assets/images/cart2.svg";
 import user from "../../assets/images/user.svg";
 import user2 from "../../assets/images/user2.svg";
 import search2 from "../../assets/images/search2.svg";
+import test from "../../assets/images/test.jpg";
 
 const Images = {
   google,
@@ -152,6 +153,7 @@ const Images = {
   user,
   user2,
   search2,
+  test,
 };
 
 export default Images;

@@ -1,9 +1,8 @@
 import React from "react";
-import { Col } from "react-bootstrap";
 import Images from "../../../components/Images/Images";
-import "./DashboardHeader.scss";
+import "./Navbar.scss";
 
-const DashboardHeader = () => {
+const Navbar = () => {
   return (
     <>
       <div className="container">
@@ -23,12 +22,16 @@ const DashboardHeader = () => {
                 <div> Anisah </div>
                 <div> | </div>
               </div>
-              <div className="role_option">
-                <div className="dashboard_role">
-                  <div className="role_div">Buyer</div>
-                  <div className="role_div">Merchant</div>
-                  <div className="role_div">enchepreneur</div>
-                  <div className="role_div">encheffiliate</div>
+              <div>
+                {/* <div> Select Your Role </div> */}
+                <div className="role_option">
+                  {/* Select Your Role */}
+                  <div className="dashboard_role">
+                    <div className="role_div">Buyer</div>
+                    <div className="role_div">Merchant</div>
+                    <div className="role_div">enchepreneur</div>
+                    <div className="role_div">encheffiliate</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -40,4 +43,4 @@ const DashboardHeader = () => {
   );
 };
 
-export default DashboardHeader;
+export default Navbar;

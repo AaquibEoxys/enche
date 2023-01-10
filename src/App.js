@@ -7,8 +7,7 @@ import Signup from "./Pages/Signup/Signup";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
-import BuyerDashboard from "./Pages/Dashboard/BuyerDashboard/BuyerDashboard";
-
+import Buyer from "./Pages/Dashboard/components/Buyer";
 function App() {
   return (
     <Router>
@@ -19,7 +18,7 @@ function App() {
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/terms" element={<TermsAndCondition />} />
-        <Route path="/buyer-dashboard" element={<BuyerDashboard />} />
+        <Route path="/buyer-dashboard" element={<Buyer />} />
       </Routes>
       <Footer />
     </Router>
