@@ -37,27 +37,22 @@ const ProductsCardsAL = () => {
       xprice: "N.P : RM 25.99",
       price: "RM 20.00",
     },
-    {
-      img: Images.wood,
-      label: "Designer Dark Brown Oak Wooden Chair",
-      seller: "Indonesia Seller",
-      rating: 5,
-      xprice: "N.P : RM 25.99",
-      price: "RM 20.00",
-    },
   ];
 
   return (
     <Container>
-      <div className="row">
-        <div className="all_products">
-          {newArrival?.map((item, key) => (
-            <div className="card_prdc col-sm">
-              <div className="row card_dvd">
-                <div className="col img_prdc">
-                  <img src={item?.img} alt="" />
-                </div>
-                <div className="col prdc_details">
+      <div className="row all_products">
+        {newArrival?.map((item, key) => (
+          <div
+            className="card_prdc col-lg-3 col-md-3 col-sm-6 col-xs-6 mb-4"
+            key={key}
+          >
+            <div className="row card_dvd">
+              <div className=" img_prdc">
+                <img src={item?.img} alt="" />
+              </div>
+              <div className="col ">
+                <div className="prdc_details">
                   <div className="details_head fw-bold mx-2">{item?.label}</div>
                   <div className="dtls_seller mx-2">{item?.seller}</div>
                   <div className="prdc_prc mx-2">{item?.price}</div>
@@ -66,28 +61,31 @@ const ProductsCardsAL = () => {
                       <div className="cart_img">
                         <img src={Images?.cart_1} alt="" />
                       </div>
-                      <div className="cart_msg fw-bold">Add To Cart</div>
+                      <div className="cart_msg fw-bold p">Add To Cart</div>
                     </div>
 
                     <div className="btn_sec mx-2">
-                      <button className="btn">BuyNow</button>
+                      <button className="btn p">BuyNow</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-      <div className="row">
-        <div className="all_products">
-          {newArrival?.map((item, key) => (
-            <div className="card_prdc col-sm">
-              <div className="row card_dvd">
-                <div className="col img_prdc">
-                  <img src={item?.img} alt="" />
-                </div>
-                <div className="col prdc_details">
+      <div className="row all_products">
+        {newArrival?.map((item, key) => (
+          <div
+            className="card_prdc col-lg-3 col-sm-3 col-xs-6  col-sm-6 mb-4"
+            key={key}
+          >
+            <div className="row card_dvd ">
+              <div className=" img_prdc">
+                <img src={item?.img} alt="" />
+              </div>
+              <div className="col">
+                <div className="prdc_details">
                   <div className="details_head fw-bold mx-2">{item?.label}</div>
                   <div className="dtls_seller mx-2">{item?.seller}</div>
                   <div className="prdc_prc mx-2">{item?.price}</div>
@@ -96,50 +94,52 @@ const ProductsCardsAL = () => {
                       <div className="cart_img">
                         <img src={Images?.cart_1} alt="" />
                       </div>
-                      <div className="cart_msg fw-bold">Add To Cart</div>
+                      <div className="cart_msg fw-bold p">Add To Cart</div>
                     </div>
 
                     <div className="btn_sec mx-2">
-                      <button className="btn">BuyNow</button>
+                      <button className="btn p">BuyNow</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
-        <div className="all_products">
-          {newArrival?.map((item, key) => (
-            <div>
-              <div className="card_prdc col-sm">
-                <div className="row card_dvd">
-                  <div className="col img_prdc">
-                    <img src={item?.img} alt="" />
-                  </div>
-                  <div className="col prdc_details">
-                    <div className="details_head fw-bold mx-2">
-                      {item?.label}
-                    </div>
-                    <div className="dtls_seller mx-2">{item?.seller}</div>
-                    <div className="prdc_prc mx-2">{item?.price}</div>
-                    <div className="card_ftr mx-2 mb-2">
-                      <div className="cart_cntns ">
-                        <div className="cart_img">
-                          <img src={Images?.cart_1} alt="" />
-                        </div>
-                        <div className="cart_msg fw-bold">Add To Cart</div>
-                      </div>
+          </div>
+        ))}
+      </div>
 
-                      <div className="btn_sec mx-2">
-                        <button className="btn">BuyNow</button>
+      <div className="row all_products">
+        {newArrival?.map((item, key) => (
+          <div
+            className="card_prdc col-lg-3 col-sm-3 col-sm-6 col-xs-6 mb-4"
+            key={key}
+          >
+            <div className="row card_dvd">
+              <div className=" img_prdc">
+                <img src={item?.img} alt="" />
+              </div>
+              <div className="col">
+                <div className="prdc_details">
+                  <div className="details_head fw-bold mx-2">{item?.label}</div>
+                  <div className="dtls_seller mx-2">{item?.seller}</div>
+                  <div className="prdc_prc mx-2">{item?.price}</div>
+                  <div className="card_ftr mx-2 mb-2">
+                    <div className="cart_cntns ">
+                      <div className="cart_img">
+                        <img src={Images?.cart_1} alt="" />
                       </div>
+                      <div className="cart_msg fw-bold p">Add To Cart</div>
+                    </div>
+
+                    <div className="btn_sec mx-2">
+                      <button className="btn p">BuyNow</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </Container>
   );

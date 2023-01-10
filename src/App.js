@@ -12,6 +12,7 @@ import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
 import AboutEnche from "./components/Footer/FooterPages/AboutEnche";
 import AboutEnchepreneur from "./components/Footer/FooterPages/AboutEnchepreneur";
 import AllProducts from "./Pages/AllProductsPages/AllProduct/AllProducts";
+import BuyerDashboard from "./Pages/Dashboard/BuyerDashboard/BuyerDashboard";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/aboutenche" element={<AboutEnche />} />
         <Route path="/aboutenchepreneur" element={<AboutEnchepreneur />} />
         <Route path="/allproducts" element={<AllProducts />} />
+        <Route path="/buyer-dashboard" element={<BuyerDashboard />} />
       </Routes>
       <Footer />
     </HashRouter>

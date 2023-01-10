@@ -2,6 +2,7 @@ $green_code: #6dad54;
 $secondary_green_code: #a3ce2d;
 
 .home_banner {
+
   // background-color: rgb(216 214 214 / 43%);
   .back_banner {
     position: absolute;
@@ -19,28 +20,44 @@ $secondary_green_code: #a3ce2d;
       box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
         rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
       padding: 0px !important;
-    }
 
-    .banner_links {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      background: #fff;
-    }
+      .banner_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: #fff;
 
-    .banner_link {
-      display: flex;
-      justify-content: space-between;
-      padding: 5px 20px;
-      background: #fff;
-      cursor: pointer;
+        .banner_link {
+          display: flex;
+          justify-content: space-between;
+          padding: 5px 20px;
+          background: #fff;
+          cursor: pointer;
 
-      span {
+          span {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(82, 81, 81);
+          }
+
+          // &:hover {
+          //   background-color: #6dad54;
+          // }
+        }
+      }
+
+      .category_drop {
+        background: #fff;
+        color: #000;
         font-size: 14px;
-        font-weight: 500;
-        color: rgb(82, 81, 81);
+        padding: 5px 10px;
+        position: absolute;
+        top: 162px;
+        left: 303px;
       }
     }
+
+
 
     .banner_img {
       height: 380px;
@@ -122,7 +139,7 @@ $secondary_green_code: #a3ce2d;
       .exp_imgs {
         position: relative;
         height: 300px;
-        width: 16%;
+        // width: 16%;
         border: 1px solid gray;
         border: none;
         border-radius: 5px;
@@ -583,25 +600,26 @@ $secondary_green_code: #a3ce2d;
         font-size: 28px;
         font-weight: 600;
         height: 40px;
+        position: relative;
+        width: 200px;
+        color: #000;
 
-        &:before {
+        .before {
           background-color: black;
-          content: " ";
           height: 4px;
           margin-top: 24px;
           position: absolute;
-          width: 8%;
-          left: 23%;
+          width: 125px;
+          right: 205px;
         }
 
-        &:after {
+        .after {
           background-color: black;
-          content: " ";
           height: 4px;
           margin-top: 24px;
           position: absolute;
-          width: 8%;
-          right: 812px;
+          width: 125px;
+          left: 205px;
         }
       }
 
@@ -681,6 +699,87 @@ $secondary_green_code: #a3ce2d;
               height: 185px;
               margin: auto;
             }
+            .hover_icons {
+              position: absolute;
+              left: 5px;
+              bottom: 5px;
+              display: none;
+              img {
+                height: auto;
+                max-width: 100%;
+                font-weight: 500;
+              }
+              .heart_icons {
+                width: 30px;
+                height: 30px;
+                background-color: #fff;
+                cursor: pointer;
+                border: 1px solid rgba(0, 0, 0, 0.514);
+                padding: 3px;
+                border-radius: 3px;
+                margin-right: 5px;
+    
+                &:hover {
+                  background-color: $green_code;
+                }
+    
+                svg {
+                  height: auto;
+                  max-width: 100%;
+                  font-weight: 500;
+    
+                  path {
+                    fill: $green_code;
+                  }
+                }
+    
+                &:hover {
+                  svg {
+                    background-color: $green_code;
+    
+                    path {
+                      fill: #fff;
+                    }
+                  }
+                }
+              }
+              .cart_icons {
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.466);
+                padding: 3px;
+                border-radius: 3px;
+    
+                &:hover {
+                  background-color: $green_code;
+                }
+    
+                svg {
+                  height: auto;
+                  max-width: 100%;
+                  font-weight: 500;
+    
+                  path {
+                    fill: $green_code;
+                  }
+                }
+    
+                &:hover {
+                  svg {
+                    background-color: $green_code;
+    
+                    path {
+                      fill: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:hover .hover_icons {
+            display: flex;
           }
 
           .explore_text {
@@ -820,11 +919,9 @@ $secondary_green_code: #a3ce2d;
 
 @media (max-width: 1199px) {
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       flex-wrap: wrap;
@@ -842,8 +939,7 @@ $secondary_green_code: #a3ce2d;
           object-fit: cover;
         }
 
-        span {
-        }
+        span {}
       }
     }
   }
@@ -1049,26 +1145,22 @@ $secondary_green_code: #a3ce2d;
     .banner_div {
       .bannerYellow {
         .explore_card {
-          .explore_head_text {
-          }
+          .explore_head_text {}
 
-          .brows_btn {
-          }
+          .brows_btn {}
         }
 
         .just_for {
           font-size: 22px;
 
-          &:before {
-            height: 2px;
-            width: 7%;
-            left: 105px;
+          .before {
+            width: 95px;
+            right: 205px;
           }
 
-          &:after {
-            height: 2px;
-            width: 7%;
-            left: 320px;
+          .after {
+            width: 95px;
+            left: 164px;
           }
         }
 
@@ -1078,9 +1170,6 @@ $secondary_green_code: #a3ce2d;
 
         .find_prod {
           font-size: 30px;
-        }
-
-        .banner_btn {
         }
 
         .yello_Img {
@@ -1157,7 +1246,7 @@ $secondary_green_code: #a3ce2d;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 768px) {
   .home_banner {
     .banner_div {
       .explore_div {
@@ -1166,8 +1255,26 @@ $secondary_green_code: #a3ce2d;
           padding: 30px 20px;
           flex-wrap: wrap;
           justify-content: flex-start;
+
           .explore_card {
             width: 31%;
+          }
+        }
+      }
+
+      .bannerYellow {
+        .just_for {
+          text-align: center;
+          font-size: 22px;
+
+          .before {
+            width: 70px;
+            right: 185px;
+          }
+
+          .after {
+            width: 70px;
+            left: 185px;
           }
         }
       }
@@ -1226,6 +1333,28 @@ $secondary_green_code: #a3ce2d;
           }
         }
       }
+
+      .bannerYellow {
+        .just_for {
+          text-align: center;
+
+          .before {
+            width: 80px;
+            right: 185px;
+          }
+
+          .after {
+            width: 80px;
+            left: 183px;
+          }
+        }
+
+        .yello_Img {
+          img {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
@@ -1237,6 +1366,7 @@ $secondary_green_code: #a3ce2d;
         .cards_box {
           .explore_card {
             width: 45%;
+
             .explore_div_img {
               img {
                 width: 165px;
@@ -1326,6 +1456,7 @@ $secondary_green_code: #a3ce2d;
           flex-wrap: wrap;
           gap: 13px;
           padding: 30px 23px;
+
           .explore_card {
             .explore_div_img {
               img {
@@ -1386,11 +1517,9 @@ $secondary_green_code: #a3ce2d;
   }
 
   .charity_cart {
-    .explore_head {
-    }
+    .explore_head {}
 
-    .explore_subhead {
-    }
+    .explore_subhead {}
 
     .charity_flex {
       padding: 20px 0px;
@@ -1480,13 +1609,16 @@ $secondary_green_code: #a3ce2d;
         }
       }
     }
+
     .banner_back {
       .banner_img {
         height: 165px;
       }
+
       .banner_link {
         display: none;
       }
+
       .stores_cart {
         display: flex;
         flex-wrap: wrap;
@@ -1495,6 +1627,7 @@ $secondary_green_code: #a3ce2d;
         padding: 0px 10px;
       }
     }
+
     // .charity_cart {
     //   .charity_flex {
     //     .exp_imgs {
@@ -1514,13 +1647,16 @@ $secondary_green_code: #a3ce2d;
         gap: 10px;
         padding: 5px 5px;
       }
+
       .banner_img {
         height: 162px;
       }
+
       .banner_link {
         display: none;
       }
     }
+
     .arrival_div {
       .arrival_resp {
         gap: 21px;
@@ -1561,6 +1697,7 @@ $secondary_green_code: #a3ce2d;
             width: 10%;
           }
         }
+
         .yello_Img {
           display: none;
         }
@@ -1574,30 +1711,36 @@ $secondary_green_code: #a3ce2d;
       .explore_div {
         .cards_box {
           gap: 18px;
+
           .explore_card {
             width: 47%;
+
             .explore_div_img {
               img {
-                width: 144px;
-                height: 144px;
+                width: 125px;
+                height: 125px;
               }
             }
           }
         }
       }
     }
+
     .charity_cart {
       .charity_flex {
         gap: 27px 0px;
+
         .exp_imgs {
           height: 260px !important;
           width: 49% !important;
         }
       }
     }
+
     .news_search {
       .news_search_box {
         padding: 5px 10px;
+
         .news_search_inp {
           width: 100%;
         }
@@ -1609,6 +1752,10 @@ $secondary_green_code: #a3ce2d;
 @media (max-width: 320px) {
   .home_banner {
     .banner_back {
+      .banner_img {
+        height: 136px;
+      }
+
       .stores_cart {
         .stores_cart_align {
           img {
@@ -1674,14 +1821,16 @@ $secondary_green_code: #a3ce2d;
         }
 
         .just_for {
-          &::before {
-            left: 50px;
-            width: 10%;
+          font-size: 20px;
+
+          .before {
+            width: 50px;
+            right: 175px;
           }
 
-          &::after {
-            left: 242px;
-            width: 10%;
+          .after {
+            width: 50px;
+            left: 175px;
           }
         }
       }
@@ -1706,6 +1855,16 @@ $secondary_green_code: #a3ce2d;
         .news_search_inp {
           width: 85%;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .home_banner {
+    .banner_back {
+      .banner_img {
+        height: 117px;
       }
     }
   }

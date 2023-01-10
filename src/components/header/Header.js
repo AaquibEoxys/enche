@@ -31,6 +31,10 @@ const Header = () => {
       name: "VND",
       img: Images.vi,
     },
+    {
+      name: "MYR",
+      img: Images.usa,
+    },
   ];
   const langaugeList = [
     { name: "Malay", img: Images.usa },

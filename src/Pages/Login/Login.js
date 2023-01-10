@@ -61,7 +61,6 @@ const Login = () => {
       errorsObject.password = "Password must be longer then 6 character";
       errorExist = true;
     }
-
     if (errorExist) {
       setErrors(errorsObject);
       return false;
@@ -83,7 +82,7 @@ const Login = () => {
               <img src={Images?.google} alt="" className="google_logo" />
               <span> Log in with Google </span>
             </div>
-            <div class="sign_in_or">or</div>
+            <div className="sign_in_or">or</div>
             <div className="loginWithFacebook">
               <img src={Images?.face} alt="" className="google_logo" />
               <span> Log in with Facebook </span>
@@ -115,10 +114,13 @@ const Login = () => {
             </div>
             <div className="login_error"> {errors?.password} </div>
             <div className="remberDev">
-              <input type="checkbox" id="rememberMe" />
+              <input type="checkbox" name="agree_terms" id="rememberMe" />
               <label htmlFor="rememberMe" className="remberMe">
                 Remember Me
               </label>
+            </div>
+            <div className="login_error">
+              {errors.agree_terms && <>Please Agree Terms and Conditions</>}
             </div>
             <div>
               <button className="login_btn" onClick={onSubmit}>

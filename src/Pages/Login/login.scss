@@ -31,6 +31,7 @@ $secondary_green_code: #a3ce2d;
       text-align: center;
       font-weight: 600;
       padding-top: 8px;
+      font-size: 15px;
     }
 
     .loginWithGoogle {
@@ -98,6 +99,7 @@ $secondary_green_code: #a3ce2d;
 
     .loginInp {
       margin-top: 12px;
+      line-height: 28px;
 
       .login_inpSvg {
         position: absolute;
@@ -153,7 +155,8 @@ $secondary_green_code: #a3ce2d;
 
     .login_error {
       color: red;
-      font-size: 14px;
+      font-size: 13px;
+      font-weight: 300;
     }
   }
 }

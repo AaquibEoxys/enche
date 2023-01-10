@@ -14,24 +14,6 @@
     }
     .bodybar {
       width: 80%;
-      .flr_bar {
-        display: flex;
-        background-color: lightgray;
-        color: gray;
-        font-size: 1.2rem;
-
-        .flr_bar_1 {
-          display: flex;
-        }
-
-        .flr_bar_2 {
-          display: flex;
-          .green-btn {
-            background-color: #6dad54;
-            color: white;
-          }
-        }
-      }
     }
   }
 }

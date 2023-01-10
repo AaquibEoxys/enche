@@ -41,7 +41,7 @@ const AllProducts = () => {
               </div>
             </div>
             <div className="bodybar">
-              <div className="row mt-5">
+              <div className="row mt-5 mx-3">
                 <Filterbar />
               </div>
               <ProductsCardsAL />

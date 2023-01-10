@@ -1,21 +1,24 @@
 .all_products {
   display: flex;
-  gap: 10px;
   .card_prdc {
-    border: 1px solid #6dad54;
-    margin-bottom: 10px;
-
     .card_dvd {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       .img_prdc {
         img {
           width: 100%;
+          border-top: 1px solid #6dad54;
+          border-left: 1px solid #6dad54;
+          border-right: 1px solid #6dad54;
         }
       }
       .prdc_details {
+        border-left: 1px solid #6dad54;
+        border-right: 1px solid #6dad54;
+        border-bottom: 1px solid #6dad54;
         .dtls_seller {
           width: 50%;
           color: #6dad54;
