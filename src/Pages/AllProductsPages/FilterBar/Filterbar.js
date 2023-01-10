@@ -1,52 +1,33 @@
 import React from "react";
 import "./Filterbar.scss";
+import { Container } from "react-bootstrap";
 
 const Filterbar = () => {
   return (
-    <>
-      <div className="flr_bar row">
-        <div className="flr_bar_1 col-sm-10">
-          <div className="col">Sort By</div>
-          <div className="col">Relevance</div>
-          <div className="col">Latest</div>
-          <div className="col">Top Products</div>
-          <div className="col">
-            <select>
-              <option>action</option>
-              <option>action01</option>
-              <option>action02</option>
-            </select>
-          </div>
-        </div>
-        <div className="flr_bar_2 col-sm-2">
-          <div className="col">1/12</div>
-          <div className="col">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-caret-right"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
-            </svg>
-          </div>
-          <div className="col">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-caret-right"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
-            </svg>
-          </div>
+    <div className="flr_bar row m-3">
+      <div className="flr_bar_1 col-sm-10">
+        <div className="col h5 sortby">Sort By</div>
+        <div className="col h5 relevance">Relevance</div>
+        <div className="col h5 latest">Latest</div>
+        <div className="col h5 topProducts">Top Products</div>
+        <div className="col drp_dwn_dv">
+          <select className="drp_dwn">
+            <option>action</option>
+            <option>action01</option>
+            <option>action02</option>
+          </select>
         </div>
       </div>
-    </>
+      <div className="flr_bar_2 col-sm-2">
+        <div className="col">1/12</div>
+        <div className="col np-btn">
+          <span>&#60;</span>
+        </div>
+        <div className="col np-btn">
+          <span>&#62;</span>
+        </div>
+      </div>
+    </div>
   );
 };
 

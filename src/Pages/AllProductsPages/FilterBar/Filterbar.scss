@@ -3,4 +3,46 @@
   justify-content: center;
   align-items: center;
   padding: 1%;
+  border-radius: 3px;
+  .flr_bar_1 {
+    .relevance {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sortby {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .drp_dwn_dv {
+      margin-left: 10px;
+      .drp_dwn {
+        height: 35px;
+        font-size: larger;
+      }
+    }
+
+    .latest {
+      background-color: #6dad54;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1%;
+      padding: 1%;
+    }
+    .topProducts {
+      background-color: #fff;
+      margin-left: 1%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .np-btn {
+    height: 10px;
+    width: 10px;
+  }
 }
