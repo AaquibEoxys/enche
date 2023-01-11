@@ -169,7 +169,7 @@ const Header = () => {
             </div>
             <div className="homepage_logo">
               <Link to="/">
-                <img src={Images.logo} alt="" />
+                <img src={Images.homeLogo2} alt="" />
               </Link>
             </div>
             <div className="search_icon">
