@@ -51,7 +51,7 @@ const ProductsCardsAL = () => {
               <div className=" img_prdc">
                 <img src={item?.img} alt="" />
               </div>
-              <div className="col ">
+              <div className="col">
                 <div className="prdc_details">
                   <div className="details_head fw-bold mx-2">{item?.label}</div>
                   <div className="dtls_seller mx-2">{item?.seller}</div>

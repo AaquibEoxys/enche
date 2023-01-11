@@ -1,0 +1,75 @@
+.prdc_sec {
+  background-color: #fff;
+  .img_part {
+    padding: 5%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .dtls_part {
+    .rating-sec {
+      display: flex;
+      .rt_sec_p {
+        display: flex;
+      }
+      .green {
+        color: #6dad54;
+      }
+    }
+    .price_sec {
+      .green {
+        color: #6dad54;
+      }
+    }
+    .shipping_dtls_sec {
+      display: flex;
+      .shipping_sec {
+        display: flex;
+      }
+    }
+    .clr_chs {
+      .clr_opt {
+        border: 1px solid lightgray;
+        text-align: center;
+        border-radius: 3px;
+      }
+    }
+    .qntty_sec {
+      .qntty_sec_cntr {
+        .add_qntty {
+          display: flex;
+          button {
+            border: 1px solid lightgray;
+            padding-left: 7%;
+            padding-right: 7%;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+    .add_sec_bynw {
+      .buttn {
+        border: 1px solid #6dad54;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6dad54;
+        width: 25%;
+        .img_cart {
+          width: 40px;
+        }
+      }
+      .btnn_bynw {
+        background-color: #6dad54;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+      }
+    }
+  }
+}

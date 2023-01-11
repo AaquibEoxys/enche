@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 
 const Filterbar = () => {
   return (
-    <div className="flr_bar mb-4 row">
+    <div className="flr_bar mb-4 mx-2 row">
       <div className="flr_bar_1 col-lg-10  col-sm-10 col-xs-6 pt-2">
         <div className="col h5 sortby">Sort By</div>
         <div className="col h5 relevance">Relevance</div>

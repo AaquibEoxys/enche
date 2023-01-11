@@ -40,11 +40,13 @@ const AllProducts = () => {
                 <ByRating />
               </div>
             </div>
-            <div className="bodybar">
-              <div className="row mt-5 mx-3">
+            <div className=" row mt-5 bodybar">
+              <div className="">
                 <Filterbar />
               </div>
-              <ProductsCardsAL />
+              <div className="">
+                <ProductsCardsAL />
+              </div>
             </div>
           </div>
         </div>
