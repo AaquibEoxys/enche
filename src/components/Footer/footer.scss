@@ -17,6 +17,9 @@
         width: 80px;
       }
     }
+    .padding_align {
+      padding-left: 0px !important;
+    }
     .footer_ul {
       list-style: none;
       padding: 0;
@@ -45,7 +48,7 @@
       }
     }
     .support_footer {
-      padding-left: 48px;
+      padding-left: 55px;
     }
   }
 
@@ -58,6 +61,24 @@
       line-height: 12px;
       color: green;
       text-align: center;
+    }
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer_padd {
+    .support_footer {
+      padding-left: 25px !important;
+    }
+    .padding_align {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+    }
+    .footer_payment_div {
+      .footer_head {
+        .footer_payment {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 }
