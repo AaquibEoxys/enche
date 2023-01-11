@@ -699,16 +699,19 @@ $secondary_green_code: #a3ce2d;
               height: 185px;
               margin: auto;
             }
+
             .hover_icons {
               position: absolute;
               left: 5px;
               bottom: 5px;
               display: none;
+
               img {
                 height: auto;
                 max-width: 100%;
                 font-weight: 500;
               }
+
               .heart_icons {
                 width: 30px;
                 height: 30px;
@@ -718,31 +721,32 @@ $secondary_green_code: #a3ce2d;
                 padding: 3px;
                 border-radius: 3px;
                 margin-right: 5px;
-    
+
                 &:hover {
                   background-color: $green_code;
                 }
-    
+
                 svg {
                   height: auto;
                   max-width: 100%;
                   font-weight: 500;
-    
+
                   path {
                     fill: $green_code;
                   }
                 }
-    
+
                 &:hover {
                   svg {
                     background-color: $green_code;
-    
+
                     path {
                       fill: #fff;
                     }
                   }
                 }
               }
+
               .cart_icons {
                 cursor: pointer;
                 width: 30px;
@@ -751,25 +755,25 @@ $secondary_green_code: #a3ce2d;
                 border: 1px solid rgba(0, 0, 0, 0.466);
                 padding: 3px;
                 border-radius: 3px;
-    
+
                 &:hover {
                   background-color: $green_code;
                 }
-    
+
                 svg {
                   height: auto;
                   max-width: 100%;
                   font-weight: 500;
-    
+
                   path {
                     fill: $green_code;
                   }
                 }
-    
+
                 &:hover {
                   svg {
                     background-color: $green_code;
-    
+
                     path {
                       fill: #fff;
                     }
@@ -778,6 +782,7 @@ $secondary_green_code: #a3ce2d;
               }
             }
           }
+
           &:hover .hover_icons {
             display: flex;
           }
@@ -931,7 +936,7 @@ $secondary_green_code: #a3ce2d;
 
       .exp_imgs {
         height: 360px !important;
-        width: 30% !important;
+        width: 33% !important;
 
         img {
           width: 100%;
@@ -1007,7 +1012,8 @@ $secondary_green_code: #a3ce2d;
       .artisan_content {
         .card_artisan {
           max-width: 100%;
-          height: 320px;
+          height: auto;
+          padding-bottom: 5px;
 
           .card_artisan_Img {
             img {
@@ -1068,6 +1074,11 @@ $secondary_green_code: #a3ce2d;
 @media (max-width: 1023px) {
   .home_banner {
     .banner_back {
+      .home_banner_card {
+        .banner_links {
+          display: none;
+        }
+      }
       .banner_img {
         height: 245px;
       }
@@ -1285,6 +1296,29 @@ $secondary_green_code: #a3ce2d;
         .card_arrival {
           width: 30%;
           height: 325px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home_banner {
+    .banner_back {
+      .home_banner_card {
+        .banner_links {
+          display: none;
+        }
+      }
+    }
+
+    .banner_div {
+      .explore_div {
+        .cards_box {
+          .explore_card {
+            min-height: auto;
+            padding-bottom: 5px;
+          }
         }
       }
     }
