@@ -199,7 +199,7 @@ const Home = () => {
         <div className="container">
           <div className="banner_back row">
             <div className="d-flex home_banner_card">
-              <div className="col-lg-2 col-md-3 banner_links">
+              <div className="col-xl-2 banner_links">
                 {categoryOptions.sort().map((item, key) => (
                   <div className="banner_link" key={key} onClick={() => setCategoryOption(!categoryOption)} >
                     <span>{item}</span>
@@ -212,7 +212,7 @@ const Home = () => {
                   <div className="category_drop"> All products from banner option </div>
                 ) : null}
               </div>
-              <div className="col-lg-10 col-md-9">
+              <div className="col-xl-10">
                 <img src={Images?.banners} alt="" className="banner_img" />
               </div>
             </div>

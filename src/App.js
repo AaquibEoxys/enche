@@ -1,5 +1,5 @@
 import { HashRouter } from "react-router-dom";
-import React, { Suspense } from "react";
+import React from "react";
 import Home from "./Pages/home/Home";
 import Header from "./components/header/Header";
 import About from "./Pages/about/About";
@@ -15,6 +15,7 @@ import AllProducts from "./Pages/AllProductsPages/AllProduct/AllProducts";
 import BuyerDashboard from "./Pages/Dashboard/BuyerDashboard/BuyerDashboard";
 import ProductDetails from "./Pages/AllProductsPages/ProductDetailsPage/Product/ProductDetails";
 
+import Buyer from "./Pages/Dashboard/components/Buyer";
 function App() {
   return (
     <HashRouter>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/allproducts" element={<AllProducts />} />
         <Route path="/buyer-dashboard" element={<BuyerDashboard />} />
         <Route path="/productdetails" element={<ProductDetails />} />
+        <Route path="/buyer-dashboard" element={<Buyer />} />
       </Routes>
       <Footer />
     </HashRouter>

@@ -1,0 +1,22 @@
+.dashboard_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+  div {
+    font-size: 18px;
+    font-weight: 500;
+    color: #636464d9;
+    cursor: pointer;
+  }
+  .profile_details {
+    .profile {
+      font-size: 17px;
+      color: #000;
+      padding: 6px 20px 6px 27px;
+      &:active {
+        color: #6dad54;
+      }
+    }
+  }
+}

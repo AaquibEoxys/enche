@@ -168,7 +168,7 @@ $secondary_green_code: #a3ce2d;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .navbar_ui {
     position: fixed;
     top: 0;
@@ -304,13 +304,13 @@ $secondary_green_code: #a3ce2d;
   }
 }
 
-@media (min-width: 769px) {
-  .fixed_navbar {
-    display: none;
-  }
+@media (min-width: 1023px) {
+  // .fixed_navbar {
+  //   display: none;
+  // }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .fixed_navbar {
     position: fixed;
     bottom: 0;

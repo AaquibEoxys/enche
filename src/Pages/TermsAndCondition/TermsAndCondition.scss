@@ -59,6 +59,7 @@ ol {
         &:before {
           content: counters(item, ".") " ";
           display: table-cell;
+          width: 26px;
         }
       }
     }
