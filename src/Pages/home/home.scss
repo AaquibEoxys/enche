@@ -2,7 +2,6 @@ $green_code: #6dad54;
 $secondary_green_code: #a3ce2d;
 
 .home_banner {
-
   // background-color: rgb(216 214 214 / 43%);
   .back_banner {
     position: absolute;
@@ -57,8 +56,6 @@ $secondary_green_code: #a3ce2d;
       }
     }
 
-
-
     .banner_img {
       height: 380px;
       object-fit: cover;
@@ -66,6 +63,10 @@ $secondary_green_code: #a3ce2d;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      img {
+        height: auto;
+        width: 100%;
+      }
     }
 
     .stores_title {
@@ -94,10 +95,12 @@ $secondary_green_code: #a3ce2d;
         padding: 22px 10px;
         gap: 10px;
         font-weight: 500;
-
-        img {
-          height: 50px;
-          width: 50px;
+        .store_cart_img {
+          // height: 45px;
+          img {
+            height: 50px;
+            width: 50px;
+          }
         }
       }
     }
@@ -643,6 +646,7 @@ $secondary_green_code: #a3ce2d;
         color: orange;
         font-size: 24px;
         font-weight: 500;
+        background-color: #fff;
       }
 
       .yello_Img {
@@ -922,11 +926,23 @@ $secondary_green_code: #a3ce2d;
   }
 }
 
+@media (max-width: 1200px) {
+  .home_banner {
+    .banner_back {
+      .banner_img {
+        height: 310px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .charity_cart {
-    .explore_head {}
+    .explore_head {
+    }
 
-    .explore_subhead {}
+    .explore_subhead {
+    }
 
     .charity_flex {
       flex-wrap: wrap;
@@ -944,7 +960,8 @@ $secondary_green_code: #a3ce2d;
           object-fit: cover;
         }
 
-        span {}
+        span {
+        }
       }
     }
   }
@@ -955,13 +972,13 @@ $secondary_green_code: #a3ce2d;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 29px;
+        gap: 14px;
         flex-wrap: wrap;
         width: 100%;
         margin: auto;
 
         .card_arrival {
-          width: 280px;
+          width: 290px;
           height: 319px;
 
           .card_arrival_Img {
@@ -1080,7 +1097,7 @@ $secondary_green_code: #a3ce2d;
         }
       }
       .banner_img {
-        height: 245px;
+        height: 319px;
       }
 
       .banner_link {
@@ -1092,12 +1109,15 @@ $secondary_green_code: #a3ce2d;
       }
 
       .stores_cart {
+        padding: 5px;
         .stores_cart_align {
           padding: 15px 4px;
-
-          img {
-            height: 40px;
-            width: 44px;
+          .store_cart_img {
+            height: 45px;
+            img {
+              height: 40px;
+              width: 44px;
+            }
           }
 
           span {
@@ -1156,22 +1176,25 @@ $secondary_green_code: #a3ce2d;
     .banner_div {
       .bannerYellow {
         .explore_card {
-          .explore_head_text {}
+          .explore_head_text {
+          }
 
-          .brows_btn {}
+          .brows_btn {
+          }
         }
 
         .just_for {
           font-size: 22px;
+          text-align: center;
 
           .before {
-            width: 95px;
-            right: 205px;
+            width: 80px;
+            right: 185px;
           }
 
           .after {
-            width: 95px;
-            left: 164px;
+            width: 80px;
+            left: 182px;
           }
         }
 
@@ -1262,7 +1285,7 @@ $secondary_green_code: #a3ce2d;
     .banner_div {
       .explore_div {
         .cards_box {
-          gap: 13px;
+          gap: 22px;
           padding: 30px 20px;
           flex-wrap: wrap;
           justify-content: flex-start;
@@ -1298,6 +1321,9 @@ $secondary_green_code: #a3ce2d;
           height: 325px;
         }
       }
+    }
+    .art_tailor {
+      height: 302px;
     }
   }
 }
@@ -1408,6 +1434,29 @@ $secondary_green_code: #a3ce2d;
               }
             }
           }
+        }
+      }
+    }
+    .banner_back {
+      .banner_img {
+        height: 237px;
+      }
+      .stores_cart {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .stores_cart_align {
+          // height: 20px;
+          width: 22%;
+        }
+      }
+    }
+    .charity_cart {
+      .charity_flex {
+        gap: 25px 0px;
+        .exp_imgs {
+          height: 250px !important;
+          width: 33% !important;
         }
       }
     }
@@ -1551,9 +1600,11 @@ $secondary_green_code: #a3ce2d;
   }
 
   .charity_cart {
-    .explore_head {}
+    .explore_head {
+    }
 
-    .explore_subhead {}
+    .explore_subhead {
+    }
 
     .charity_flex {
       padding: 20px 0px;
@@ -1579,7 +1630,8 @@ $secondary_green_code: #a3ce2d;
 
         .card_arrival {
           width: 47%;
-          height: 271px;
+          height: auto;
+          padding-bottom: 5px;
         }
       }
     }
@@ -1589,8 +1641,8 @@ $secondary_green_code: #a3ce2d;
         justify-content: space-between;
 
         .categories_icon {
-          width: 115px;
-          height: 150px;
+          width: 100px;
+          height: 140px;
 
           img {
             height: auto;
@@ -1603,14 +1655,14 @@ $secondary_green_code: #a3ce2d;
     .banner_div {
       .bannerYellow {
         .just_for {
-          &::before {
-            left: 82px;
-            width: 10%;
+          .before {
+            // left: 82px;
+            width: 65px;
           }
 
-          &::after {
-            left: 292px;
-            width: 10%;
+          .after {
+            // left: 292px;
+            width: 65px;
           }
         }
 
@@ -1620,12 +1672,17 @@ $secondary_green_code: #a3ce2d;
       }
 
       .explore_div {
-        .explore_card {
-          width: 47%;
-        }
-
         .cards_box {
-          gap: 18px;
+          gap: 14px;
+          .explore_card {
+            width: 47%;
+            .explore_div_img {
+              img {
+                width: 130px;
+                height: 130px;
+              }
+            }
+          }
         }
       }
     }
@@ -1636,6 +1693,9 @@ $secondary_green_code: #a3ce2d;
       }
 
       .news_search_box {
+        .news_search_inp {
+          width: unset;
+        }
         .subscribe_btn {
           padding: 13px;
           font-size: 12px;
@@ -1646,7 +1706,7 @@ $secondary_green_code: #a3ce2d;
 
     .banner_back {
       .banner_img {
-        height: 165px;
+        height: 179px;
       }
 
       .banner_link {
@@ -1662,15 +1722,17 @@ $secondary_green_code: #a3ce2d;
       }
     }
 
-    // .charity_cart {
-    //   .charity_flex {
-    //     .exp_imgs {
-    //       width: 45%;
-    //     }
-    //   }
-    // }
+    .charity_cart {
+      .charity_flex {
+        .exp_imgs {
+          width: 49% !important;
+        }
+      }
+    }
   }
 }
+
+// @media (max-width: 423px)
 
 @media (max-width: 375px) {
   .home_banner {
@@ -1678,7 +1740,7 @@ $secondary_green_code: #a3ce2d;
       .stores_cart {
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 10px;
+        gap: 5px;
         padding: 5px 5px;
       }
 
@@ -1696,8 +1758,8 @@ $secondary_green_code: #a3ce2d;
         gap: 21px;
 
         .card_arrival {
-          width: 47%;
-          height: 47%;
+          width: 46%;
+          height: 46%;
         }
       }
     }
@@ -1721,15 +1783,18 @@ $secondary_green_code: #a3ce2d;
     .banner_div {
       .bannerYellow {
         .just_for {
-          &::before {
-            left: 70px;
-            width: 10%;
+          .before {
+            // left: 0px;
+            width: 65px;
           }
 
-          &::after {
-            left: 270px;
-            width: 10%;
+          .after {
+            // left: 270px;
+            width: 65px;
           }
+        }
+        .exp_all_pro {
+          font-size: 30px;
         }
 
         .yello_Img {
@@ -1745,6 +1810,7 @@ $secondary_green_code: #a3ce2d;
       .explore_div {
         .cards_box {
           gap: 18px;
+          padding: 30px 25px;
 
           .explore_card {
             width: 47%;
@@ -1761,8 +1827,11 @@ $secondary_green_code: #a3ce2d;
     }
 
     .charity_cart {
+      .explore_subhead {
+        font-size: 45px;
+      }
       .charity_flex {
-        gap: 27px 0px;
+        gap: 25px 0px;
 
         .exp_imgs {
           height: 260px !important;
@@ -1791,10 +1860,13 @@ $secondary_green_code: #a3ce2d;
       }
 
       .stores_cart {
+        justify-content: flex-start;
         .stores_cart_align {
+          padding: 15px 4px;
+          width: 90px;
           img {
             height: auto;
-            width: 24px;
+            width: 90px;
           }
         }
       }
@@ -1878,6 +1950,10 @@ $secondary_green_code: #a3ce2d;
       }
     }
 
+    .art_tailor {
+      height: auto;
+    }
+
     .news_search {
       height: 215px;
 
@@ -1899,6 +1975,75 @@ $secondary_green_code: #a3ce2d;
     .banner_back {
       .banner_img {
         height: 117px;
+      }
+      .stores_cart {
+        justify-content: space-between;
+        .stores_cart_align {
+          width: 120px;
+        }
+      }
+    }
+    .category_section {
+      .category_div {
+        .categories_icon {
+          width: 120px;
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .arrival_div {
+      .arrival_resp {
+        gap: 0px;
+        .card_arrival {
+          padding-bottom: 20px;
+          .card_arrival_Img {
+          }
+        }
+      }
+    }
+    .banner_div {
+      .bannerYellow {
+        height: 240px;
+        .explore_card {
+          .explore_head_text {
+            line-height: 40px;
+          }
+        }
+        .just_for {
+          font-size: 16px;
+          .before {
+            right: 162px;
+            bottom: 18px;
+          }
+          .after {
+            left: 162px;
+            bottom: 18px;
+          }
+        }
+        .exp_all_pro {
+          font-size: 22px;
+        }
+        .find_prod {
+          font-size: 20px;
+        }
+        .banner_btn {
+          width: 212px;
+          padding: 5px;
+          font-size: 18px;
+        }
+      }
+    }
+    .news_search {
+      height: auto;
+      padding-bottom: 15px;
+      .news_search_box {
+        .subscribe_btn {
+          font-size: 13px;
+          padding: 10px;
+          width: unset;
+        }
       }
     }
   }

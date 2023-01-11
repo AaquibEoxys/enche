@@ -114,10 +114,13 @@ const Login = () => {
             </div>
             <div className="login_error"> {errors?.password} </div>
             <div className="remberDev">
-              <input type="checkbox" name="agree_terms" id="rememberMe" />
-              <label htmlFor="rememberMe" className="remberMe">
-                Remember Me
-              </label>
+              <div className="check_remember">
+                <input type="checkbox" name="agree_terms" id="rememberMe" />
+                <label htmlFor="rememberMe" className="remberMe">
+                  Remember Me
+                </label>
+              </div>
+              <div className="forgot_password">Forgot Password ?</div>
             </div>
             <div className="login_error">
               {errors.agree_terms && <>Please Agree Terms and Conditions</>}

@@ -123,11 +123,20 @@ $secondary_green_code: #a3ce2d;
     .remberDev {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 8px;
       padding: 5px 0px;
       margin: 6px 0px;
-
-      .remberMe {
+      .check_remember {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .remberMe {
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+      .forgot_password {
         font-size: 13px;
         font-weight: 500;
       }
