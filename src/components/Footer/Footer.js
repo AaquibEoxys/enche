@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer">
           <Row className="footer_padd">
-            <div className="col-lg-12 col-xl-8 col-md-12 row">
-              <Col xl={3} md={3}>
+            <div className="col-lg-12 col-xl-12 col-md-12 row">
+              <Col xl={2} lg={3} md={4}>
                 <div className="footer_head">
                   <h3>About enche</h3>
                 </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col xl={3} md={3}>
+              <Col xl={2} lg={3} md={4} className="padding_align">
                 <div className="footer_head">
                   <h3>Term & Conditions</h3>
                 </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col xl={3} md={3} className="support_footer">
+              <Col xl={2} lg={3} md={4} className="support_footer">
                 <div className="footer_head">
                   <h3>Support</h3>
                 </div>
@@ -93,7 +93,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col xl={3} md={3}>
+              <Col xl={2} lg={3} md={4}>
                 <div className="footer_head">
                   <h3>Connect with Us</h3>
                 </div>
@@ -118,25 +118,25 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-            </div>
-            <div className="col-lg-12 col-xl-4 col-md-12 ">
-              <div className="footer_head">
-                <h3>Payment Method</h3>
-                <div className="footer_payment">
-                  <img src={Images.visa} alt="" />
-                  <img src={Images.FPX} alt="" />
-                  <img src={Images.maybank2u} alt="" />
-                  <img src={Images.CIMB} alt="" />
-                  <img src={Images.bankislam} alt="" />
-                  <img src={Images.connect} alt="" />
-                  <img src={Images.amonline} alt="" />
-                  <img src={Images.webcash} alt="" />
-                  <img src={Images.eleven} alt="" />
-                  <img src={Images.esa} alt="" />
-                  <img src={Images.RHB} alt="" />
-                  <img src={Images.Bcard} alt="" />
-                  <img src={Images.paypal} alt="" />
-                  <img src={Images.pbank} alt="" />
+              <div className="col-lg-12 col-xl-4 col-md-8 footer_payment_div ">
+                <div className="footer_head">
+                  <h3>Payment Method</h3>
+                  <div className="footer_payment">
+                    <img src={Images.visa} alt="" />
+                    <img src={Images.FPX} alt="" />
+                    <img src={Images.maybank2u} alt="" />
+                    <img src={Images.CIMB} alt="" />
+                    <img src={Images.bankislam} alt="" />
+                    <img src={Images.connect} alt="" />
+                    <img src={Images.amonline} alt="" />
+                    <img src={Images.webcash} alt="" />
+                    <img src={Images.eleven} alt="" />
+                    <img src={Images.esa} alt="" />
+                    <img src={Images.RHB} alt="" />
+                    <img src={Images.Bcard} alt="" />
+                    <img src={Images.paypal} alt="" />
+                    <img src={Images.pbank} alt="" />
+                  </div>
                 </div>
               </div>
             </div>

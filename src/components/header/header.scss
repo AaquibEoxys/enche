@@ -305,9 +305,9 @@ $secondary_green_code: #a3ce2d;
 }
 
 @media (min-width: 1023px) {
-  // .fixed_navbar {
-  //   display: none;
-  // }
+  .fixed_navbar {
+    display: none;
+  }
 }
 
 @media (max-width: 1023px) {
