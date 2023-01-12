@@ -13,7 +13,7 @@ const ProductShow = (props) => {
     }
   };
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="prdc_sec mt-5 ml-5 mr-5 row">
         <div className="col-lg-5 col-md-5 col-sm-5 col-xs-12 img_part">
           <img src={props.newArrival[0].img} alt="" />
@@ -38,6 +38,13 @@ const ProductShow = (props) => {
             <div className="rt_sec_p ">
               <div className="h4">15</div>
               <div className="h4">Sold</div>
+            </div>
+          </div>
+          <div className="discnt row mt-3">
+            <div className="discntprsnt fw-bold col-4">-15 Off</div>
+            <div className="discntamnt col-8">
+              <span className="fw-bold">RM 20.00</span> on{" "}
+              <span className="fw-bold">12Dec</span>,12am-2am
             </div>
           </div>
           <div className="price_sec mx-5">

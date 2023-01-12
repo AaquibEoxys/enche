@@ -1,5 +1,5 @@
-.all_products {
-  display: flex;
+.maylike {
+  background-color: #fff;
   .card_prdc {
     .card_dvd {
       display: flex;
@@ -20,6 +20,7 @@
         border-right: 1px solid #6dad54;
         border-bottom: 1px solid #6dad54;
         .dtls_seller {
+          width: 50%;
           color: #6dad54;
           border: 1px solid #6dad54;
           font-size: 0.6rem;

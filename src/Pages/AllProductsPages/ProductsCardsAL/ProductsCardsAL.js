@@ -48,15 +48,19 @@ const ProductsCardsAL = () => {
             key={key}
           >
             <div className="row card_dvd">
-              <div className=" img_prdc">
+              <div className=" col-xs-12 img_prdc">
                 <img src={item?.img} alt="" />
               </div>
               <div className="col">
                 <div className="prdc_details">
-                  <div className="details_head fw-bold mx-2">{item?.label}</div>
-                  <div className="dtls_seller mx-2">{item?.seller}</div>
-                  <div className="prdc_prc mx-2">{item?.price}</div>
-                  <div className="card_ftr mx-2 mb-2">
+                  <div className="details_head fw-bold mx-2  col-xs-12">
+                    {item?.label}
+                  </div>
+                  <div className=" col-xs-12 col-md-6 col-lg-6 dtls_seller mx-2 h4">
+                    {item?.seller}
+                  </div>
+                  <div className="prdc_prc mx-2 p">{item?.price}</div>
+                  <div className="card_ftr mx-2 mb-2 p">
                     <div className="cart_cntns">
                       <div className="cart_img">
                         <img src={Images?.cart_1} alt="" />
@@ -77,7 +81,7 @@ const ProductsCardsAL = () => {
       <div className="row all_products">
         {newArrival?.map((item, key) => (
           <div
-            className="card_prdc col-lg-3 col-sm-3 col-xs-6  col-sm-6 mb-4"
+            className="card_prdc col-lg-3 col-md-3 col-sm-6 col-xs-6 mb-4"
             key={key}
           >
             <div className="row card_dvd ">
@@ -111,7 +115,7 @@ const ProductsCardsAL = () => {
       <div className="row all_products">
         {newArrival?.map((item, key) => (
           <div
-            className="card_prdc col-lg-3 col-sm-3 col-sm-6 col-xs-6 mb-4"
+            className="card_prdc col-lg-3 col-md-3 col-sm-6 col-xs-6 mb-4"
             key={key}
           >
             <div className="row card_dvd">

@@ -18,7 +18,7 @@ const AllProducts = () => {
         <div className="al_prdt">
           <div className="sec_1">
             <div className="icon mx-3 mt-3">
-              <img src={Images?.filter_1} alt="" srcset="" />
+              <img src={Images?.filter_1} alt="" />
             </div>
             <div className="h5 fw-bold mt-3">Filter Result</div>
           </div>

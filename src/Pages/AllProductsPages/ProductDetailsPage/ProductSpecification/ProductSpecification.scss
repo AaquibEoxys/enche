@@ -1,0 +1,31 @@
+.prdc_spc_des {
+  background-color: #fff;
+  .prdc_spctn {
+    .prdc_spctn_bd {
+      .prdc_spctn_b_bdy {
+        display: flex;
+        text-align: left;
+        .txt-clr {
+          color: #6dad54;
+        }
+      }
+    }
+  }
+  .prdc_desptn {
+    .prdc_desptn_bd {
+      display: flex;
+    }
+    .prdc_desptn_bd_tbl {
+      border: 2px solid gray;
+
+      .prdc_desptn_bd_tbl1 {
+        border-right: 1px solid gray;
+        padding: 1%;
+      }
+      .prdc_desptn_bd_tbl2 {
+        border-left: 1px solid gray;
+        padding: 1%;
+      }
+    }
+  }
+}

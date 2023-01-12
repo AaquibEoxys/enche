@@ -12,7 +12,7 @@ import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
 import AboutEnche from "./components/Footer/FooterPages/AboutEnche";
 import AboutEnchepreneur from "./components/Footer/FooterPages/AboutEnchepreneur";
 import AllProducts from "./Pages/AllProductsPages/AllProduct/AllProducts";
-import BuyerDashboard from "./Pages/Dashboard/BuyerDashboard/BuyerDashboard";
+// import BuyerDashboard from "./Pages/Dashboard/BuyerDashboard/BuyerDashboard";
 import ProductDetails from "./Pages/AllProductsPages/ProductDetailsPage/Product/ProductDetails";
 
 import Buyer from "./Pages/Dashboard/components/Buyer";
@@ -29,7 +29,7 @@ function App() {
         <Route path="/aboutenche" element={<AboutEnche />} />
         <Route path="/aboutenchepreneur" element={<AboutEnchepreneur />} />
         <Route path="/allproducts" element={<AllProducts />} />
-        <Route path="/buyer-dashboard" element={<BuyerDashboard />} />
+        {/* <Route path="/buyer-dashboard" element={<BuyerDashboard />} /> */}
         <Route path="/productdetails" element={<ProductDetails />} />
         <Route path="/buyer-dashboard" element={<Buyer />} />
       </Routes>

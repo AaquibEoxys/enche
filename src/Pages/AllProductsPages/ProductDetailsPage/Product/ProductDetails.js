@@ -1,7 +1,13 @@
 import React from "react";
 import ProductShow from "../ProductSec1/ProductShow";
+import ProductSecTwo from "../ProductSecTwo/ProductSecTwo";
+import TopPicks from "../TopPicks/TopPicks";
+import ProductSpecification from "../ProductSpecification/ProductSpecification";
+import ProductRating from "../ProductRating/ProductRating";
 import Images from "../../../../components/Images/Images";
 import "./ProductDetails.scss";
+import Comments from "../Comments/Comments";
+import MayAlsoLike from "../MayAlsoLike/MayAlsoLike";
 
 const SingleProducts = () => {
   const newArrival = [
@@ -42,6 +48,24 @@ const SingleProducts = () => {
     <div className="prdc_dtls">
       <div className="">
         <ProductShow newArrival={newArrival} />
+      </div>
+      <div>
+        <ProductSecTwo />
+      </div>
+      <div>
+        <TopPicks />
+      </div>
+      <div>
+        <ProductSpecification />
+      </div>
+      <div>
+        <ProductRating />
+      </div>
+      <div>
+        <Comments />
+      </div>
+      <div>
+        <MayAlsoLike />
       </div>
     </div>
   );
