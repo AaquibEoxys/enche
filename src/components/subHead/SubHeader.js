@@ -12,7 +12,7 @@ import $ from "jquery";
 
 const SubHeader = () => {
   const [drop, setDrop] = useState(false);
-  // const [value, setValue] = useState({ currency: "usd" });
+  const [curr, setCurr] = useState(false);
   const [selectedLang, setSelectedLang] = useState({
     // logo: Images.langLogo,
     language: "Select Langauge",
@@ -56,6 +56,7 @@ const SubHeader = () => {
       0
     ) {
       setDrop(false);
+      setCurr(false);
     }
   });
 
@@ -160,19 +161,21 @@ const SubHeader = () => {
               </div>
             </div>
             <div
-                value={value?.currency}
-                name="currency"
-                onChange={(e) => setValue({ [e.target.name]: e.target.value })}
-                className="curreny_option navigation_link lang_drop"
-              >
-                <div className="nav_lang_div" id="currency">
-                  <div className="nav_lang_img">
-                    <img src={selectedCurrency?.logo} alt="" />
-                  </div>
-                  <div className="nav_lang_lebel">
-                    {selectedCurrency?.language} &nbsp;
-                    <i className="fa fa-chevron-down"></i>
-                  </div>
+              value={value?.currency}
+              name="currency"
+              onChange={(e) => setValue({ [e.target.name]: e.target.value })}
+              onClick={() => setCurr(!curr)}
+              className="curreny_option navigation_link lang_drop"
+            >
+              <div className="nav_lang_div" id="currency">
+                <div className="nav_lang_img">
+                  <img src={selectedCurrency?.logo} alt="" />
+                </div>
+                <div className="nav_lang_lebel">
+                  {selectedCurrency?.language} &nbsp;
+                  <i className="fa fa-chevron-down"></i>
+                </div>
+                {curr ? (
                   <div id="menu_barContract" className="curr_option">
                     {currencyList.map((item, key) => (
                       <div
@@ -192,8 +195,9 @@ const SubHeader = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                ) : null}
               </div>
+            </div>
           </div>
           <div className="responsive_lang"></div>
         </div>
