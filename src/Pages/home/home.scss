@@ -95,6 +95,7 @@ $secondary_green_code: #a3ce2d;
         padding: 22px 10px;
         gap: 10px;
         font-weight: 500;
+        width: 20%;
         .store_cart_img {
           // height: 45px;
           img {
@@ -795,6 +796,12 @@ $secondary_green_code: #a3ce2d;
             font-weight: 600;
             color: #4d4d4d;
             padding: 5px 25px 0px 9px;
+            // padding: 5px 20px 0px 9px;
+            padding: 5px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            // width: 73%;
           }
 
           .star_icons {
@@ -1181,8 +1188,8 @@ $secondary_green_code: #a3ce2d;
     .category_section {
       .category_div {
         .categories_icon {
-          width: 139px;
-          height: 150px;
+          width: 173px;
+          height: 143px;
           margin-top: 15px;
         }
       }

@@ -142,49 +142,57 @@ const Home = () => {
   const craftBox = [
     {
       img: Images.bracelet,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Gold-laced Black Leather",
+      size: "[Size 22cm]",
       rating: 3,
       price: "RM 184.88",
     },
     {
       img: Images.bracelet,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Gold-laced Black Leather",
+      size: "[Size 22cm]",
       rating: 3,
       price: "RM 184.88",
     },
     {
       img: Images.bracelet,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Gold-laced Black Leather",
+      size: "[Size 22cm]",
       rating: 5,
       price: "RM 184.88",
     },
     {
       img: Images.bracelet,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Gold-laced Black Leather",
+      size: "[Size 22cm]",
       rating: 5,
       price: "RM 184.88",
     },
     {
       img: Images.bracelet,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Gold-laced Black Leather",
+      size: "[Size 22cm]",
       rating: 3,
       price: "RM 184.88",
     },
     {
       img: Images.bracelet,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Gold-laced Black Leather",
+      size: "[Size 22cm]",
       rating: 3,
       price: "RM 184.88",
     },
     {
       img: Images.bracelet,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Gold-laced Black Leather",
+      size: "[Size 22cm]",
       rating: 5,
       price: "RM 184.88",
     },
     {
       img: Images.bracelet,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Gold-laced Black Leather",
+      size: "[Size 22cm]",
       rating: 5,
       price: "RM 184.88",
     },
@@ -476,7 +484,7 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="explore_text">{item.label}</div>
+                      <div className="explore_text"> <span>{item.label}</span>  <span> {item.size} </span> </div>
                       <div className="star_icons">
                         <StarRating rating={item.rating} />
                       </div>
