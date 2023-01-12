@@ -120,7 +120,9 @@ const Login = () => {
                   Remember Me
                 </label>
               </div>
-              <div className="forgot_password">Forgot Password ?</div>
+              <Link to="/forgot-password" className="forgot_pass">
+                <div className="forgot_password">Forgot Password ?</div>
+              </Link>
             </div>
             <div className="login_error">
               {errors.agree_terms && <>Please Agree Terms and Conditions</>}

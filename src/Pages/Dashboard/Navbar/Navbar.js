@@ -27,10 +27,14 @@ const Navbar = () => {
                 <div className="role_option">
                   {/* Select Your Role */}
                   <div className="dashboard_role">
-                    <div className="role_div">Buyer</div>
-                    <div className="role_div">Merchant</div>
-                    <div className="role_div">enchepreneur</div>
-                    <div className="role_div">encheffiliate</div>
+                    <div>
+                      <div className="role_div">Buyer</div>
+                    </div>
+                    <div>
+                      <div className="role_div">Merchant</div>
+                      <div className="role_div">enchepreneur</div>
+                      <div className="role_div">encheffiliate</div>
+                    </div>
                   </div>
                 </div>
               </div>

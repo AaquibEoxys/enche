@@ -14,12 +14,12 @@ const SubHeader = () => {
   const [drop, setDrop] = useState(false);
   const [curr, setCurr] = useState(false);
   const [selectedLang, setSelectedLang] = useState({
-    // logo: Images.langLogo,
+    logo: Images.langLogo,
     language: "Select Langauge",
   });
   const [value, setValue] = useState({ currency: "usd" });
   const [selectedCurrency, setSelectedCurrency] = useState({
-    logo: Images.usa,
+    logo: Images.malaysia,
     language: "MYR",
   });
 
@@ -34,20 +34,24 @@ const SubHeader = () => {
     },
     {
       name: "VND",
-      img: Images.vi,
+      img: Images.vietnam,
     },
     {
       name: "MYR",
-      img: Images.usa,
+      img: Images.malaysia,
     },
+    // {
+    //   name: "FRI",
+    //   img: Images.france,
+    // },
   ];
 
   const langaugeList = [
-    { name: "Malay", img: Images.usa },
+    { name: "Malay", img: Images.malaysia },
     { name: "Turkey", img: Images.turkey },
-    { name: "English", img: Images.US },
+    { name: "English", img: Images.usa2 },
     { name: "Indonesia", img: Images.indonesia },
-    { name: "Vietnamese", img: Images.vi },
+    { name: "Vietnamese", img: Images.vietnam },
   ];
 
   $(document).mouseup(function (e) {
@@ -127,16 +131,20 @@ const SubHeader = () => {
             <div> Contact Us </div>
             <div> About Us </div>
             <div className="header_resp_lang" name="level">
-              <div className="nav_lang_div">
+              <div
+                className="nav_lang_div"
+                id="menu_barContract"
+                onClick={() => setDrop(!drop)}
+              >
                 <div className="nav_lang_img">
                   <img src={selectedLang?.logo} alt="" />
                 </div>
-                <div className="nav_lang_lebel" onClick={() => setDrop(!drop)}>
+                <div className="nav_lang_lebel">
                   {selectedLang?.language}&nbsp;
                   <i className="fa fa-chevron-down"></i>
                 </div>
                 {drop ? (
-                  <div id="menu_barContract" className="drop_down">
+                  <div className="drop_down">
                     {langaugeList.map((item, key) => (
                       <div
                         className="option_with_flag"
@@ -165,15 +173,17 @@ const SubHeader = () => {
               name="currency"
               onChange={(e) => setValue({ [e.target.name]: e.target.value })}
               onClick={() => setCurr(!curr)}
-              className="curreny_option navigation_link lang_drop"
+              className="lang_drop"
             >
               <div className="nav_lang_div" id="currency">
-                <div className="nav_lang_img">
-                  <img src={selectedCurrency?.logo} alt="" />
-                </div>
-                <div className="nav_lang_lebel">
-                  {selectedCurrency?.language} &nbsp;
-                  <i className="fa fa-chevron-down"></i>
+                <div className="lang_nav_drop">
+                  <div className="nav_lang_img">
+                    <img src={selectedCurrency?.logo} alt="" />
+                  </div>
+                  <div className="nav_lang_lebel">
+                    {selectedCurrency?.language} &nbsp;
+                    <i className="fa fa-chevron-down"></i>
+                  </div>
                 </div>
                 {curr ? (
                   <div id="menu_barContract" className="curr_option">
@@ -198,6 +208,21 @@ const SubHeader = () => {
                 ) : null}
               </div>
             </div>
+            <select
+              className="join_us_resp navigation_link"
+              name="level"
+              onChange={(e) => setValue({ [e.target.name]: e.target.value })}
+            >
+              <option defaultValue="Join As" hidden>
+                Join As
+              </option>
+              <option value="abc" className="curencyOption">
+                Buyer
+              </option>
+              <option value="abc" className="curencyOption">
+                Seller
+              </option>
+            </select>
           </div>
           <div className="responsive_lang"></div>
         </div>

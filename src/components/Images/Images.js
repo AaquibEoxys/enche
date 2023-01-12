@@ -63,17 +63,25 @@ import profile from "../../assets/images/profile.svg";
 import heart from "../../assets/images/heart.svg";
 import heart2 from "../../assets/images/heart2.svg";
 import shopping from "../../assets/images/shopping-cart2.svg";
-import vi from "../../assets/images/vi.png";
-import US from "../../assets/images/US.png";
-import indonesia from "../../assets/images/indonesia.png";
-import usa from "../../assets/images/usa.png";
-import turkey from "../../assets/images/turkey.png";
+// import vi from "../../assets/images/vi.png";
+// import US from "../../assets/images/US.png";
+// import indonesia from "../../assets/images/indonesia.png";
+// import usa from "../../assets/images/usa.png";
+// import turkey from "../../assets/images/turkey.png";
 import langLogo from "../../assets/images/langLogo.svg";
 import heart3 from "../../assets/images/heart3.svg";
 import cart2 from "../../assets/images/cart2.svg";
 import user from "../../assets/images/user.svg";
 import user2 from "../../assets/images/user2.svg";
 import search2 from "../../assets/images/search2.svg";
+// import france from "../../assets/images/france.svg";
+import malaysia from "../../assets/images/malaysia.svg";
+import indonesia from "../../assets/images/indonesia.svg";
+import turkey from "../../assets/images/turkey.svg";
+import vietnam from "../../assets/images/vietnam.svg";
+import eyeOpen from "../../assets/images/eyeOpen.svg";
+import eyeClose from "../../assets/images/eyeClose.svg";
+import usa2 from "../../assets/images/usa2.svg";
 import test from "../../assets/images/test.jpg";
 import homeLogo2 from "../../assets/images/homeLogo2.png";
 
@@ -143,12 +151,12 @@ const Images = {
   heart2,
   profile,
   shopping,
-  vi,
+  // vi,
   turkey,
   indonesia,
-  usa,
+  // usa,
   langLogo,
-  US,
+  // US,
   heart3,
   cart2,
   user,
@@ -156,6 +164,12 @@ const Images = {
   search2,
   test,
   homeLogo2,
+  // france,
+  malaysia,
+  vietnam,
+  usa2,
+  eyeOpen,
+  eyeClose,
 };
 
 export default Images;
