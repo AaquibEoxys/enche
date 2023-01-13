@@ -1,0 +1,12 @@
+.optionName {
+  width: 33%;
+  .dropdown {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #dee2e6;
+    outline: none;
+    &::placeholder {
+      color: #dee2e6;
+    }
+  }
+}

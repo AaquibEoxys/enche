@@ -2,6 +2,7 @@ import React from "react";
 import "./MyAccount.scss";
 import Images from "../../../../../../components/Images/Images";
 import { Link } from "react-router-dom";
+import DateOfBirthDropdown from "../../../../../../components/DateOfBirthDropdown/DateOfBirthDropdown";
 
 const MyAccount = () => {
   return (
@@ -68,7 +69,9 @@ const MyAccount = () => {
                     <div className="form_style">Date of birth</div>
                   </div>
                   <div className="col-lg-9 user_details_bold">
-                    <input type="date" />
+                    <div className="date_div">
+                      <DateOfBirthDropdown />
+                    </div>
                   </div>
                 </div>
                 <div className="row user_details">
@@ -80,12 +83,14 @@ const MyAccount = () => {
               </div>
             </div>
             <div className="col-4">
-              {/* <div className="profile_divider"> </div> */}
               <div className="profile_img_select">
                 <div className="profile_img">
                   <img src={Images.test} alt="" />
                 </div>
-                <button className="upload_btn"> Select Image </button>
+                <div className="ImageChoose">
+                  <button className="upload_btn">Select Image</button>
+                  <input type="file" />
+                </div>
                 <div>
                   <div className="img_description"> File size maximum 1 MB</div>
                   <div className="img_description">
