@@ -1759,9 +1759,12 @@ $secondary_green_code: #a3ce2d;
       .stores_cart {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 6px;
-        padding: 0px 10px;
+        // padding: 0px 10px;
+        .stores_cart_align {
+          width: 32%;
+        }
       }
     }
 
@@ -1899,9 +1902,12 @@ $secondary_green_code: #a3ce2d;
     .banner_back {
       .stores_cart {
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-start;
         gap: 5px;
         padding: 5px 5px;
+        .stores_cart_align {
+          width: 32%;
+        }
       }
 
       .banner_img {
@@ -2023,7 +2029,7 @@ $secondary_green_code: #a3ce2d;
         justify-content: flex-start;
         .stores_cart_align {
           padding: 15px 4px;
-          width: 90px;
+          width: 48%;
           img {
             height: auto;
             width: 90px;
@@ -2146,9 +2152,6 @@ $secondary_green_code: #a3ce2d;
       }
       .stores_cart {
         justify-content: space-between;
-        .stores_cart_align {
-          width: 120px;
-        }
       }
     }
     .category_section {

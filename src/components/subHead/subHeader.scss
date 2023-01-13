@@ -231,6 +231,7 @@ $secondary_green_code: #a3ce2d;
           }
         }
       }
+
       .join_us_resp {
         background-color: #eeeded;
         border: none;
@@ -403,15 +404,19 @@ $secondary_green_code: #a3ce2d;
             display: none;
           }
         }
+
         .search_bar {
           width: 45%;
+
           .home_search {
             .home_inp {
               font-size: 12px;
+
               &::placeholder {
                 font-size: 12px;
               }
             }
+
             .inputSearch {
               .search_icon {
                 display: none;
@@ -420,6 +425,7 @@ $secondary_green_code: #a3ce2d;
           }
         }
       }
+
       .news_contain {
         .search_svg {
           width: 100px;
@@ -460,6 +466,7 @@ $secondary_green_code: #a3ce2d;
         padding: 0px 39px;
         justify-content: center;
         flex-wrap: wrap;
+
         .header_resp_lang {
           .nav_lang_div {
             .nav_lang_img {
@@ -470,8 +477,9 @@ $secondary_green_code: #a3ce2d;
                 border-radius: 50%;
               }
             }
-            .nav_lang_lebel {
-            }
+
+            .nav_lang_lebel {}
+
             .drop_down {
               .option_with_flag {
                 .resp_lang_option {
@@ -486,17 +494,20 @@ $secondary_green_code: #a3ce2d;
             }
           }
         }
+
         .lang_drop {
           display: flex;
           flex-direction: column;
-          z-index: 99;
+
           .nav_lang_div {
             display: flex;
-            flex-direction: column;
-            gap: 5px;
+            gap: 6px;
+            position: relative;
+
             .lang_nav_drop {
               display: flex;
               gap: 5px;
+
               .nav_lang_img {
                 img {
                   height: 20px;
@@ -506,21 +517,20 @@ $secondary_green_code: #a3ce2d;
                 }
               }
             }
+
             .curr_option {
-              background-color: #ffffff;
-              border: none;
+              background-color: #f8f9fa;
+              display: flex;
+              flex-direction: column;
               position: absolute;
-              font-size: 14px;
-              z-index: 999;
-              width: 120px;
-              top: 77px;
-              color: #000;
-              font-weight: 300;
-              right: 125px;
-              padding: 5px 10px;
+              top: 29px;
+              left: -9px;
+              z-index: 99;
+
               .option_with_flag {
                 display: flex;
                 gap: 8px;
+                padding: 2px 10px;
                 .country_flag {
                   img {
                     height: 15px;
