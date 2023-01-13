@@ -63,6 +63,7 @@ import profile from "../../assets/images/profile.svg";
 import heart from "../../assets/images/heart.svg";
 import heart2 from "../../assets/images/heart2.svg";
 import shopping from "../../assets/images/shopping-cart2.svg";
+<<<<<<< HEAD
 import Asset from "../../assets/images/Asset.png";
 import laptop1 from "../../assets/images/laptop1.webp";
 import laptop3 from "../../assets/images/laptop3.png";
@@ -78,6 +79,13 @@ import US from "../../assets/images/US.png";
 import indonesia from "../../assets/images/indonesia.png";
 import usa from "../../assets/images/usa.png";
 import turkey from "../../assets/images/turkey.png";
+=======
+// import vi from "../../assets/images/vi.png";
+// import US from "../../assets/images/US.png";
+// import indonesia from "../../assets/images/indonesia.png";
+// import usa from "../../assets/images/usa.png";
+// import turkey from "../../assets/images/turkey.png";
+>>>>>>> b1e3e999892630e93426cd6ed82bc8e417929986
 import langLogo from "../../assets/images/langLogo.svg";
 import back from "../../assets/images/back.svg";
 import filter_1 from "../../assets/images/filter_1.svg";
@@ -89,11 +97,20 @@ import user from "../../assets/images/user.svg";
 import cart_1 from "../../assets/images/cart_1.svg";
 import user2 from "../../assets/images/user2.svg";
 import search2 from "../../assets/images/search2.svg";
+// import france from "../../assets/images/france.svg";
+import malaysia from "../../assets/images/malaysia.svg";
+import indonesia from "../../assets/images/indonesia.svg";
+import turkey from "../../assets/images/turkey.svg";
+import vietnam from "../../assets/images/vietnam.svg";
+import eyeOpen from "../../assets/images/eyeOpen.svg";
+import eyeClose from "../../assets/images/eyeClose.svg";
+import usa2 from "../../assets/images/usa2.svg";
 import test from "../../assets/images/test.jpg";
 import shippingIcon from "../../assets/images/shipping-icon.svg";
 import encheEllipse from "../../assets/images/encheEllipse.svg";
 import chatNow from "../../assets/images/chatNow.svg";
 import viewShop from "../../assets/images/viewShop.svg";
+import homeLogo2 from "../../assets/images/homeLogo2.png";
 
 const Images = {
   google,
@@ -172,6 +189,7 @@ const Images = {
   icon06,
   icon07,
   vi,
+  
   turkey,
   indonesia,
   usa,
@@ -181,6 +199,7 @@ const Images = {
   next,
   searchResult,
   US,
+ 
   heart3,
   cart2,
   user,
@@ -192,6 +211,13 @@ const Images = {
   encheEllipse,
   chatNow,
   viewShop,
+  homeLogo2,
+
+  malaysia,
+  vietnam,
+  usa2,
+  eyeOpen,
+  eyeClose,
 };
 
 export default Images;

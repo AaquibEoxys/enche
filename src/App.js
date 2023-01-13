@@ -16,6 +16,7 @@ import AllProducts from "./Pages/AllProductsPages/AllProduct/AllProducts";
 import ProductDetails from "./Pages/AllProductsPages/ProductDetailsPage/Product/ProductDetails";
 
 import Buyer from "./Pages/Dashboard/components/Buyer";
+import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
 function App() {
   return (
     <HashRouter>
@@ -32,6 +33,7 @@ function App() {
         {/* <Route path="/buyer-dashboard" element={<BuyerDashboard />} /> */}
         <Route path="/productdetails" element={<ProductDetails />} />
         <Route path="/buyer-dashboard" element={<Buyer />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
       <Footer />
     </HashRouter>

@@ -11,7 +11,7 @@ const Header = () => {
   const [searchTab, setSearchTab] = useState(false);
   const [drop, setDrop] = useState(false);
   const [selectedCurrency, setSelectedCurrency] = useState({
-    logo: Images.usa,
+    logo: Images.malaysia,
     language: "MYR",
   });
   const [selectedLang, setSelectedLang] = useState({
@@ -29,19 +29,23 @@ const Header = () => {
     },
     {
       name: "VND",
-      img: Images.vi,
+      img: Images.vietnam,
     },
     {
       name: "MYR",
-      img: Images.usa,
+      img: Images.malaysia,
     },
+    // {
+    //   name: "FRI",
+    //   img: Images.france,
+    // },
   ];
   const langaugeList = [
-    { name: "Malay", img: Images.usa },
+    { name: "Malay", img: Images.malaysia },
     { name: "Turkey", img: Images.turkey },
-    { name: "English", img: Images.US },
+    { name: "English", img: Images.usa2 },
     { name: "Indonesia", img: Images.indonesia },
-    { name: "Vietnamese", img: Images.vi },
+    { name: "Vietnamese", img: Images.vietnam },
   ];
 
   $(document).mouseup(function (e) {
@@ -169,7 +173,7 @@ const Header = () => {
             </div>
             <div className="homepage_logo">
               <Link to="/">
-                <img src={Images.logo} alt="" />
+                <img src={Images.homeLogo2} alt="" />
               </Link>
             </div>
             <div className="search_icon">

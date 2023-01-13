@@ -6,8 +6,10 @@ import SubHeader from "../../components/subHead/SubHeader";
 import Title from "../../components/Title/Title";
 
 const Signup = () => {
-  const [values, setValues] = useState(null);
+  const [values, setValues] = useState({ agree_terms: 0 });
   const [errors, setErrors] = useState({});
+  const [hidePass, setHidePass] = useState(true);
+  const [hideConfirmPass, setHideConfirmPass] = useState(true);
   Title(" | Signup");
   const handleChange = (e) => {
     if (e.target.name === "agree_terms") {
@@ -151,12 +153,32 @@ const Signup = () => {
                 <img src={Images?.lock} alt="" className="google_logo" />
               </span>
               <input
-                type="text"
+                // type="text"
                 placeholder="Password"
                 name="password"
                 value={values?.password}
                 onChange={(e) => handleChange(e)}
+                type={hidePass ? "password" : "text"}
               />
+              {hidePass ? (
+                <>
+                  <div
+                    className="show_password"
+                    onClick={() => setHidePass(!hidePass)}
+                  >
+                    <img src={Images.eyeClose} alt="" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div
+                    className="show_password"
+                    onClick={() => setHidePass(!hidePass)}
+                  >
+                    <img src={Images.eyeOpen} alt="" />
+                  </div>
+                </>
+              )}
             </div>
             <div className="login_error"> {errors?.password} </div>
             <div className="loginInp">
@@ -164,15 +186,34 @@ const Signup = () => {
                 <img src={Images?.lock} alt="" className="google_logo" />
               </span>
               <input
-                type="text"
+                type={hideConfirmPass ? "password" : "text"}
                 placeholder="Confirm Password"
                 name="confirmPassword"
                 value={values?.confirmPassword}
                 onChange={(e) => handleChange(e)}
               />
+              {hideConfirmPass ? (
+                <>
+                  <div
+                    className="show_password"
+                    onClick={() => setHideConfirmPass(!hideConfirmPass)}
+                  >
+                    <img src={Images.eyeClose} alt="" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div
+                    className="show_password"
+                    onClick={() => setHideConfirmPass(!hideConfirmPass)}
+                  >
+                    <img src={Images.eyeOpen} alt="" />
+                  </div>
+                </>
+              )}
             </div>
             <div className="login_error"> {errors?.confirmPassword} </div>
-            <div className="remberDev">
+            <div className="checkTerms">
               <input
                 type="checkbox"
                 name="agree_terms"
@@ -187,7 +228,7 @@ const Signup = () => {
                 <Link> Privacy </Link>
               </label>
             </div>
-            <div className="login_error">{errors?.agree_terms}</div>
+            <div className="login_error mb-2">{errors?.agree_terms}</div>
             <div className="log_btn_div">
               <button className="login_btn" onClick={onSubmit}>
                 Sign up

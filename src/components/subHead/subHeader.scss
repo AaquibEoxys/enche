@@ -215,12 +215,12 @@ $secondary_green_code: #a3ce2d;
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 22px;
+            top: 35px;
             left: -9px;
             z-index: 99;
 
             .option_with_flag {
-              background-color: #fff;
+              background-color: #f8f9fa;
               padding: 2px 10px;
 
               .resp_lang_option {
@@ -230,6 +230,13 @@ $secondary_green_code: #a3ce2d;
             }
           }
         }
+      }
+
+      .join_us_resp {
+        background-color: #eeeded;
+        border: none;
+        color: #4e4949;
+        font-weight: 400;
       }
     }
   }
@@ -397,15 +404,19 @@ $secondary_green_code: #a3ce2d;
             display: none;
           }
         }
+
         .search_bar {
           width: 45%;
+
           .home_search {
             .home_inp {
               font-size: 12px;
+
               &::placeholder {
                 font-size: 12px;
               }
             }
+
             .inputSearch {
               .search_icon {
                 display: none;
@@ -414,6 +425,7 @@ $secondary_green_code: #a3ce2d;
           }
         }
       }
+
       .news_contain {
         .search_svg {
           width: 100px;
@@ -453,6 +465,82 @@ $secondary_green_code: #a3ce2d;
         width: 100%;
         padding: 0px 39px;
         justify-content: center;
+        flex-wrap: wrap;
+
+        .header_resp_lang {
+          .nav_lang_div {
+            .nav_lang_img {
+              img {
+                height: 20px;
+                width: 20px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+              }
+            }
+
+            .nav_lang_lebel {}
+
+            .drop_down {
+              .option_with_flag {
+                .resp_lang_option {
+                  .country_flag {
+                    img {
+                      height: 15px;
+                      width: 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .lang_drop {
+          display: flex;
+          flex-direction: column;
+
+          .nav_lang_div {
+            display: flex;
+            gap: 6px;
+            position: relative;
+
+            .lang_nav_drop {
+              display: flex;
+              gap: 5px;
+
+              .nav_lang_img {
+                img {
+                  height: 20px;
+                  width: 20px;
+                  border: 1px solid #fff;
+                  border-radius: 50%;
+                }
+              }
+            }
+
+            .curr_option {
+              background-color: #f8f9fa;
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              top: 29px;
+              left: -9px;
+              z-index: 99;
+
+              .option_with_flag {
+                display: flex;
+                gap: 8px;
+                padding: 2px 10px;
+                .country_flag {
+                  img {
+                    height: 15px;
+                    width: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
 
       .responsive_lang {

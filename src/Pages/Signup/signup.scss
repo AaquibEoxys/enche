@@ -1,11 +1,39 @@
 .sign_body {
-    .cardBody {
-        .card_padd {
-            .loginInp {
-                .login_inpSvg {
-                    
-                }
-            }
+  .cardBody {
+    .card_padd {
+      .loginInp {
+        .login_inpSvg {
         }
+      }
+      .loginInp {
+        position: relative;
+        .show_password {
+          position: absolute;
+          top: 8px;
+          right: 10px;
+          cursor: pointer;
+        }
+      }
     }
+    .checkTerms {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 0px 0px 0px;
+      margin: 6px 0px 0px 0px;
+      .check_remember {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .remberMe {
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+      .forgot_password {
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
 }

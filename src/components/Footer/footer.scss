@@ -84,9 +84,14 @@
 }
 
 @media (max-width: 767px) and (min-width: 280px) {
-  .footer_padd {
-    .support_footer {
-      padding: 13px !important;
+  .footer {
+    .footer_padd {
+      .support_footer {
+        padding: 13px !important;
+      }
+      .padding_align {
+        padding-left: 11px !important;
+      }
     }
   }
 }
