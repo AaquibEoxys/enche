@@ -15,7 +15,7 @@ const AllProducts = () => {
     <>
       <SubHeader />
       <Container>
-        <div className="al_prdt">
+        <div className="al_prdt p-5">
           <div className="sec_1">
             <div className="icon mx-3 mt-3">
               <img src={Images?.filter_1} alt="" />

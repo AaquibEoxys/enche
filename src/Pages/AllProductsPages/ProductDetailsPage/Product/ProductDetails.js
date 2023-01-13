@@ -46,7 +46,7 @@ const SingleProducts = () => {
   ];
   return (
     <div className="prdc_dtls">
-      <div className="">
+      <div className="mt-4">
         <ProductShow newArrival={newArrival} />
       </div>
       <div>

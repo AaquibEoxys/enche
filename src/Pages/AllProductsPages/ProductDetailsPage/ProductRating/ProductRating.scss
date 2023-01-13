@@ -1,18 +1,25 @@
 .prdct_rtng {
   background-color: #fff;
+  .prdct_rtng_hd {
+    color: #1c1c1c;
+    font-size: 1.87rem;
+    font-family: "Poppins";
+    font-weight: 500;
+  }
   .prdct_rtng_bx {
     border: 1px solid #6dad54;
     .prdct_rtng_bx_1 {
       .rtng_bx_1_rtng {
         color: #6dad54;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        font-family: "Poppins";
+        font-size: 1.87rem;
+        font-weight: 500;
       }
       .rtng_bx_1_star {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        font-size: 1rem;
+
         .fa-star {
           color: #6dad54;
           margin: 0px 3px;

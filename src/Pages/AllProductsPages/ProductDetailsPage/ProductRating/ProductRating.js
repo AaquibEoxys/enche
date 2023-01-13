@@ -6,15 +6,15 @@ const ProductRating = () => {
   return (
     <div>
       <div className="prdct_rtng container mt-5">
-        <div className="prdct_rtng_hd h4">Product Ratings</div>
+        <div className="prdct_rtng_hd mx-2">Product Ratings</div>
         <div className="prdct_rtng_bx  mx-2 row p-3">
           <div className="prdct_rtng_bx_1 col-4">
-            <div className="rtng_bx_1_rtng ">
-              <div className="rtng_bx_1_rtng_dtls h3 mx-2">5.0</div>
+            <div className="rtng_bx_1_rtng mx-5 ">
+              <div className="rtng_bx_1_rtng_dtls">5.0</div>
               <div className="rtng_bx_1_rtng_of mx-2">out of 5</div>
             </div>
 
-            <div className="rtng_bx_1_star">
+            <div className="rtng_bx_1_star mx-5">
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>

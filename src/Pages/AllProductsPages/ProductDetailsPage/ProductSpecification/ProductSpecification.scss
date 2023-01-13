@@ -1,30 +1,70 @@
 .prdc_spc_des {
   background-color: #fff;
+
   .prdc_spctn {
+    .prdc_spctn_hd {
+      color: #1c1c1c;
+      font-weight: 500;
+      font-family: "Poppins";
+      font-size: 1.87rem;
+    }
     .prdc_spctn_bd {
+      .prdc_spctn_b_h {
+        font-weight: 700;
+        color: #a6a6a6;
+        font-family: "Roboto";
+        font-size: 1.56rem;
+      }
       .prdc_spctn_b_bdy {
         display: flex;
         text-align: left;
+        font-weight: 400;
+        font-size: 1.3rem;
         .txt-clr {
           color: #6dad54;
+        }
+        .stck_data {
+          color: #040404;
+          font-weight: 700;
+          font-size: 1.37rem;
+        }
+        .shp_cntry {
+          color: #a6a6a6;
+          font-weight: 700;
+          font-size: 1.56rem;
         }
       }
     }
   }
   .prdc_desptn {
+    .prdc_desptn_hd {
+      color: #1c1c1c;
+      font-size: 1.87rem;
+      font-family: "Poppins";
+      font-weight: 500;
+    }
     .prdc_desptn_bd {
       display: flex;
+      font-weight: 700;
+      font-size: 1.43rem;
+      color: #a6a6a6;
     }
     .prdc_desptn_bd_tbl {
-      border: 2px solid gray;
+      border: 2px solid #a6a6a6;
 
       .prdc_desptn_bd_tbl1 {
-        border-right: 1px solid gray;
+        border-right: 1px solid#a6a6a6;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #a6a6a6;
         padding: 1%;
       }
       .prdc_desptn_bd_tbl2 {
-        border-left: 1px solid gray;
+        border-left: 1px solid #a6a6a6;
         padding: 1%;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #a6a6a6;
       }
     }
   }

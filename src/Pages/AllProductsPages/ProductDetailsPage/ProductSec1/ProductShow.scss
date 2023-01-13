@@ -1,10 +1,18 @@
 .prdc_sec {
   background-color: #fff;
+
   .img_part {
     padding: 5%;
 
     img {
       width: 100%;
+    }
+    .smpl_imgs {
+      img {
+        height: 60px;
+        width: 60px;
+        border: 1px solid lightgray;
+      }
     }
   }
   .dtls_part {
@@ -14,15 +22,27 @@
         display: flex;
       }
       .green {
-        color: #6dad54;
+        color: #71ad42;
       }
     }
     .discnt {
-      background-image: linear-gradient(to right, #298106, #6dad54);
+      background-image: linear-gradient(
+        269.94deg,
+        #57a966 6.02%,
+        #5bab66 6.02%
+      );
       color: #fff;
       padding: 1%;
     }
     .price_sec {
+      display: flex;
+      align-items: center;
+      .prc_dsc {
+        .lnthr_txt {
+          text-decoration: line-through;
+          color: #7a7878;
+        }
+      }
       .green {
         color: #6dad54;
       }
@@ -31,24 +51,39 @@
       display: flex;
       .shipping_sec {
         display: flex;
+        .sps_s_txt {
+          color: #7b7b7c;
+        }
+      }
+      .spng_al {
+        color: #7b7b7c;
       }
     }
     .clr_chs {
+      .clr_hd {
+        color: #7b7b7c;
+        font-weight: 1000;
+      }
       .clr_opt {
         border: 1px solid lightgray;
         text-align: center;
         border-radius: 3px;
+        color: #7b7b7c;
+        font-weight: 1000;
       }
     }
     .qntty_sec {
+      color: #7b7b7c;
+      font-weight: 1000;
       .qntty_sec_cntr {
         .add_qntty {
           display: flex;
           button {
             border: 1px solid lightgray;
-            padding-left: 7%;
-            padding-right: 7%;
+            padding-left: 14%;
+            padding-right: 14%;
             border-radius: 3px;
+            color: #7b7b7c;
           }
         }
       }

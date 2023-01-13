@@ -90,6 +90,10 @@ import cart_1 from "../../assets/images/cart_1.svg";
 import user2 from "../../assets/images/user2.svg";
 import search2 from "../../assets/images/search2.svg";
 import test from "../../assets/images/test.jpg";
+import shippingIcon from "../../assets/images/shipping-icon.svg";
+import encheEllipse from "../../assets/images/encheEllipse.svg";
+import chatNow from "../../assets/images/chatNow.svg";
+import viewShop from "../../assets/images/viewShop.svg";
 
 const Images = {
   google,
@@ -184,6 +188,10 @@ const Images = {
   user2,
   search2,
   test,
+  shippingIcon,
+  encheEllipse,
+  chatNow,
+  viewShop,
 };
 
 export default Images;

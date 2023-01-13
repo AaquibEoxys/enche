@@ -1,5 +1,11 @@
 .toppicks {
   background-color: #fff;
+  font-family: "Poppins";
+  .tpc_head {
+    color: #1c1c1c;
+    font-weight: 500;
+    font-size: 1.87rem;
+  }
   .card_prdc {
     .card_dvd {
       display: flex;
@@ -10,25 +16,31 @@
       .img_prdc {
         img {
           width: 100%;
-          border-top: 1px solid #6dad54;
-          border-left: 1px solid #6dad54;
-          border-right: 1px solid #6dad54;
+          border-top: 1px solid #71ad42;
+          border-left: 1px solid #71ad42;
+          border-right: 1px solid #71ad42;
         }
       }
       .prdc_details {
-        border-left: 1px solid #6dad54;
-        border-right: 1px solid #6dad54;
-        border-bottom: 1px solid #6dad54;
+        .details_head {
+          color: #646469;
+          font-weight: 600;
+          font-size: 0.87rem;
+        }
+        border-left: 1px solid #71ad42;
+        border-right: 1px solid #71ad42;
+        border-bottom: 1px solid #71ad42;
         .dtls_seller {
-          width: 50%;
-          color: #6dad54;
-          border: 1px solid #6dad54;
-          font-size: 0.6rem;
+          color: #7fb555;
+          border: 1px solid #7fb555;
+          font-size: 0.75rem;
           text-align: center;
           border-radius: 3px;
         }
         .prdc_prc {
-          color: red;
+          font-size: 0.875rem;
+          color: #d50909;
+          font-weight: 500;
         }
         .card_ftr {
           display: flex;
@@ -37,8 +49,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #6dad54;
-            border: 1px solid #6dad54;
+            color: #71ad42;
+            border: 1px solid #71ad42;
             border-radius: 3px;
             padding: 1%;
             font-size: 0.7rem;
@@ -48,12 +60,13 @@
               }
             }
             .cart_msg {
-              font-size: 0.7rem;
+              font-size: 0.68rem;
+              font-weight: 600;
             }
           }
           .btn_sec {
             button {
-              background-color: #6dad54;
+              background-color: #71ad42;
               color: white;
               border: transparent;
               border-radius: 3px;
