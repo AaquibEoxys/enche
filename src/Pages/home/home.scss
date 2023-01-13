@@ -916,7 +916,7 @@ $secondary_green_code: #a3ce2d;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         gap: 10px;
         padding-top: 20px;
         .categories_icon {
@@ -1097,7 +1097,7 @@ $secondary_green_code: #a3ce2d;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
 
         .categories_icon {
           width: 133px;

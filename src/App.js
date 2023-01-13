@@ -9,6 +9,7 @@ import "./App.css";
 import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
 import Buyer from "./Pages/Dashboard/components/Buyer";
 import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
+import Cart from "./Pages/Cart/Cart";
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/terms" element={<TermsAndCondition />} />
         <Route path="/buyer-dashboard" element={<Buyer />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </Router>

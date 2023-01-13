@@ -13,7 +13,7 @@
   }
   .dashboard_user {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     .dashboard_user_icon {
       padding: 0px 12px;
       display: flex;
@@ -28,29 +28,64 @@
       }
     }
     .select_role {
-      font-size: 14px;
+      font-size: 13px;
       color: gray;
     }
     .role_option {
       border-radius: 5px;
       border: 1px solid gray;
-      padding: 0px 10px;
       display: flex;
       align-items: center;
+      background-color: rgb(246 247 248);
+      overflow: hidden;
+
+      .active{
+        background: #6dad54 !important;
+        color: #fff;
+        border-radius: 5px;
+
+        
+      }
       .dashboard_role {
         display: flex;
+        background-color: rgb(246 247 248);
         gap: 10px;
+        .role_div{
+          min-width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         .dashboard_role_option {
           display: flex;
-          .role_div {
-            background: #6dad54;
+          border-radius: 5px;
+          overflow: hidden;
+          .active{
+            background: #6dad54 !important;
             color: #fff;
+            border-radius: 5px;
+           
+          }
+          .role_div {
+            color: #000;
             font-size: 13px;
             padding: 0px 5px;
             text-align: center;
+            min-width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            background-color: rgb(246 247 248);
+            cursor: pointer;
+           
+            .transeparent{
+              background-color: transparent;
+            }
           }
+          
         }
       }
     }
   }
 }
+

@@ -20,7 +20,7 @@ const Signup = () => {
     } else if (
       (values?.[e.target.name]?.length === undefined ||
         values?.[e.target.name]?.length === 0) &&
-      e.target.value == " "
+      e.target.value === " "
     ) {
       setValues({ ...values, [e.target.name]: "" });
       setErrors({
