@@ -1,0 +1,19 @@
+.al_prdt {
+  .sec_1 {
+    display: flex;
+    .icon {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .sec_2 {
+    display: flex;
+    .sidebar {
+      width: 20%;
+      height: auto;
+    }
+    .bodybar {
+      width: 80%;
+    }
+  }
+}
