@@ -79,7 +79,7 @@ const Cart = () => {
               <div className="mt-4">
                 <input type="checkbox" /> {list.head}
               </div>
-              <tbody>
+              <tbody className="test">
                 {list.cartData.map((item) => (
                   <>
                     <tr key={key}>
