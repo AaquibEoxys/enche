@@ -1,6 +1,9 @@
-.product_checkbox {
-  display: flex;
-  gap: 10px;
+.thead_div {
+  border-bottom: 2px solid #6eb151;
+  .product_checkbox {
+    display: flex;
+    gap: 10px;
+  }
 }
 .unit_price {
   display: flex;
@@ -28,7 +31,7 @@
 .product_det_img {
   display: flex;
   gap: 15px;
-  justify-content: center;
+  //   justify-content: center;
   .product_det {
     display: flex;
     align-items: flex-start;
@@ -42,4 +45,9 @@
       }
     }
   }
+}
+.shop_head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

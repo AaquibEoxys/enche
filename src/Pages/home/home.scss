@@ -964,6 +964,17 @@ $secondary_green_code: #a3ce2d;
         }
       }
     }
+    .banner_back {
+      .stores_cart {
+        padding: 5px 10px;
+        .stores_cart_align {
+          padding: 22px 0px;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1628,6 +1639,9 @@ $secondary_green_code: #a3ce2d;
     }
 
     .news_search {
+      .news_search_head {
+        font-size: 12px;
+      }
       .news_search_box {
         .news_search_inp {
           width: unset;
@@ -1636,19 +1650,13 @@ $secondary_green_code: #a3ce2d;
         .subscribe_btn {
           padding: 13px;
           font-size: 14px;
-          width: 86px;
+          // width: 86px;
         }
       }
     }
   }
 
   .charity_cart {
-    .explore_head {
-    }
-
-    .explore_subhead {
-    }
-
     .charity_flex {
       padding: 20px 0px;
       gap: 20px 2px;
@@ -1733,6 +1741,7 @@ $secondary_green_code: #a3ce2d;
     .news_search {
       .news_search_head {
         padding: 17px 10px;
+        font-size: 12px;
       }
 
       .news_search_box {
@@ -1887,6 +1896,9 @@ $secondary_green_code: #a3ce2d;
     }
 
     .news_search {
+      .news_search_head {
+        font-size: 12px;
+      }
       .news_search_box {
         padding: 5px 10px;
 
@@ -2007,6 +2019,9 @@ $secondary_green_code: #a3ce2d;
     }
 
     .news_search {
+      .news_search_head {
+        font-size: 12px;
+      }
       .news_search_box {
         padding: 5px 10px;
 
