@@ -1,0 +1,29 @@
+.main {
+  .shpd_frm {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.12rem;
+    font-family: "Poppins";
+  }
+  .form-check {
+    .form-check-label {
+      color: #000000;
+      font-weight: 400;
+    }
+    .form-checked-input {
+      background-color: #6dad54;
+      border-color: #6dad54;
+    }
+    .form-check-input[type="checkbox"] {
+      border-radius: 0em;
+    }
+  }
+  .more {
+    font-weight: 600;
+    font-size: 1.12rem;
+    color: #000000;
+    select {
+      width: 33% !important;
+    }
+  }
+}

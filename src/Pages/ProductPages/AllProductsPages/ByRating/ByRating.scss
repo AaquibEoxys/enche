@@ -1,0 +1,23 @@
+main {
+  .form-check {
+    .form-check-label {
+      color: #000000;
+      font-weight: 400;
+      font-family: "Poppins";
+    }
+    .form-check-input:checked {
+      background-color: #6dad54;
+    }
+    .form-check-input[type="checkbox"] {
+      border-radius: 0em;
+    }
+  }
+  .more {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.12rem;
+    select {
+      width: 33% !important;
+    }
+  }
+}

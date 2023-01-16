@@ -1,0 +1,49 @@
+.cmnt_sctn {
+  background-color: #fff;
+  font-family: "Poppins";
+
+  .cmtr_ns {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    .img_cmtr {
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 60px;
+      }
+    }
+    .nam_star {
+      .nam_cmtr {
+        font-size: 0.87rem;
+
+        font-weight: 500;
+        color: #000000;
+      }
+      .fa-star {
+        color: #71ad42;
+      }
+    }
+  }
+  .dat_sec_cmtr {
+    display: flex;
+    color: #989898;
+    font-size: 1.06rem;
+    .ls_vrnt {
+      display: flex;
+    }
+  }
+  .cmt_sec_cmtr {
+    font-family: "Roboto";
+    font-size: 1.12rem;
+    color: #767679;
+  }
+  .img_shw_cmtr {
+    display: flex;
+    .shw_cmtr_img {
+      img {
+        height: 100px;
+        width: 100px;
+      }
+    }
+  }
+}

@@ -11,9 +11,8 @@ import "./App.css";
 import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
 import AboutEnche from "./components/Footer/FooterPages/AboutEnche";
 import AboutEnchepreneur from "./components/Footer/FooterPages/AboutEnchepreneur";
-import AllProducts from "./Pages/AllProductsPages/AllProduct/AllProducts";
-// import BuyerDashboard from "./Pages/Dashboard/BuyerDashboard/BuyerDashboard";
-import ProductDetails from "./Pages/AllProductsPages/ProductDetailsPage/Product/ProductDetails";
+import AllProducts from "./Pages/ProductPages/AllProductsPages/AllProduct/AllProducts";
+import ProductDetails from "./Pages/ProductPages/ProductDetailsPage/Product/ProductDetails";
 
 import Buyer from "./Pages/Dashboard/components/Buyer";
 import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
