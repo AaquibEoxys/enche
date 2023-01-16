@@ -1,0 +1,45 @@
+.product_checkbox {
+  display: flex;
+  gap: 10px;
+}
+.unit_price {
+  display: flex;
+  gap: 10px;
+  width: 100% !important;
+  .cross_price {
+    color: #b9b9bb;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: line-through;
+  }
+  .actual_price {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #5e5e60;
+  }
+}
+.total_price {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #ff2323;
+}
+.product_det_img {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  .product_det {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    .cart_imgs {
+      height: 80px;
+      width: 80px;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
