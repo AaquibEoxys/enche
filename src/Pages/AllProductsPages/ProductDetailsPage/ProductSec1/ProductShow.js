@@ -13,8 +13,8 @@ const ProductShow = (props) => {
     }
   };
   return (
-    <div className="container mt-5">
-      <div className="prdc_sec mt-5 ml-5 mr-5 row">
+    <div className="container">
+      <div className="prdc_sec mt-3 ml-5 mr-5 row">
         <div className="col-lg-5 col-md-5 col-sm-5 col-xs-12 img_part">
           <div>
             <img src={props.newArrival[0].img} alt="" />
@@ -107,9 +107,9 @@ const ProductShow = (props) => {
             <div className="qntty_sec_cntr col-2">
               {
                 <div className="add_qntty">
-                  <button onClick={add}>+</button>
-                  <button disable>{Quantity}</button>
                   <button onClick={remove}>-</button>
+                  <button disable>{Quantity}</button>
+                  <button onClick={add}>+</button>
                 </div>
               }
             </div>
