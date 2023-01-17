@@ -1,0 +1,151 @@
+.chk_crd {
+  background-color: #fff;
+
+  .chk_ot_crd {
+    .col-8 {
+      color: #000000;
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 1.18rem;
+    }
+    .col-2 {
+      color: #bbbcbd;
+      font-size: 0.93rem;
+      text-align: end;
+    }
+    .col-1 {
+      color: #bbbcbd;
+      font-size: 0.93rem;
+    }
+  }
+  .crd_sec_2 {
+    font-size: 0.87rem;
+    .lne {
+      height: 16px;
+      width: 1px;
+      color: #d9d9d9;
+    }
+    .shp_onln {
+      color: #4d4d4d;
+      display: flex;
+      justify-content: end;
+    }
+    .ct_nw {
+      color: #33ccb7;
+      font-size: 0.93rem;
+      font-family: "Roboto";
+      display: flex;
+      justify-content: start;
+    }
+  }
+  .crd_itm_dtl {
+    font-family: "Roboto";
+    display: flex;
+    align-items: center;
+    .col-6 {
+      display: flex;
+      align-items: center;
+      .itm_dtl_nam {
+        font-weight: 500;
+
+        color: #2f2e35;
+        font-size: 1rem;
+      }
+    }
+    .vrtsn_n_d {
+      font-size: 0.93rem;
+      color: #9e9895;
+      font-weight: 500;
+      display: flex;
+    }
+
+    .vrt_u_p {
+      color: #222222;
+    }
+    .vrt_amnt {
+      text-align: center;
+      color: #222222;
+    }
+    .itm_sbttl {
+      text-align: end;
+      color: #222222;
+    }
+  }
+  .vcher_brdr {
+    border: 1px dotted#D1D1D1;
+    .voucher {
+      font-family: "Roboto";
+      display: flex;
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
+      .shp_vchr {
+        color: #514739;
+        font-weight: 400;
+        display: flex;
+        justify-content: end;
+      }
+      .slct_vchr {
+        color: #3155aa;
+        display: flex;
+        justify-content: end;
+      }
+    }
+  }
+  .msg_shp {
+    font-family: "Roboto";
+    border-bottom: 1px dotted solid#E8E8E8;
+    .msg_hder {
+      font-size: 0.93rem;
+      color: #32333e;
+    }
+    .msg_input {
+      border: 1px solid #e8e8e8;
+      input::placeholder {
+        color: #bbbbbb;
+        font-size: 0.93rem;
+      }
+    }
+    .shpng_optn {
+      color: #00bfa5;
+      font-size: 0.93rem;
+      text-align: end;
+    }
+    .stnd_dlvry {
+      .stnd_dlvry_hd {
+        color: #323333;
+        font-weight: 500;
+      }
+      .stnd_dlvry_txt {
+        font-weight: 400;
+        color: #888888;
+        font-size: 0.87rem;
+      }
+    }
+    .chng {
+      color: #105fb0;
+      font-weight: 500;
+    }
+    .lst_prc {
+      color: #222222;
+      font-weight: 500;
+      text-align: end;
+    }
+  }
+  .fnl_ordr_dtls {
+    font-family: "Roboto";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-left: 80%;
+
+    .ordr_ttl {
+      display: flex;
+      color: #929292;
+      font-size: 0.93vw;
+    }
+    .ttl_prc {
+      color: #f05a38;
+      font-size: 1.4vw;
+    }
+  }
+}

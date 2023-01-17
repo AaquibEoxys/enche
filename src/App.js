@@ -11,13 +11,12 @@ import "./App.css";
 import TermsAndCondition from "./Pages/TermsAndCondition/TermsAndCondition";
 import AboutEnche from "./components/Footer/FooterPages/AboutEnche";
 import AboutEnchepreneur from "./components/Footer/FooterPages/AboutEnchepreneur";
-import AllProducts from "./Pages/AllProductsPages/AllProduct/AllProducts";
-// import BuyerDashboard from "./Pages/Dashboard/BuyerDashboard/BuyerDashboard";
-import ProductDetails from "./Pages/AllProductsPages/ProductDetailsPage/Product/ProductDetails";
-
+import AllProducts from "./Pages/ProductPages/AllProductsPages/AllProduct/AllProducts";
+import ProductDetails from "./Pages/ProductPages/ProductDetailsPage/Product/ProductDetails";
 import Buyer from "./Pages/Dashboard/components/Buyer";
 import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
 import Cart from "./Pages/Cart/Cart";
+import Checkout from "./Pages/Checkout/Checkout";
 function App() {
   return (
     <HashRouter>
@@ -31,11 +30,11 @@ function App() {
         <Route path="/aboutenche" element={<AboutEnche />} />
         <Route path="/aboutenchepreneur" element={<AboutEnchepreneur />} />
         <Route path="/allproducts" element={<AllProducts />} />
-        {/* <Route path="/buyer-dashboard" element={<BuyerDashboard />} /> */}
         <Route path="/productdetails" element={<ProductDetails />} />
         <Route path="/buyer-dashboard" element={<Buyer />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
     </HashRouter>

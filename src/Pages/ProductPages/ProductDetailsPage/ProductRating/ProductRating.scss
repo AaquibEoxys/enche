@@ -1,0 +1,43 @@
+.prdct_rtng {
+  background-color: #fff;
+  .prdct_rtng_hd {
+    color: #1c1c1c;
+    font-size: 1.87rem;
+    font-family: "Poppins";
+    font-weight: 500;
+  }
+  .prdct_rtng_bx {
+    border: 1px solid #6dad54;
+    .prdct_rtng_bx_1 {
+      .rtng_bx_1_rtng {
+        color: #6dad54;
+        display: flex;
+        font-family: "Poppins";
+        font-size: 1.87rem;
+        font-weight: 500;
+      }
+      .rtng_bx_1_star {
+        display: flex;
+        font-size: 1.5rem;
+
+        .fa-star {
+          color: #6dad54;
+          margin: 0px 3px;
+        }
+      }
+    }
+    .prdct_rtng_bx_2 {
+      display: flex;
+      flex-wrap: wrap;
+      .rtng_optn {
+        font-family: "Poppins";
+        border: 1px solid #a5aba2;
+        color: #a5aba2;
+        padding: 0.5%;
+        margin: 5px;
+        border-radius: 4px;
+        font-size: 0.93rem;
+      }
+    }
+  }
+}

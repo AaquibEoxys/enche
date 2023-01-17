@@ -1,0 +1,26 @@
+.p_rng {
+  font-family: "Poppins";
+  .p_rng_hd {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.12rem;
+    .p_rng_i {
+      input::placeholder {
+        color: #bfbfbf;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+  }
+  .btn-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn-grn {
+      background-color: #71ad42;
+      color: #fff;
+      width: 100%;
+    }
+  }
+}

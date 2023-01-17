@@ -1,0 +1,71 @@
+.sec_two {
+  font-family: "poppins";
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .sect_logo {
+    border-radius: 110px;
+    height: 110px;
+    width: 110px;
+    border: 2px solid #c7bebe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sect_cht_vs {
+    .sect_cht_vs_s1 {
+      .sect_cht_vs_s1_cn {
+        font-weight: 500;
+        color: #585869;
+      }
+      .sect_cht_vs_s1_msg {
+        font-size: 1.1vw;
+        font-weight: 400;
+      }
+      .btn_sec {
+        .btn_cht {
+          color: #71ad42;
+          .btn_ct_sh {
+            border: 2px solid #71ad42;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ceecb6;
+            .chat_msg {
+              font-size: 0.8vw;
+            }
+          }
+        }
+        .btn_vshp {
+          color: #5e5e5e;
+          .btn_ct_sh {
+            border: 2px solid #5e5e5e;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .vshp_msg {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sect_2 {
+    .sect_dta {
+      display: flex;
+
+      .dt_hd {
+        width: 50%;
+        color: #41434b;
+        font-weight: 500;
+      }
+      .dt_vlu {
+        color: #6dad54;
+      }
+    }
+  }
+}

@@ -94,10 +94,9 @@ import user from "../../assets/images/user.svg";
 import cart_1 from "../../assets/images/cart_1.svg";
 import user2 from "../../assets/images/user2.svg";
 import search2 from "../../assets/images/search2.svg";
-// import france from "../../assets/images/france.svg";
 import malaysia from "../../assets/images/malaysia.svg";
-import indonesia from "../../assets/images/indonesia.svg";
-import turkey from "../../assets/images/turkey.svg";
+// import indonesia from "../../assets/images/indonesia.svg";
+// import turkey from "../../assets/images/turkey.svg";
 import vietnam from "../../assets/images/vietnam.svg";
 import eyeOpen from "../../assets/images/eyeOpen.svg";
 import eyeClose from "../../assets/images/eyeClose.svg";
@@ -113,6 +112,9 @@ import homeLogo2 from "../../assets/images/homeLogo2.png";
 import bottle from "../../assets/images/bottle.jpeg";
 import bottle2 from "../../assets/images/bottle2.jpg";
 import bottle3 from "../../assets/images/bottle3.jpg";
+import locationDelivery from "../../assets/images/locationDelivery .svg";
+import cht_nw from "../../assets/images/cht_nw.svg";
+import carWash from "../../assets/images/carWash.png";
 
 const Images = {
   google,
@@ -191,7 +193,6 @@ const Images = {
   icon06,
   icon07,
   vi,
-
   turkey,
   indonesia,
   usa,
@@ -201,7 +202,6 @@ const Images = {
   next,
   searchResult,
   US,
-
   heart3,
   cart2,
   user,
@@ -214,7 +214,6 @@ const Images = {
   chatNow,
   viewShop,
   homeLogo2,
-
   malaysia,
   vietnam,
   usa2,
@@ -225,6 +224,9 @@ const Images = {
   bottle3,
   chatNow2,
   chat_icon,
+  locationDelivery,
+  cht_nw,
+  carWash,
 };
 
 export default Images;
