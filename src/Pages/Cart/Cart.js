@@ -28,7 +28,7 @@ const Cart = () => {
         {
           img: Images.bottle3,
           label: "Bayu kelulut  Multifloral Sachet (285g)   ",
-          xprice: "N.P : RM 95.00",
+          xprice: "RM 95.00",
           price: "RM 90.00",
           total_price: "RM 90.00",
         },
@@ -68,23 +68,38 @@ const Cart = () => {
                 <input type="checkbox" />
                 <div>Products</div>
               </th>
-              <th>Unit Price</th>
-              <th>Quantity</th>
-              <th>Total Price</th>
-              <th>Action</th>
+              <th className="heading_center">Unit Price</th>
+              <th className="heading_center">Quantity</th>
+              <th className="heading_center">Total Price</th>
+              <th className="heading_center">Action</th>
             </tr>
           </thead>
           {shopName.map((list, key) => (
             <>
               <div className="mt-4">
-                <input type="checkbox" /> {list.head}
+                <div className="table_shop_head">
+                  <div className="check_shop">
+                    <input
+                      className="check_color"
+                      type="checkbox"
+                      value="checked"
+                    />
+                    <div className="shop_name">{list.head}</div>
+                  </div>
+                  <div className="chat_logo">
+                    <img src={Images.chat_icon} alt="" /> <span>CHAT</span>
+                  </div>
+                  <div className="shop_logo">
+                    <img src={Images.viewShop} alt="" /> <span>VIEW SHOP</span>
+                  </div>
+                </div>
               </div>
               <tbody className="test">
                 {list.cartData.map((item) => (
                   <>
-                    <tr key={key}>
+                    <tr className="row_space" key={key}>
                       <td className="col-xl-4 col-lg-4">
-                        <div className="product_det_img">
+                        <div className="product_det_img mt-2">
                           <div className=" product_det">
                             <input type="checkbox" />
                             <div className="cart_imgs">
@@ -92,7 +107,7 @@ const Cart = () => {
                             </div>
                           </div>
                           <div className="">
-                            <div> {item?.label} </div>
+                            <div className="item_name"> {item?.label} </div>
                           </div>
                         </div>
                       </td>
@@ -108,11 +123,24 @@ const Cart = () => {
                     </tr>
                   </>
                 ))}
-                {/* <hr /> */}
               </tbody>
             </>
           ))}
         </Table>
+        <div className="total_cart">
+          <div className="total_check">
+            <input type="checkbox" />
+            <span>Selected all (5)</span>
+          </div>
+          <div>Delete</div>
+          <div className="move_likes">Move To My Likes</div>
+          <div className="total_price_div">
+            Total(5 items): <span> RM680.00 </span>
+          </div>
+          <div className="checkout_btn_div">
+            <button className="checkout_btn"> Check Out </button>
+          </div>
+        </div>
       </div>
     </>
   );

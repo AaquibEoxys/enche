@@ -76,7 +76,8 @@ $secondary_green_code: #a3ce2d;
       font-size: 18px;
       font-weight: 600;
       padding: 10px 4px;
-      color: gray;
+      color: #5e5e60;
+      font-family: "Roboto" !important;
     }
 
     .stores_cart {
@@ -126,12 +127,15 @@ $secondary_green_code: #a3ce2d;
       font-weight: 500;
       padding-top: 24px;
       line-height: 22px;
+      font-family: "Roboto" !important;
     }
 
     .explore_subhead {
       text-align: center;
       font-size: 60px;
       font-weight: 700;
+      font-family: "Roboto" !important;
+      color: #71ad42;
       color: $green_code;
       padding-bottom: 20px;
     }
@@ -177,7 +181,8 @@ $secondary_green_code: #a3ce2d;
     .arrival_head {
       font-size: 18px;
       font-weight: 600;
-      color: #6e6b6b;
+      font-family: "Roboto" !important;
+      color: #606060;
       padding: 8px 0px;
       display: flex;
       justify-content: space-between;
@@ -349,10 +354,14 @@ $secondary_green_code: #a3ce2d;
       div {
         &:first-child {
           font-weight: 600;
+          color: #5e5e60;
+          font-family: "Roboto" !important;
         }
 
         &:nth-child(2) {
           font-weight: 500;
+          color: #5e5e60;
+          font-family: "Roboto" !important;
         }
       }
     }
@@ -523,7 +532,8 @@ $secondary_green_code: #a3ce2d;
       text-align: start;
       font-size: 18px;
       font-weight: 600;
-      color: #6e6b6b;
+      color: #5e5e60;
+      font-family: "Roboto" !important;
       // padding: 0px 20px;
     }
 
@@ -1190,8 +1200,8 @@ $secondary_green_code: #a3ce2d;
       .arrival_resp {
         display: flex;
         align-items: center;
-        // justify-content: center;
-        gap: 29px;
+        justify-content: flex-start;
+        gap: 17px 36px;
         flex-wrap: wrap;
         width: 100%;
         margin: auto;
@@ -1301,7 +1311,7 @@ $secondary_green_code: #a3ce2d;
     .arrival_div {
       .arrival_content {
         .card_arrival {
-          width: 31%;
+          // width: 31%;
           height: 325px;
         }
       }
@@ -1309,7 +1319,7 @@ $secondary_green_code: #a3ce2d;
 
     .category_section {
       .category_div {
-        justify-content: space-between;
+        // justify-content: space-between;
         gap: 15px;
         padding-top: 25px;
       }

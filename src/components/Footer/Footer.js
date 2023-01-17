@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer">
           <Row className="footer_padd">
-            <div className="col-lg-12 col-xl-12 col-md-12 row">
-              <Col xl={2} lg={3} md={4}>
+            <div className="col-lg-12 col-xl-12 col-xxl-12 col-md-12 row">
+              <Col xl={3} xxl={2} lg={3} md={4}>
                 <div className="footer_head">
                   <h3>About enche</h3>
                 </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col xl={2} lg={3} md={4} className="padding_align">
+              <Col xl={3} xxl={2} lg={3} md={4} className="padding_align">
                 <div className="footer_head">
                   <h3>Term & Conditions</h3>
                 </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col xl={2} lg={3} md={4} className="support_footer">
+              <Col xl={3} xxl={2} lg={3} md={4} className="support_footer">
                 <div className="footer_head">
                   <h3>Support</h3>
                 </div>
@@ -93,7 +93,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <Col xl={2} lg={3} md={4}>
+              <Col xl={3} xxl={2} lg={3} md={4}>
                 <div className="footer_head">
                   <h3>Connect with Us</h3>
                 </div>
@@ -118,7 +118,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </Col>
-              <div className="col-lg-12 col-xl-4 col-md-8 footer_payment_div ">
+              <div className="col-lg-12 col-xxl-4 col-xl-12 col-md-8 footer_payment_div ">
                 <div className="footer_head">
                   <h3>Payment Method</h3>
                   <div className="footer_payment">

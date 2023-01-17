@@ -106,6 +106,8 @@ import test from "../../assets/images/test.jpg";
 import shippingIcon from "../../assets/images/shipping-icon.svg";
 import encheEllipse from "../../assets/images/encheEllipse.svg";
 import chatNow from "../../assets/images/chatNow.svg";
+import chatNow2 from "../../assets/images/chatNow2.svg";
+import chat_icon from "../../assets/images/chat_icon.svg";
 import viewShop from "../../assets/images/viewShop.svg";
 import homeLogo2 from "../../assets/images/homeLogo2.png";
 import bottle from "../../assets/images/bottle.jpeg";
@@ -221,6 +223,8 @@ const Images = {
   bottle,
   bottle2,
   bottle3,
+  chatNow2,
+  chat_icon,
 };
 
 export default Images;

@@ -29,10 +29,11 @@ $secondary_green_code: #a3ce2d;
       .curreny_option {
         outline: none;
         border: none;
-        background: none;
+        background: #6dad54;
 
         .curencyOption {
           color: black;
+          background-color: #f8f9fa;
           .option_with_flag {
             display: flex;
             .country_flag {

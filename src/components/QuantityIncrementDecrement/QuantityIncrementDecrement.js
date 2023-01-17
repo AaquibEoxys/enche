@@ -14,14 +14,18 @@ const QuantityIncrementDecrement = () => {
 
   return (
     <>
-      <div className="qntty_sec_cntr col-2">
-        {
-          <div className="add_qntty">
-            <button onClick={remove}>-</button>
-            <button disable>{Quantity}</button>
-            <button onClick={add}>+</button>
-          </div>
-        }
+      <div className="qntty_sec_cntr">
+        <div className="add_qntty">
+          <button className="quantity_minus" onClick={remove}>
+            -
+          </button>
+          <button className="quantity" disable>
+            {Quantity}
+          </button>
+          <button className="quantity_plus" onClick={add}>
+            +
+          </button>
+        </div>
       </div>
     </>
   );

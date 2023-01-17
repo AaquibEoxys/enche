@@ -8,6 +8,7 @@ import "./login.scss";
 const Login = () => {
   const [values, setValues] = useState(null);
   const [errors, setErrors] = useState({});
+  const [hidePass, setHidePass] = useState(true);
   Title(" | Login ");
 
   const handleChange = (e) => {
@@ -57,8 +58,13 @@ const Login = () => {
     ) {
       errorsObject.password = "Please enter password";
       errorExist = true;
-    } else if (values?.password.length < 6) {
-      errorsObject.password = "Password must be longer then 6 character";
+    } else if (
+      !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(
+        values?.password
+      )
+    ) {
+      errorsObject.password =
+        "Password must be at least 8 characters with Alphanumeric and Special Character  ";
       errorExist = true;
     }
     if (errorExist) {
@@ -105,12 +111,31 @@ const Login = () => {
                 <img src={Images?.lock} alt="" className="google_logo" />
               </span>
               <input
-                type="password"
+                type={hidePass ? "password" : "text"}
                 placeholder="Password"
                 name="password"
                 value={values?.password}
                 onChange={(e) => handleChange(e)}
               />
+              {hidePass ? (
+                <>
+                  <div
+                    className="show_password"
+                    onClick={() => setHidePass(!hidePass)}
+                  >
+                    <img src={Images.eyeClose} alt="" className="eye_icon" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div
+                    className="show_password"
+                    onClick={() => setHidePass(!hidePass)}
+                  >
+                    <img src={Images.eyeOpen} alt="" className="eye_icon" />
+                  </div>
+                </>
+              )}
             </div>
             <div className="login_error"> {errors?.password} </div>
             <div className="remberDev">

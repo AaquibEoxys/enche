@@ -207,7 +207,7 @@ const Home = () => {
         <div className="container">
           <div className="banner_back row">
             <div className="d-flex home_banner_card">
-              <div className="col-xl-2 col-lg-3 banner_links">
+              <div className="col-xl-2 banner_links">
                 {categoryOptions.sort().map((item, key) => (
                   <div
                     className="banner_link"
@@ -226,7 +226,7 @@ const Home = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="col-xl-10 col-lg-9 img_banner">
+              <div className="col-xl-10 col-lg-12 img_banner">
                 <img src={Images?.banners} alt="" className="banner_img" />
               </div>
             </div>

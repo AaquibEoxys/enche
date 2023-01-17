@@ -72,7 +72,7 @@ const Signup = () => {
       errorsObject.password = "Please enter password";
       errorExist = true;
     } else if (
-      !/^(?=.*\d)(?=.*[!@#$%^&*()_+])[0-9a-zA-Z!@#$%^&*()_+]{8,}$/.test(
+      !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(
         values?.password
       )
     ) {
@@ -124,7 +124,7 @@ const Signup = () => {
             </div>
             <div className="loginInp">
               <span className="login_inpSvg">
-                <img src={Images.user} alt="" className="google_logo" />
+                <img src={Images.user} alt="" className="user_logo" />
               </span>
               <input
                 type="text"
@@ -166,7 +166,7 @@ const Signup = () => {
                     className="show_password"
                     onClick={() => setHidePass(!hidePass)}
                   >
-                    <img src={Images.eyeClose} alt="" />
+                    <img src={Images.eyeClose} alt="" className="eye_icon" />
                   </div>
                 </>
               ) : (
@@ -175,7 +175,7 @@ const Signup = () => {
                     className="show_password"
                     onClick={() => setHidePass(!hidePass)}
                   >
-                    <img src={Images.eyeOpen} alt="" />
+                    <img src={Images.eyeOpen} alt="" className="eye_icon" />
                   </div>
                 </>
               )}
@@ -198,7 +198,7 @@ const Signup = () => {
                     className="show_password"
                     onClick={() => setHideConfirmPass(!hideConfirmPass)}
                   >
-                    <img src={Images.eyeClose} alt="" />
+                    <img src={Images.eyeClose} alt="" className="eye_icon" />
                   </div>
                 </>
               ) : (
@@ -207,7 +207,7 @@ const Signup = () => {
                     className="show_password"
                     onClick={() => setHideConfirmPass(!hideConfirmPass)}
                   >
-                    <img src={Images.eyeOpen} alt="" />
+                    <img src={Images.eyeOpen} alt="" className="eye_icon" />
                   </div>
                 </>
               )}
