@@ -28,7 +28,7 @@ const AllProducts = () => {
                 <div className="icon mx-3 mt-3">
                   <img src={Images?.searchResult} />
                 </div>
-                <div className="al_prdc_hd_2 mt-3">
+                <div className="al_prdc_hd_2 mt-3 mb-3">
                   Search result for <span className="fltr_reslt">Leather</span>
                 </div>
               </div>
@@ -52,13 +52,9 @@ const AllProducts = () => {
                 <ByRating />
               </div>
             </div>
-            <div className=" row mt-5 bodybar">
-              <div className="">
-                <Filterbar />
-              </div>
-              <div className="">
-                <ProductsCardsAL />
-              </div>
+            <div className="bodybar">
+              <Filterbar />
+              <ProductsCardsAL />
             </div>
           </div>
         </div>
