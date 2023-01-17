@@ -94,7 +94,6 @@ import user from "../../assets/images/user.svg";
 import cart_1 from "../../assets/images/cart_1.svg";
 import user2 from "../../assets/images/user2.svg";
 import search2 from "../../assets/images/search2.svg";
-// import france from "../../assets/images/france.svg";
 import malaysia from "../../assets/images/malaysia.svg";
 // import indonesia from "../../assets/images/indonesia.svg";
 // import turkey from "../../assets/images/turkey.svg";

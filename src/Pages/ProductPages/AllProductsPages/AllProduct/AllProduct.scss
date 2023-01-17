@@ -1,0 +1,50 @@
+.al_prdt {
+  .sec_1 {
+    .al_prdc_hd {
+      display: flex;
+      font-family: "Poppins";
+      font-style: normal;
+      .alprdc_sec1 {
+        display: flex;
+        .icon {
+          height: 1.4rem;
+          width: 1.4rem;
+          color: #231f20;
+        }
+        .al_prdc_hd_1 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 33px;
+        }
+      }
+      .alprdc_sec2 {
+        display: flex;
+        .icon {
+          height: 1.4rem;
+          width: 1.4rem;
+          color: #231f20;
+        }
+        .al_prdc_hd_2 {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 33px;
+          .fltr_reslt {
+            color: #6dad54;
+          }
+        }
+      }
+    }
+  }
+  .sec_2 {
+    display: flex;
+    .sidebar {
+      width: 20%;
+      height: auto;
+    }
+    .bodybar {
+      width: 80%;
+    }
+  }
+}
