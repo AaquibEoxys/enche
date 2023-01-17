@@ -106,6 +106,10 @@ $secondary_green_code: #a3ce2d;
             width: 50px;
           }
         }
+        span {
+          color: #5e5e60;
+          font-weight: 600;
+        }
       }
     }
 
@@ -314,16 +318,16 @@ $secondary_green_code: #a3ce2d;
 
         .card_text {
           font-size: 13px;
-          color: #000000;
+          color: #646464;
           padding: 5px 5px 0px 5px;
-          font-weight: 400;
+          font-weight: 500;
         }
 
         .card_x_price {
           text-decoration: line-through;
           padding: 0 7px;
           font-size: 13px;
-          font-weight: 500;
+          font-weight: 400;
           color: #000000;
         }
 
@@ -331,6 +335,7 @@ $secondary_green_code: #a3ce2d;
           font-weight: 700;
           padding: 1px 7px;
           font-size: 15px;
+          color: #3d3b3b;
         }
 
         .star_icons {
@@ -559,7 +564,7 @@ $secondary_green_code: #a3ce2d;
 
         span {
           font-size: 14px;
-          font-weight: 500;
+          font-weight: 400;
           text-align: center;
           height: 40px;
         }
@@ -805,7 +810,7 @@ $secondary_green_code: #a3ce2d;
           }
 
           .explore_text {
-            font-weight: 600;
+            font-weight: 500;
             color: #4d4d4d;
             padding: 5px 25px 0px 9px;
             // padding: 5px 20px 0px 9px;
@@ -823,6 +828,7 @@ $secondary_green_code: #a3ce2d;
           .card_price {
             padding: 0px 10px;
             font-weight: 700;
+            color: #484848;
           }
         }
       }
