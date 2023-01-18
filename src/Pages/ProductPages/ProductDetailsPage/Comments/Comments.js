@@ -56,7 +56,7 @@ const Comments = () => {
     <div>
       <div className="cmnt_sctn p-3 container">
         {commentdata?.map((item, key) => (
-          <div className="cmtr_ns row container">
+          <div className="cmtr_ns row container" key={key}>
             <div className="img_cmtr col-1">
               <img src={item?.img} alt="" />
             </div>

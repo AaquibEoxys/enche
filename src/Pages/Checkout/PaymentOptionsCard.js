@@ -20,8 +20,10 @@ const PaymentOptionsCard = () => {
       <div className=" row pymtoptncrd_sec_one">
         <div className="pmnt_mtd col-2">PayMent Method</div>
         <div className="mthd_optn col-10">
-          {data?.map((item) => (
-            <div className="optn_tb btn mx-2 mt-2 mb-2">{item}</div>
+          {data?.map((item, key) => (
+            <div className="optn_tb btn mx-2 mt-2 mb-2" key={key}>
+              {item}
+            </div>
           ))}
         </div>
       </div>

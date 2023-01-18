@@ -75,8 +75,8 @@ const Cart = () => {
             </tr>
           </thead>
           {shopName.map((list, key) => (
-            <>
-              <div className="mt-4">
+            <React.Fragment key={key}>
+              <div className="mt-4" key={key}>
                 <div className="table_shop_head">
                   <div className="check_shop">
                     <input
@@ -95,9 +95,9 @@ const Cart = () => {
                 </div>
               </div>
               <tbody className="test">
-                {list.cartData.map((item) => (
-                  <>
-                    <tr className="row_space" key={key}>
+                {list.cartData.map((item, key) => (
+                  <React.Fragment key={key}>
+                    <tr className="row_space">
                       <td className="col-xl-4 col-lg-4">
                         <div className="product_det_img mt-2">
                           <div className=" product_det">
@@ -121,10 +121,10 @@ const Cart = () => {
                       <td className="total_price">{item?.total_price}</td>
                       <td className="delete_item">Delete</td>
                     </tr>
-                  </>
+                  </React.Fragment>
                 ))}
               </tbody>
-            </>
+            </React.Fragment>
           ))}
         </Table>
         <div className="total_cart">
