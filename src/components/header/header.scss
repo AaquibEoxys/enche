@@ -96,7 +96,7 @@ $secondary_green_code: #a3ce2d;
         background: #fff;
         color: #000;
         top: 30px;
-        width: 200px;
+        width: 150px;
         padding: 1px 0;
         .option_with_flag {
           display: flex;
@@ -219,7 +219,7 @@ $secondary_green_code: #a3ce2d;
       position: absolute;
       left: 0;
       right: 0;
-      width: 80%;
+      width: 55%;
       top: 0;
       background: #fff;
       animation-name: slow_toggle_nav;
@@ -324,7 +324,7 @@ $secondary_green_code: #a3ce2d;
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .fixed_navbar {
     display: none;
   }

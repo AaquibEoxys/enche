@@ -226,7 +226,7 @@ const Home = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="col-xl-10 col-lg-12 img_banner">
+              <div className="col-xl-10 col-lg img_banner">
                 <img src={Images?.banners} alt="" className="banner_img" />
               </div>
             </div>
@@ -274,7 +274,7 @@ const Home = () => {
             <div className="arrival_content arrival_resp row">
               {newArrival.map((item, key) => (
                 <div
-                  className="card_arrival col-xl-2 col-lg-4 col-md-4 "
+                  className="card_arrival col-xxl-2 col-xl-2 col-lg-4 col-md-4 col-sm-6"
                   key={key}
                 >
                   <div className="card_arrival_Img">
@@ -350,7 +350,7 @@ const Home = () => {
             <div className="row">
               {craft.map((item, key) => (
                 <div
-                  className="artisan_content col-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6 "
+                  className="artisan_content col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 "
                   key={key}
                 >
                   <div className="card_artisan">
@@ -485,8 +485,7 @@ const Home = () => {
                         </div>
                       </div>
                       <div className="explore_text">
-                        {" "}
-                        <span>{item.label}</span> <span> {item.size} </span>{" "}
+                        <span>{item.label}</span> <span> {item.size} </span>
                       </div>
                       <div className="star_icons">
                         <StarRating rating={item.rating} />

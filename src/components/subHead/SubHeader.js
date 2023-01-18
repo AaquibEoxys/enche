@@ -124,105 +124,107 @@ const SubHeader = () => {
               <div className="home_icons"></div>
             </div>
           </div>
-          <div className="home_news">
-            <div> KUDOS </div>
-            <div> Newsletter </div>
-            <div> Help </div>
-            <div> Contact Us </div>
-            <div> About Us </div>
-            <div className="header_resp_lang" name="level">
+          <div className="container">
+            <div className="home_news">
+              <div> KUDOS </div>
+              <div> Newsletter </div>
+              <div> Help </div>
+              <div> Contact Us </div>
+              <div> About Us </div>
+              <div className="header_resp_lang" name="level">
+                <div
+                  className="nav_lang_div"
+                  id="menu_barContract"
+                  onClick={() => setDrop(!drop)}
+                >
+                  <div className="nav_lang_img">
+                    <img src={selectedLang?.logo} alt="" />
+                  </div>
+                  <div className="nav_lang_lebel">
+                    {selectedLang?.language}&nbsp;
+                    <i className="fa fa-chevron-down"></i>
+                  </div>
+                  {drop ? (
+                    <div className="drop_down">
+                      {langaugeList.map((item, key) => (
+                        <div
+                          className="option_with_flag"
+                          onClick={(e) => {
+                            setSelectedLang({
+                              logo: item.img,
+                              language: item.name,
+                            });
+                          }}
+                          key={key}
+                        >
+                          <div className="resp_lang_option">
+                            <div className="country_flag">
+                              <img src={item.img} alt="" />
+                            </div>
+                            <div className="country_langaue">{item.name}</div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
+              </div>
               <div
-                className="nav_lang_div"
-                id="menu_barContract"
-                onClick={() => setDrop(!drop)}
+                value={value?.currency}
+                name="currency"
+                onChange={(e) => setValue({ [e.target.name]: e.target.value })}
+                onClick={() => setCurr(!curr)}
+                className="lang_drop"
               >
-                <div className="nav_lang_img">
-                  <img src={selectedLang?.logo} alt="" />
-                </div>
-                <div className="nav_lang_lebel">
-                  {selectedLang?.language}&nbsp;
-                  <i className="fa fa-chevron-down"></i>
-                </div>
-                {drop ? (
-                  <div className="drop_down">
-                    {langaugeList.map((item, key) => (
-                      <div
-                        className="option_with_flag"
-                        onClick={(e) => {
-                          setSelectedLang({
-                            logo: item.img,
-                            language: item.name,
-                          });
-                        }}
-                        key={key}
-                      >
-                        <div className="resp_lang_option">
+                <div className="nav_lang_div" id="currency">
+                  <div className="lang_nav_drop">
+                    <div className="nav_lang_img">
+                      <img src={selectedCurrency?.logo} alt="" />
+                    </div>
+                    <div className="nav_lang_lebel">
+                      {selectedCurrency?.language} &nbsp;
+                      <i className="fa fa-chevron-down"></i>
+                    </div>
+                  </div>
+                  {curr ? (
+                    <div id="menu_barContract" className="curr_option">
+                      {currencyList.map((item, key) => (
+                        <div
+                          className="option_with_flag"
+                          onClick={(e) => {
+                            setSelectedCurrency({
+                              logo: item.img,
+                              language: item.name,
+                            });
+                          }}
+                          key={key}
+                        >
                           <div className="country_flag">
                             <img src={item.img} alt="" />
                           </div>
                           <div className="country_langaue">{item.name}</div>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                ) : null}
-              </div>
-            </div>
-            <div
-              value={value?.currency}
-              name="currency"
-              onChange={(e) => setValue({ [e.target.name]: e.target.value })}
-              onClick={() => setCurr(!curr)}
-              className="lang_drop"
-            >
-              <div className="nav_lang_div" id="currency">
-                <div className="lang_nav_drop">
-                  <div className="nav_lang_img">
-                    <img src={selectedCurrency?.logo} alt="" />
-                  </div>
-                  <div className="nav_lang_lebel">
-                    {selectedCurrency?.language} &nbsp;
-                    <i className="fa fa-chevron-down"></i>
-                  </div>
+                      ))}
+                    </div>
+                  ) : null}
                 </div>
-                {curr ? (
-                  <div id="menu_barContract" className="curr_option">
-                    {currencyList.map((item, key) => (
-                      <div
-                        className="option_with_flag"
-                        onClick={(e) => {
-                          setSelectedCurrency({
-                            logo: item.img,
-                            language: item.name,
-                          });
-                        }}
-                        key={key}
-                      >
-                        <div className="country_flag">
-                          <img src={item.img} alt="" />
-                        </div>
-                        <div className="country_langaue">{item.name}</div>
-                      </div>
-                    ))}
-                  </div>
-                ) : null}
               </div>
+              <select
+                className="join_us_resp navigation_link"
+                name="level"
+                onChange={(e) => setValue({ [e.target.name]: e.target.value })}
+              >
+                <option defaultValue="Join As" hidden>
+                  Join As
+                </option>
+                <option value="abc" className="curencyOption">
+                  Buyer
+                </option>
+                <option value="abc" className="curencyOption">
+                  Seller
+                </option>
+              </select>
             </div>
-            <select
-              className="join_us_resp navigation_link"
-              name="level"
-              onChange={(e) => setValue({ [e.target.name]: e.target.value })}
-            >
-              <option defaultValue="Join As" hidden>
-                Join As
-              </option>
-              <option value="abc" className="curencyOption">
-                Buyer
-              </option>
-              <option value="abc" className="curencyOption">
-                Seller
-              </option>
-            </select>
           </div>
           <div className="responsive_lang"></div>
         </div>
