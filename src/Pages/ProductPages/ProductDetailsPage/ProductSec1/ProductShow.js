@@ -40,14 +40,12 @@ const ProductShow = (props) => {
         </div>
 
         <div className="col-lg-7 col-md-7 col-sm-7 col-xs-12 dtls_part">
-          <div className="h3 fw-bold mt-5 mx-3">
-            {props.newArrival[0].label}
-          </div>
+          <div className="pdc_hdng mt-5 mx-3">{props.newArrival[0].label}</div>
 
           <div className="rating-sec mt-3">
-            <div className="rt_sec_p  ml-3 mx-3">
-              <div className="rating-text green h4">5.0</div>
-              <div className="rating-star green mx-2">
+            <div className="rt_sec_p ml-3 mx-3">
+              <div className="rating-text">5.0</div>
+              <div className="rating-star mx-2">
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
@@ -56,51 +54,55 @@ const ProductShow = (props) => {
               </div>
             </div>
             <div className="rt_sec_p  mx-3">
-              <div className="h4">14</div>
-              <div className="h4">Ratings</div>
+              <div className="nmb_rtng">14</div>
+              <div className="rtng_txt">Ratings</div>
             </div>
             <div className="rt_sec_p  mx-3">
-              <div className="h4">|</div>
+              <div className="lin"></div>
             </div>
             <div className="rt_sec_p ">
-              <div className="h4">15</div>
-              <div className="h4">Sold</div>
+              <div className="nmb_rtng">15</div>
+              <div className="rtng_txt">Sold</div>
             </div>
           </div>
           <div className="discnt row mt-3">
-            <div className="discntprsnt fw-bold col-4">-15 Off</div>
+            <div className="discntprsnt col-2">-15 Off</div>
             <div className="discntamnt col-8">
-              <span className="fw-bold">RM 20.00</span> on{" "}
-              <span className="fw-bold">12Dec</span>,12am-2am
+              <span className="">RM 20.00</span> on{" "}
+              <span className="">12Dec</span>,12am-2am
             </div>
+            <div className="disxtra col-2"></div>
           </div>
           <div className="price_sec m-2">
             <div className="prc_dsc mx-5">
-              <span className="h2 lnthr_txt">RM 25.00</span>
+              <span className="lnthr_txt">RM 25.00</span>
             </div>
-            <div className="price display-4 fw-bold green">RM 20.00</div>
+            <div className="price">RM 20.00</div>
+            <div className="prc_of m-2">
+              <div className="dcnt_dt">-15 off</div>
+            </div>
           </div>
           <div className="shipping_dtls_sec mt-5 mx-5">
             <div className="shipping_sec row">
-              <div className="sps_s_txt fw-bold col mx-3">Shipping</div>
+              <div className="sps_s_txt  col mx-3">Shipping</div>
               <div className="sps_s_icon col mx-3">
                 <img src={Images.shippingIcon} />
               </div>
             </div>
             <div className="spng_al">
-              <div className="spng_to row">
-                <div className="shipin col-6">Shipping To</div>
+              <div className="spng_to fr_drp_dwn row">
+                <div className="shipin  col">Shipping To</div>
                 <div className="spng_drpdn col mx-3">
-                  <select>
-                    <option>abc</option>
+                  <select className="drp_dwn">
+                    <option>Hello World</option>
                   </select>
                 </div>
               </div>
-              <div className="spng_frm row mt-3">
-                <div className="shipin col-6">ShippingFees</div>
+              <div className="spng_frm fr_drp_dwn row mt-3">
+                <div className="shipin col">ShippingFees</div>
                 <div className="spng_drpdn col mx-3">
-                  <select>
-                    <option>abc</option>
+                  <select className="drp_dwn">
+                    <option>dddsaakkkl</option>
                   </select>
                 </div>
               </div>
@@ -124,7 +126,7 @@ const ProductShow = (props) => {
                 </div>
               }
             </div>
-            <div className="avlablty col-2 mx-3">
+            <div className="avlablty col-4 mx-3">
               <div className="avl_qty">816 Available</div>
             </div>
           </div>
@@ -136,7 +138,6 @@ const ProductShow = (props) => {
               <div className="cart_msg">Add To Cart</div>
             </div>
             <div className="btnn_bynw col-2 mx-3">BuyNow</div>
-            <div className="btnn_bynw col-2 mx-1">RFQ</div>
           </div>
         </div>
       </div>

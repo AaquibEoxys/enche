@@ -6,19 +6,19 @@
   .prdcpth_dt {
     color: #6eb151;
     font-family: "Roboto";
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
   .grtrtn {
-    font-size: 24px;
+    font-size: 1.5vw;
     color: #000000;
   }
 }
 
 .prdc_sec {
   background-color: #fff;
+
   .img_part {
     padding: 5%;
-
     img {
       width: 100%;
     }
@@ -31,23 +31,58 @@
     }
   }
   .dtls_part {
+    .pdc_hdng {
+      font-size: 1.93vw;
+      font-weight: 700;
+      font-family: "Poppins";
+    }
     .rating-sec {
       display: flex;
+      font-size: 1.5vw;
+      font-family: "Poppins";
+      font-weight: 400;
       .rt_sec_p {
         display: flex;
-      }
-      .green {
-        color: #71ad42;
+        .rating-text {
+          color: #71ad42;
+        }
+        .rating-star {
+          color: #71ad42;
+        }
+        .nmb_rtng {
+          color: #282a30;
+        }
+        .rtng_txt {
+          color: #9d9d9d;
+        }
+        .lin {
+          border: 2px solid #000000;
+        }
       }
     }
     .discnt {
-      background-image: linear-gradient(
+      font-family: "Poppins";
+      color: #fff;
+      padding: 1%;
+      background-color: linear-gradient(
         269.94deg,
         #57a966 6.02%,
         #5bab66 6.02%
       );
-      color: #fff;
-      padding: 1%;
+      .discntprsnt {
+        font-size: 1.75vw;
+        font-weight: 700;
+        background: #328f64;
+      }
+      .discntamnt {
+        font-size: 1.75vw;
+        font-weight: 600;
+        background-color: #8ec687;
+      }
+      .disxtra {
+        background-color: #8ec687;
+        opacity: 0.68;
+      }
     }
     .price_sec {
       display: flex;
@@ -56,14 +91,33 @@
         .lnthr_txt {
           text-decoration: line-through;
           color: #7a7878;
+          font-size: 1.5vw;
+          font-weight: 600;
         }
       }
-      .green {
-        color: #6dad54;
+      .price {
+        color: #71ad42;
+        font-size: 2vw;
+        font-weight: 700;
+      }
+      .prc_of {
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.87vw;
+        margin-bottom: 6%;
+        margin-left: 6%;
+        .dcnt_dt {
+          width: 65px;
+          background-color: #71ad42;
+          text-align: center;
+        }
       }
     }
     .shipping_dtls_sec {
       display: flex;
+      font-size: 1vw;
+      font-weight: 600;
+      font-family: "Poppins";
       .shipping_sec {
         display: flex;
         .sps_s_txt {
@@ -72,48 +126,66 @@
       }
       .spng_al {
         color: #7b7b7c;
+        .fr_drp_dwn {
+          .spng_drpdn {
+            .drp_dwn {
+              color: #000000;
+              font-weight: 600;
+              width: 10vw;
+            }
+          }
+        }
       }
     }
     .clr_chs {
-      .clr_hd {
-        color: #7b7b7c;
-        font-weight: 1000;
-      }
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.1vw;
+      color: #7b7b7c;
+
       .clr_opt {
         border: 1px solid lightgray;
         text-align: center;
         border-radius: 3px;
-        color: #7b7b7c;
-        font-weight: 1000;
       }
     }
     .qntty_sec {
       color: #7b7b7c;
-      font-weight: 1000;
+      font-family: "Poppins";
+      .qntty_sec_hd {
+        font-weight: 700;
+      }
       .qntty_sec_cntr {
         .add_qntty {
           display: flex;
+
           button {
             border: 1px solid lightgray;
             padding-left: 14%;
             padding-right: 14%;
             border-radius: 3px;
             color: #7b7b7c;
+            font-weight: 600;
+            font-size: 1.1vw;
           }
         }
       }
     }
     .add_sec_bynw {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1vw;
       .buttn {
-        border: 1px solid #6dad54;
+        border: 2px solid #6dad54;
         border-radius: 3px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         color: #6dad54;
-        width: 25%;
         .img_cart {
-          width: 40px;
+          width: 24px;
         }
       }
       .btnn_bynw {

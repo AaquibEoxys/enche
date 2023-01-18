@@ -3,9 +3,9 @@ import "./CheckoutCard.scss";
 import Images from "../../components/Images/Images";
 const CheckoutCard = () => {
   return (
-    <div className="chk_crd">
-      <div className="container  mt-3">
-        <div className="row chk_ot_crd pt-5">
+    <div className="chk_crd mb-2">
+      <div className="container mt-3">
+        <div className="row chk_ot_crd pt-3">
           <div className="col-8">
             <div className="chk_ot_hd mx-2">Product Order</div>
           </div>
@@ -51,7 +51,7 @@ const CheckoutCard = () => {
           </div>
         </div>
       </div>
-      <div className="row msg_shp mt-5 mx-2 mb-3">
+      <div className="row msg_shp mt-2 mx-2 mb-3">
         <div className="col-1 msg_hder">Message</div>
         <div className="col-4 msg_input">
           <input
@@ -67,9 +67,13 @@ const CheckoutCard = () => {
         <div className="col-2 chng">CHANGE</div>
         <div className="col-1 lst_prc">RM4.90</div>
       </div>
+      <hr />
       <div className="fnl_ordr_dtls">
-        <div className="ordr_ttl"></div>
-        <div className="ttl_prc"></div>
+        <div className="ordr_ttl">
+          <div className="odr_ttl_stc_dt">Order Total</div>
+          <div className="odr_ttl_dnm_dt">(1 item)</div>
+        </div>
+        <div className="ttl_prc mx-2">RM 6.70</div>
       </div>
     </div>
   );

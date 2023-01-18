@@ -134,11 +134,18 @@
   .fnl_ordr_dtls {
     font-family: "Roboto";
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-left: 80%;
+
     .ordr_ttl {
+      display: flex;
       color: #929292;
+      font-size: 0.93vw;
     }
     .ttl_prc {
       color: #f05a38;
+      font-size: 1.4vw;
     }
   }
 }

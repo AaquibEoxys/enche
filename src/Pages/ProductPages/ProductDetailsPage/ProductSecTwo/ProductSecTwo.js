@@ -12,14 +12,14 @@ const ProductSecTwo = () => {
         <div className="sect_cht_vs col-3">
           <div className="sect_cht_vs_s1">
             <div className="sect_cht_vs_s1_cn">enche.com</div>
-            <div className="fw-light">Active 15 Minutes Ago</div>
+            <div className="sect_cht_vs_s1_msg">Active 15 Minutes Ago</div>
             <div className="btn_sec row">
               <div className="btn_cht col-6 mt-2">
                 <div className="btn_ct_sh p-1">
                   <div className="chat_icon mx-1">
                     <img src={Image.chatNow} />
                   </div>
-                  <div className="chat_msg mx-2">Chat Now</div>
+                  <div className="chat_msg">Chat Now</div>
                 </div>
               </div>
               <div className="btn_vshp col-6 mt-2 ">
