@@ -2,7 +2,7 @@ $green_code: #6dad54;
 $secondary_green_code: #a3ce2d;
 
 .home_page {
-  background-color: rgb(216 214 214 / 43%);
+  background-color: #f3f3f3;
   height: 110px;
 
   .home_Head {
@@ -473,6 +473,10 @@ $secondary_green_code: #a3ce2d;
                 border-radius: 50%;
               }
             }
+
+            .nav_lang_lebel {
+            }
+
             .drop_down {
               .option_with_flag {
                 .resp_lang_option {

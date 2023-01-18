@@ -19,8 +19,9 @@
       }
       .prdc_details {
         .details_head {
-          color: #646469;
-          font-weight: 600;
+          color: #1a1c1e;
+          font-weight: 500;
+          font-size: 14px;
         }
         border-left: 1px solid #71ad42;
         border-right: 1px solid #71ad42;
@@ -30,7 +31,13 @@
           border: 1px solid #7fb555;
           font-size: 0.75vw;
           text-align: center;
+          font-weight: 500;
           border-radius: 3px;
+        }
+        .mn_prc {
+          text-decoration: line-through;
+          color: #9f9fa7;
+          font-size: 14px;
         }
         .prdc_prc {
           font-size: 0.875vw;
@@ -39,33 +46,42 @@
         }
         .card_ftr {
           display: flex;
+          align-items: center;
 
           .cart_cntns {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             color: #71ad42;
             border: 1px solid #71ad42;
             border-radius: 3px;
             padding: 1%;
             font-size: 0.7vw;
+            padding: 3%;
+
             .cart_img {
               img {
-                height: 13px;
+                height: 16px;
               }
             }
             .cart_msg {
-              font-size: 0.68vw;
-              font-weight: 600;
+              font-size: 12px;
+              font-weight: 500;
             }
           }
           .btn_sec {
+            display: flex;
+            align-items: flex-end;
             button {
               background-color: #71ad42;
               color: white;
               border: transparent;
               border-radius: 3px;
-              font-size: 0.8vw;
+              font-size: 12px;
+              padding-top: 12%;
+              padding-bottom: 12%;
+              padding-left: 20%;
+              padding-right: 20%;
             }
           }
         }
