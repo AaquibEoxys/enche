@@ -12,8 +12,9 @@ import { Container } from "react-bootstrap";
 
 const AllProducts = () => {
   return (
-    <>
+    <div className="container-fluid">
       <SubHeader />
+      <div className="hr_ln"></div>
       <Container>
         <div className="al_prdt p-5">
           <div className="sec_1">
@@ -63,7 +64,7 @@ const AllProducts = () => {
           </div>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 

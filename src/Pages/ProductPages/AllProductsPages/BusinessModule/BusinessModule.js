@@ -4,7 +4,7 @@ import "./BusinessModule.scss";
 const BusinessModule = () => {
   return (
     <>
-      <div className="fw-bold">Business Module</div>
+      <div className="bm_hdr">Business Module</div>
       <div className="form-check mt-3">
         <input
           className="form-check-input"

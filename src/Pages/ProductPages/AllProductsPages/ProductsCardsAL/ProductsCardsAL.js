@@ -117,21 +117,22 @@ const ProductsCardsAL = () => {
               </div>
               <div className="col">
                 <div className="prdc_details">
-                  <div className="details_head mx-2">{item?.label}</div>
-                  <div className="dtls_seller col-xs-12 col-md-8 col-xl-8 col-sm-8 mx-2">
+                  <div className="details_head mx-2 pt-1">{item?.label}</div>
+                  <div className="dtls_seller col-xs-12 col-md-8 col-xl-8 col-sm-8 mx-2 mt-1">
                     {item?.seller}
                   </div>
-                  <div className="prdc_prc mx-2">{item?.price}</div>
-                  <div className="card_ftr row m-1">
-                    <div className="cart_cntns col-6">
+                  <div className="mn_prc mx-2 mt-1">{item.xprice}</div>
+                  <div className="prdc_prc mx-2 mt-1">{item?.price}</div>
+                  <div className="card_ftr mt-2 mb-2">
+                    <button className="cart_cntns mx-1">
                       <div className="cart_img">
                         <img src={Images?.cart_1} alt="" />
                       </div>
                       <div className="cart_msg p">Add To Cart</div>
-                    </div>
+                    </button>
 
-                    <div className="btn_sec col-4">
-                      <button className="btn p">BuyNow</button>
+                    <div className="btn_sec col-5">
+                      <button className="p mx-1">BuyNow</button>
                     </div>
                   </div>
                 </div>
