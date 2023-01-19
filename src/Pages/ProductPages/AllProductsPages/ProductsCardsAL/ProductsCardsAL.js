@@ -132,7 +132,7 @@ const ProductsCardsAL = () => {
                     </button>
 
                     <div className="btn_sec col-5">
-                      <button className="p mx-1">BuyNow</button>
+                      <button className="p mx-1">Buy Now</button>
                     </div>
                   </div>
                 </div>

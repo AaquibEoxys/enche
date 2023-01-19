@@ -16,10 +16,12 @@
       font-style: normal;
       .alprdc_sec1 {
         display: flex;
+        align-items: center;
+        width: 17%;
+
         .icon {
-          height: 16px;
-          width: 16px;
-          color: #231f20;
+          height: 20px;
+          width: 20px;
         }
         .al_prdc_hd_1 {
           font-family: "Poppins";
@@ -49,6 +51,7 @@
   }
   .sec_2 {
     display: flex;
+    justify-content: space-between;
     .sidebar {
       width: 20%;
       height: auto;

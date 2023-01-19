@@ -1,32 +1,47 @@
 import React, { useState } from "react";
 import "./ProductShow.scss";
 import Images from "../../../../components/Images/Images";
-
+let TotalQuantity = 16;
 const ProductShow = (props) => {
   const [Quantity, setQuantity] = useState(0);
   const add = () => {
-    setQuantity((count) => count + 1);
+    if (TotalQuantity > Quantity) setQuantity((count) => count + 1);
   };
   const remove = () => {
     if (Quantity > 0) {
       setQuantity((count) => count - 1);
     }
   };
+
   return (
     <div className="container">
-      <div className="prdcpath">
-        <div className="prdcpth_dt">enche</div>
-        <div className="grtrtn">&#62;</div>
-        <div className="prdcpth_dt">product</div>
-        <div className="grtrtn">&#62;</div>
-        <div className="prdcpth_dt">Category</div>
-        <div className="grtrtn">&#62;</div>
-        <div className="prdcpth_dt">Artisan Crafts</div>
-        <div className="grtrtn">&#62;</div>
-        <div className="prdcpth_dt">Gold-laced Black Leather[size 22]</div>
+      <div className="prdcpath row ">
+        <div className="hdng_data">
+          <h4 className="prdcpth_dt mx-2">
+            enche
+            <span className="grtrtn">&#62;</span>
+          </h4>
+
+          <h4 className="prdcpth_dt mx-2">
+            product
+            <span className="grtrtn">&#62;</span>
+          </h4>
+
+          <h4 className="prdcpth_dt mx-2">
+            Category<span className="grtrtn">&#62;</span>
+          </h4>
+
+          <h4 className="prdcpth_dt  mx-2">
+            Artisan Crafts<span className="grtrtn">&#62;</span>
+          </h4>
+
+          <div className="col-4">
+            <h4 className="prdcpth_dt">Gold-laced Black Leather[size 22]</h4>
+          </div>
+        </div>
       </div>
-      <div className="prdc_sec mt-3 ml-5 mr-5 row">
-        <div className="col-lg-5 col-md-5 col-sm-5 col-xs-12 img_part">
+      <div className="prdc_sec mt-3 row">
+        <div className="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-md-auto img_part">
           <div>
             <img src={props.newArrival[0].img} alt="" />
           </div>
@@ -39,7 +54,7 @@ const ProductShow = (props) => {
           </div>
         </div>
 
-        <div className="col-lg-7 col-md-7 col-sm-7 col-xs-12 dtls_part">
+        <div className="col-lg-7 col-md-7 col-sm-7  col-md-auto col-xs-12 dtls_part">
           <div className="h3 fw-bold mt-5 mx-3">
             {props.newArrival[0].label}
           </div>
@@ -125,7 +140,7 @@ const ProductShow = (props) => {
               }
             </div>
             <div className="avlablty col-2 mx-3">
-              <div className="avl_qty">816 Available</div>
+              <div className="avl_qty">{TotalQuantity} Available</div>
             </div>
           </div>
           <div className="add_sec_bynw mt-5 mb-5 row">
@@ -136,7 +151,6 @@ const ProductShow = (props) => {
               <div className="cart_msg">Add To Cart</div>
             </div>
             <div className="btnn_bynw col-2 mx-3">BuyNow</div>
-            <div className="btnn_bynw col-2 mx-1">RFQ</div>
           </div>
         </div>
       </div>

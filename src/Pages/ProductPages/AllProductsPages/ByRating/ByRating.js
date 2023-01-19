@@ -6,46 +6,26 @@ const ByRating = () => {
     <div className="main">
       <div className="fw-bold">By Rating</div>
       <div className="form-check mt-3">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckDefault"
-        />
-        <label className="form-check-label" for="flexCheckDefault">
+        <input className="form-check-input" type="checkbox" value="" />
+        <label className="form-check-label" for="#">
           Default checkbox
         </label>
       </div>
       <div className="form-check mt-3">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckChecked"
-        />
-        <label className="form-check-label" for="flexCheckChecked">
+        <input className="form-check-input" type="checkbox" value="" />
+        <label className="form-check-label" for="#">
           Checked checkbox
         </label>
       </div>
       <div className="form-check mt-3">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckDefault"
-        />
-        <label className="form-check-label" for="flexCheckDefault">
+        <input className="form-check-input" type="checkbox" value="" />
+        <label className="form-check-label" for="#">
           Default checkbox
         </label>
       </div>
       <div className="form-check mt-3">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckChecked"
-        />
-        <label className="form-check-label" for="flexCheckChecked">
+        <input className="form-check-input" type="checkbox" value="" />
+        <label className="form-check-label" for="#">
           Checked checkbox
         </label>
       </div>

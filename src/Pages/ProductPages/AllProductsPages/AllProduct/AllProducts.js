@@ -16,14 +16,14 @@ const AllProducts = () => {
       <SubHeader />
       <div className="hr_ln"></div>
       <Container>
-        <div className="al_prdt p-5">
+        <div className="al_prdt py-5">
           <div className="sec_1">
             <div className="al_prdc_hd">
               <div className="alprdc_sec1">
-                <div className="icon mx-3 mt-3">
-                  <img src={Images?.filter_1} alt="" />
+                <div className="icon mx-2">
+                  <img src={Images.filter_1} />
                 </div>
-                <div className="al_prdc_hd_1 mt-3">Filter Result</div>
+                <span className="al_prdc_hd_1">Filter Result</span>
               </div>
               <div className="alprdc_sec2 mx-5">
                 <div className="icon mx-3 mt-3">
@@ -37,23 +37,13 @@ const AllProducts = () => {
           </div>
           <div className="sec_2">
             <div className="sidebar">
-              <div className="mx-3 mt-3">
-                <ShippedFrom />
-              </div>
-              <div className="mx-3">
-                <BusinessModule />
-              </div>
-              <div className="mx-3">
-                <PriceRange />
-              </div>
-              <div className="mx-3">
-                <ByCategory />
-              </div>
-              <div className="mx-3">
-                <ByRating />
-              </div>
+              <ShippedFrom />
+              <BusinessModule />
+              <PriceRange />
+              <ByCategory />
+              <ByRating />
             </div>
-            <div className=" row mt-5 bodybar">
+            <div className=" row mt-2 bodybar">
               <div className="">
                 <Filterbar />
               </div>

@@ -61,16 +61,17 @@
       color: #686868;
     }
   }
-  .flr_bar_2 {
+  .fl_br_2 {
     display: flex;
     align-items: center;
-    background-color: #e2e2e3;
+
     .fl_br_2 {
       display: flex;
     }
   }
   .np-btn {
-    .gtr_slmr {
+    .gtr_slmr_1,
+    .gtr_slmr_2 {
       padding-left: 30%;
       padding-right: 30%;
       padding-top: 15%;
@@ -78,8 +79,6 @@
       border: 1px solid gray;
       background-color: #fff;
       border-radius: 6px;
-      height: 0.5rem;
-      width: 0.75rem;
     }
   }
 }

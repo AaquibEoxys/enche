@@ -1,18 +1,31 @@
-.bm_hdr {
-  font-weight: 600;
-  font-size: 18px;
-}
-.form-check {
-  .form-check-label {
+.main {
+  .bm_hdr {
     color: #000000;
-    font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Poppins";
   }
-  .form-checked-input {
-    background-color: #6dad54;
-    border-color: #6dad54;
+  .form-check {
+    .form-check-label {
+      color: #000000;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .form-checked-input {
+      background-color: #6dad54;
+      border-color: #6dad54;
+    }
+    .form-check-input[type="checkbox"] {
+      border-radius: 0em;
+    }
   }
-  .form-check-input[type="checkbox"] {
-    border-radius: 0em;
+  .more {
+    color: #000000;
+    select {
+      width: 25% !important;
+      font-weight: 600;
+      font-size: 14px;
+      background-color: transparent;
+    }
   }
 }

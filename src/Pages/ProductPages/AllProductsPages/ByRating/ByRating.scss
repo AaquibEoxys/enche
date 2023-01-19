@@ -15,9 +15,11 @@ main {
   .more {
     color: #000000;
     font-weight: 600;
-    font-size: 1.12rem;
     select {
-      width: 33% !important;
+      width: 25% !important;
+      font-weight: 600;
+      font-size: 14px;
+      background-color: transparent;
     }
   }
 }

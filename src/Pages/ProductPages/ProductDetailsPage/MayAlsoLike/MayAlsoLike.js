@@ -60,7 +60,7 @@ const TopPicks = () => {
         <div className="tpc_head h5  mt-4 mb-3">You May Also Like</div>
         {newArrival?.map((item, key) => (
           <div
-            className="card_prdc col-lg-2 col-md-2 col-sm-4 col-xs-4 mb-4 mt-1"
+            className="card_prdc col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 mb-4 mt-1"
             key={key}
           >
             <div className="row card_dvd">
