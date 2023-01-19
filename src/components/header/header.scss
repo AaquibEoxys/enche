@@ -75,6 +75,9 @@ $secondary_green_code: #a3ce2d;
         .drop_down {
           display: none;
         }
+        .joins_drop {
+          display: none;
+        }
         .nav_lang_img {
           height: 20px;
           width: 20px;
@@ -88,6 +91,9 @@ $secondary_green_code: #a3ce2d;
           display: block;
         }
         &:hover .drop_down {
+          display: block;
+        }
+        &:hover .joins_drop {
           display: block;
         }
       }
@@ -118,6 +124,34 @@ $secondary_green_code: #a3ce2d;
             }
           }
         }
+      }
+      .joins_drop {
+        position: absolute;
+        background: #fff;
+        color: #000;
+        top: 30px;
+        width: 70px;
+        padding: 1px 0;
+        .joins_option {
+          padding: 5px;
+          &:hover {
+            background-color: rgb(241, 239, 239);
+          }
+        }
+        // .option_with_flag {
+        //   display: flex;
+        //   gap: 13px;
+        //   align-items: center;
+        //   cursor: pointer;
+        //   padding: 1px 9px;
+        //   &:hover {
+        //     background-color: rgb(241, 239, 239);
+        //   }
+        //   .country_langaue {
+        //     font-size: 15px;
+        //     color: #000000;
+        //   }
+        // }
       }
     }
     .lang_drop {

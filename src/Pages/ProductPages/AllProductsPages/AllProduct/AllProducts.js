@@ -20,7 +20,7 @@ const AllProducts = () => {
           <div className="sec_1">
             <div className="al_prdc_hd">
               <div className="alprdc_sec1">
-                <div className="icon mx-2">
+                <div className="icon">
                   <img src={Images.filter_1} />
                 </div>
                 <span className="al_prdc_hd_1">Filter Result</span>
@@ -30,7 +30,8 @@ const AllProducts = () => {
                   <img src={Images?.searchResult} />
                 </div>
                 <div className="al_prdc_hd_2 mt-3 mb-3">
-                  Search result for <span className="fltr_reslt">Leather</span>
+                  Search result for &nbsp;"
+                  <span className="fltr_reslt">Leather</span>"
                 </div>
               </div>
             </div>

@@ -17,6 +17,7 @@
       .alprdc_sec1 {
         display: flex;
         align-items: center;
+        gap: 10px;
         width: 17%;
 
         .icon {
@@ -52,6 +53,7 @@
   .sec_2 {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     .sidebar {
       width: 20%;
       height: auto;

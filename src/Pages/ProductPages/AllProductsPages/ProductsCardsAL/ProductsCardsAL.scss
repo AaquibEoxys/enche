@@ -26,13 +26,13 @@
         border-left: 1px solid #71ad42;
         border-right: 1px solid #71ad42;
         border-bottom: 1px solid #71ad42;
+        background: #fff;
         .dtls_seller {
           color: #7fb555;
           border: 1px solid #7fb555;
           font-size: 0.75vw;
           text-align: center;
           font-weight: 500;
-          border-radius: 3px;
         }
         .mn_prc {
           text-decoration: line-through;
@@ -52,8 +52,10 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            gap: 5px;
             color: #71ad42;
             border: 1px solid #71ad42;
+            background: #ffffff;
             border-radius: 3px;
             padding: 1%;
             font-size: 0.7vw;
@@ -78,10 +80,33 @@
               border: transparent;
               border-radius: 3px;
               font-size: 13px;
-              padding-top: 11%;
-              padding-bottom: 11%;
+              padding-top: 7%;
+              padding-bottom: 7%;
               padding-left: 15%;
               padding-right: 15%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .all_products {
+    .card_prdc {
+      .card_dvd {
+        .prdc_details {
+          .card_ftr {
+            .cart_cntns {
+              padding: 3px;
+              gap: 3px;
+            }
+            .btn_sec {
+              button {
+                padding: 4px 8px;
+                font-size: 12px;
+              }
             }
           }
         }

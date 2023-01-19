@@ -10,6 +10,7 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   const [searchTab, setSearchTab] = useState(false);
   const [drop, setDrop] = useState(false);
+  const [joins, setJoins] = useState("Join As");
   const [selectedCurrency, setSelectedCurrency] = useState({
     logo: Images.malaysia,
     language: "MYR",
@@ -126,11 +127,7 @@ const Header = () => {
                   <div className="nav_lang_img">
                     <img src={selectedLang?.logo} alt="" />
                   </div>
-                  <div
-                    className="nav_lang_lebel"
-                    // id="language"
-                    // onClick={() => setDrop(!drop)}
-                  >
+                  <div className="nav_lang_lebel">
                     {selectedLang?.language}&nbsp;
                     <i className="fa fa-chevron-down"></i>
                   </div>
@@ -155,21 +152,34 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <select
-                className="curreny_option navigation_link"
+              <div
+                className="curreny_option navigation_link lang_drop"
                 name="level"
                 onChange={(e) => setValue({ [e.target.name]: e.target.value })}
               >
-                <option defaultValue="Join As" hidden>
-                  Join As
-                </option>
-                <option value="abc" className="curencyOption">
-                  Buyer
-                </option>
-                <option value="abc" className="curencyOption">
-                  Seller
-                </option>
-              </select>
+                <div className="nav_lang_div">
+                  <div className="nav_lang_lebel">
+                    {joins}&nbsp;
+                    <i className="fa fa-chevron-down"></i>
+                  </div>
+                  <div id="menu_barContract" className="joins_drop">
+                    <div
+                      value="Buyer"
+                      className="joins_option"
+                      onClick={(e) => setJoins("Buyer")}
+                    >
+                      Buyer
+                    </div>
+                    <div
+                      value="Seller"
+                      className="joins_option"
+                      onClick={(e) => setJoins("Seller")}
+                    >
+                      Seller
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="nav_sign">
                 <Link to="/signup" className="navigation_link nav_signIn">
                   <span>Sign Up</span>
