@@ -75,9 +75,9 @@ import icon06 from "../../assets/images/icon06.png";
 import icon07 from "../../assets/images/icon07.png";
 import vi from "../../assets/images/vi.png";
 import US from "../../assets/images/US.png";
-import indonesia from "../../assets/images/indonesia.png";
+// import indonesia from "../../assets/images/indonesia.png";
 import usa from "../../assets/images/usa.png";
-import turkey from "../../assets/images/turkey.png";
+// import turkey from "../../assets/images/turkey.png";
 // import vi from "../../assets/images/vi.png";
 // import US from "../../assets/images/US.png";
 // import indonesia from "../../assets/images/indonesia.png";
@@ -95,6 +95,8 @@ import cart_1 from "../../assets/images/cart_1.svg";
 import user2 from "../../assets/images/user2.svg";
 import search2 from "../../assets/images/search2.svg";
 import malaysia from "../../assets/images/malaysia.svg";
+import indonesia from "../../assets/images/indonesia.svg";
+import turkey from "../../assets/images/turkey.svg";
 import vietnam from "../../assets/images/vietnam.svg";
 import eyeOpen from "../../assets/images/eyeOpen.svg";
 import eyeClose from "../../assets/images/eyeClose.svg";
@@ -103,8 +105,16 @@ import test from "../../assets/images/test.jpg";
 import shippingIcon from "../../assets/images/shipping-icon.svg";
 import encheEllipse from "../../assets/images/encheEllipse.svg";
 import chatNow from "../../assets/images/chatNow.svg";
+import chatNow2 from "../../assets/images/chatNow2.svg";
+import chat_icon from "../../assets/images/chat_icon.svg";
 import viewShop from "../../assets/images/viewShop.svg";
 import homeLogo2 from "../../assets/images/homeLogo2.png";
+import bottle from "../../assets/images/bottle.jpeg";
+import bottle2 from "../../assets/images/bottle2.jpg";
+import bottle3 from "../../assets/images/bottle3.jpg";
+import locationDelivery from "../../assets/images/locationDelivery .svg";
+import cht_nw from "../../assets/images/cht_nw.svg";
+import carWash from "../../assets/images/carWash.png";
 
 const Images = {
   google,
@@ -209,6 +219,14 @@ const Images = {
   usa2,
   eyeOpen,
   eyeClose,
+  bottle,
+  bottle2,
+  bottle3,
+  chatNow2,
+  chat_icon,
+  locationDelivery,
+  cht_nw,
+  carWash,
 };
 
 export default Images;

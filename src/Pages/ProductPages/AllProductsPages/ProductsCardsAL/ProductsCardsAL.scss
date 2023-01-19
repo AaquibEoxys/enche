@@ -29,7 +29,7 @@
         .dtls_seller {
           color: #7fb555;
           border: 1px solid #7fb555;
-          font-size: 0.75rem;
+          font-size: 0.75vw;
           text-align: center;
           font-weight: 500;
           border-radius: 3px;
@@ -40,7 +40,7 @@
           font-size: 14px;
         }
         .prdc_prc {
-          font-size: 0.875rem;
+          font-size: 0.875vw;
           color: #d50909;
           font-weight: 500;
         }
@@ -55,6 +55,8 @@
             color: #71ad42;
             border: 1px solid #71ad42;
             border-radius: 3px;
+            padding: 1%;
+            font-size: 0.7vw;
             padding: 3%;
 
             .cart_img {

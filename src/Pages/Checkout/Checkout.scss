@@ -1,0 +1,61 @@
+.chk_ot_bdy {
+  background-color: #ededee;
+
+  .container {
+    .ck_ot_hd {
+      font-family: "Poppins";
+      font-size: 1.75vw;
+      color: #71ad42;
+      font-weight: 400;
+    }
+    .add_sec {
+      background-color: #fff;
+      .add_sec_hd {
+        display: flex;
+        .add_sec_hd_txt {
+          color: #71ad42;
+          font-size: 1.1vw;
+        }
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        .dflt_btn {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          .bttn {
+            color: #71ad42;
+            border: 1px solid #71ad42;
+            text-align: center;
+            font-size: 0.75rem;
+            padding: 2%;
+          }
+        }
+        .chng_opt {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          font-family: "Roboto";
+          font-weight: 500;
+          color: #539bf2;
+        }
+        .col-2 {
+          .nm_nmbr {
+            color: #000000;
+            font-size: 1vw;
+            font-weight: 600;
+          }
+        }
+        .col-8 {
+          color: #6e6e6e;
+          font-family: "Poppins";
+          font-weight: 400;
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}

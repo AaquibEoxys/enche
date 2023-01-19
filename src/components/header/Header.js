@@ -47,6 +47,21 @@ const Header = () => {
     { name: "Indonesia", img: Images.indonesia },
     { name: "Vietnamese", img: Images.vietnam },
   ];
+  const categoryList = [
+    "Fashion",
+    "Beauty & Personal Care",
+    "Mommy & Babies",
+    "Home Appliance",
+    "Health & Wellness",
+    "Pets",
+    "Service",
+    "Tool & Home Improvement",
+    "Sports and Hobbies",
+    "Automotive",
+    "Electronics Accessories",
+    "Muslim Fashion",
+    "Agriculture",
+  ];
 
   $(document).mouseup(function (e) {
     if (
@@ -139,8 +154,6 @@ const Header = () => {
                     ))}
                   </div>
                 </div>
-                {/* {drop ? ( */}
-                {/* ) : null} */}
               </div>
               <select
                 className="curreny_option navigation_link"
@@ -196,21 +209,11 @@ const Header = () => {
                       />
                     </span>
                   </div>
-                  <span className="list_category"> Fashion </span>
-                  <span className="list_category">Beauty & Personal Care</span>
-                  <span className="list_category"> Mommy & Babies </span>
-                  <span className="list_category"> Home Appliance </span>
-                  <span className="list_category"> Health & Wellness </span>
-                  <span className="list_category"> Pets </span>
-                  <span className="list_category"> Service </span>
-                  <span className="list_category">
-                    Tool & Home Improvenment
-                  </span>
-                  <span className="list_category"> Sports and Hobbies </span>
-                  <span className="list_category"> Automotive </span>
-                  <span className="list_category">Electronics Accessories</span>
-                  <span className="list_category"> Muslim Fashion </span>
-                  <span className="list_category"> Agriculture </span>
+                  {categoryList.sort().map((item, key) => (
+                    <span className="list_category" key={key}>
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
             ) : null}

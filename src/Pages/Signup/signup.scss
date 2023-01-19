@@ -12,6 +12,9 @@
           top: 8px;
           right: 10px;
           cursor: pointer;
+          .eye_icon {
+            height: 20px;
+          }
         }
       }
     }
@@ -19,6 +22,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      font-size: 13px;
       padding: 5px 0px 0px 0px;
       margin: 6px 0px 0px 0px;
       .check_remember {

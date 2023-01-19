@@ -1,4 +1,18 @@
 .prdc_dtls {
   background-color: #f3f3f3;
   width: 100%;
+
+  .sngl_prdc_dta {
+    display: flex;
+    align-items: center;
+
+    .sp_txt {
+      color: #6eb151;
+      font-size: 1.5rem;
+    }
+    .sp_sym {
+      height: 0.7rem;
+      width: 0.5rem;
+    }
+  }
 }

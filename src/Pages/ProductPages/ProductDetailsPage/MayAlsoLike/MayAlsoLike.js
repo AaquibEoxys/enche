@@ -57,7 +57,7 @@ const TopPicks = () => {
   return (
     <Container>
       <div className="myalslk row mt-4">
-        <div className="tpc_head h5  mt-4 mb-3">You May Also Like</div>
+        <div className="tpc_head mt-4 mb-3">You May Also Like</div>
         {newArrival?.map((item, key) => (
           <div
             className="card_prdc col-xl-2 col-lg-3 col-md-4 col-sm-4 col-xs-4 mb-4 mt-1"

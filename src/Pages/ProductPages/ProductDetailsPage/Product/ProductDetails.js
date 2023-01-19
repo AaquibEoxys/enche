@@ -48,7 +48,41 @@ const SingleProducts = () => {
   return (
     <div className="prdc_dtls">
       <SubHeader />
-      <div className="mt-4">
+      <div className="container">
+        {/* <div className="sngl_prdc_dta mt-3">
+          <div className="mx-2 sp_txt">Enche</div>
+          <div className="mx-2 sp_symb"> &#62;</div>
+          <div className="mx-2 sp_txt">Products</div>
+          <div className="mx-2 sp_symb"> &#62;</div>
+          <div className="mx-2 sp_txt">Category</div>
+          <div className="mx-2 sp_symb"> &#62;</div>
+          <div className="mx-2 sp_txt">Asian Craft</div>
+          <div className="mx-2 sp_symb"> &#62;</div>
+          <div className="mx-2 sp_txt">{newArrival[0].label}</div>
+        </div> */}
+        <div>
+          <ProductShow newArrival={newArrival} />
+        </div>
+        <div>
+          <ProductSecTwo />
+        </div>
+        <div>
+          <TopPicks />
+        </div>
+        <div>
+          <ProductSpecification />
+        </div>
+        <div>
+          <ProductRating />
+        </div>
+        <div>
+          <Comments />
+        </div>
+        <div>
+          <MayAlsoLike />
+        </div>
+      </div>
+      {/* <div className="mt-4">
         <ProductShow newArrival={newArrival} />
       </div>
       <div>
@@ -68,7 +102,7 @@ const SingleProducts = () => {
       </div>
       <div>
         <MayAlsoLike />
-      </div>
+      </div> */}
     </div>
   );
 };

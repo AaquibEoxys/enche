@@ -4,7 +4,7 @@
   .tpc_head {
     color: #1c1c1c;
     font-weight: 500;
-    font-size: 1.87rem;
+    font-size: 1.87vw;
   }
   .card_prdc {
     .card_dvd {
@@ -25,7 +25,7 @@
         .details_head {
           color: #646469;
           font-weight: 600;
-          font-size: 0.87rem;
+          font-size: 0.87vw;
         }
         border-left: 1px solid #71ad42;
         border-right: 1px solid #71ad42;
@@ -33,12 +33,12 @@
         .dtls_seller {
           color: #7fb555;
           border: 1px solid #7fb555;
-          font-size: 0.75rem;
+          font-size: 0.75vw;
           text-align: center;
           border-radius: 3px;
         }
         .prdc_prc {
-          font-size: 0.875rem;
+          font-size: 0.875vw;
           color: #d50909;
           font-weight: 500;
         }
@@ -53,14 +53,14 @@
             border: 1px solid #71ad42;
             border-radius: 3px;
             padding: 1%;
-            font-size: 0.7rem;
+            font-size: 0.7vw;
             .cart_img {
               img {
                 height: 13px;
               }
             }
             .cart_msg {
-              font-size: 0.68rem;
+              font-size: 0.68vw;
               font-weight: 600;
             }
           }
@@ -70,7 +70,7 @@
               color: white;
               border: transparent;
               border-radius: 3px;
-              font-size: 0.8rem;
+              font-size: 0.8vw;
             }
           }
         }
