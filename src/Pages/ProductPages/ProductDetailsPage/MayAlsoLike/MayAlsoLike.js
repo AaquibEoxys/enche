@@ -83,7 +83,7 @@ const TopPicks = () => {
                     </div>
 
                     <div className="btn_sec col-4">
-                      <button className="btn p">BuyNow</button>
+                      <button className="btn p">Buy Now</button>
                     </div>
                   </div>
                 </div>

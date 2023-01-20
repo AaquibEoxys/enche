@@ -14,7 +14,7 @@ const SingleProducts = () => {
   const newArrival = [
     {
       img: Images.wood,
-      label: "Gold-laced Black Leather [Size 22cm]",
+      label: "Designer Dark Brown Oak Wooden Chair",
       seller: "Indonesia Seller",
       rating: 3,
       xprice: "N.P : RM 25.99",

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ProductShow.scss";
 import Images from "../../../../components/Images/Images";
+import { Link } from "react-router-dom";
 let TotalQuantity = 16;
 const ProductShow = (props) => {
   const [Quantity, setQuantity] = useState(0);
@@ -148,9 +149,11 @@ const ProductShow = (props) => {
               <div className="img_cart m-1 mx-2">
                 <img src={Images.cart_1} alt="" />
               </div>
-              <div className="cart_msg">Add To Cart</div>
+              <Link to="/cart" style={{ textDecoration: "none" }}>
+                <div className="cart_msg">Add To Cart</div>
+              </Link>
             </div>
-            <div className="btnn_bynw col-2 mx-3">BuyNow</div>
+            <div className="btnn_bynw col-2 mx-3">Buy Now</div>
           </div>
         </div>
       </div>

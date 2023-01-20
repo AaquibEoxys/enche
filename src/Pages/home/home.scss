@@ -207,7 +207,6 @@ $secondary_green_code: #a3ce2d;
         display: flex;
         flex-direction: column;
         padding: 0px;
-
         .card_arrival_Img {
           position: relative;
 
@@ -517,9 +516,10 @@ $secondary_green_code: #a3ce2d;
         }
 
         .card_price {
-          font-weight: 700;
-          padding: 1px 7px;
           font-size: 15px;
+          font-weight: 500;
+          color: #000;
+          padding: 1px 7px;
         }
 
         .star_icons {
